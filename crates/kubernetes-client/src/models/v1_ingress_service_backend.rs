@@ -18,7 +18,7 @@ pub struct V1IngressServiceBackend {
     #[serde(rename = "name")]
     pub name: String,
     #[serde(rename = "port", skip_serializing_if = "Option::is_none")]
-    pub port: Option<crate::models::V1ServiceBackendPort>,
+    pub port: Option<Box<crate::models::V1ServiceBackendPort>>,
 }
 
 impl V1IngressServiceBackend {

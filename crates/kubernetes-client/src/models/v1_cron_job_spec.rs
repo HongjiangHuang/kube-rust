@@ -21,7 +21,7 @@ pub struct V1CronJobSpec {
     #[serde(rename = "failedJobsHistoryLimit", skip_serializing_if = "Option::is_none")]
     pub failed_jobs_history_limit: Option<i32>,
     #[serde(rename = "jobTemplate")]
-    pub job_template: crate::models::V1JobTemplateSpec,
+    pub job_template: Box<crate::models::V1JobTemplateSpec>,
     /// The schedule in Cron format, see https://en.wikipedia.org/wiki/Cron.
     #[serde(rename = "schedule")]
     pub schedule: String,
@@ -42,7 +42,7 @@ impl V1CronJobSpec {
         V1CronJobSpec {
             concurrency_policy: None,
             failed_jobs_history_limit: None,
-            job_template,
+            job_template: Box::new(job_template),
             schedule,
             starting_deadline_seconds: None,
             successful_jobs_history_limit: None,

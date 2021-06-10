@@ -24,7 +24,7 @@ pub struct V2beta1HorizontalPodAutoscalerSpec {
     #[serde(rename = "minReplicas", skip_serializing_if = "Option::is_none")]
     pub min_replicas: Option<i32>,
     #[serde(rename = "scaleTargetRef")]
-    pub scale_target_ref: crate::models::V2beta1CrossVersionObjectReference,
+    pub scale_target_ref: Box<crate::models::V2beta1CrossVersionObjectReference>,
 }
 
 impl V2beta1HorizontalPodAutoscalerSpec {
@@ -34,7 +34,7 @@ impl V2beta1HorizontalPodAutoscalerSpec {
             max_replicas,
             metrics: None,
             min_replicas: None,
-            scale_target_ref,
+            scale_target_ref: Box::new(scale_target_ref),
         }
     }
 }

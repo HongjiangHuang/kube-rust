@@ -21,7 +21,7 @@ pub struct V1alpha1Role {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     /// Rules holds all the PolicyRules for this Role
     #[serde(rename = "rules", skip_serializing_if = "Option::is_none")]
     pub rules: Option<Vec<crate::models::V1alpha1PolicyRule>>,

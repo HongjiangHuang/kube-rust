@@ -18,7 +18,7 @@ pub struct V1SecurityContext {
     #[serde(rename = "allowPrivilegeEscalation", skip_serializing_if = "Option::is_none")]
     pub allow_privilege_escalation: Option<bool>,
     #[serde(rename = "capabilities", skip_serializing_if = "Option::is_none")]
-    pub capabilities: Option<crate::models::V1Capabilities>,
+    pub capabilities: Option<Box<crate::models::V1Capabilities>>,
     /// Run container in privileged mode. Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
     #[serde(rename = "privileged", skip_serializing_if = "Option::is_none")]
     pub privileged: Option<bool>,
@@ -38,11 +38,11 @@ pub struct V1SecurityContext {
     #[serde(rename = "runAsUser", skip_serializing_if = "Option::is_none")]
     pub run_as_user: Option<i64>,
     #[serde(rename = "seLinuxOptions", skip_serializing_if = "Option::is_none")]
-    pub se_linux_options: Option<crate::models::V1SeLinuxOptions>,
+    pub se_linux_options: Option<Box<crate::models::V1SeLinuxOptions>>,
     #[serde(rename = "seccompProfile", skip_serializing_if = "Option::is_none")]
-    pub seccomp_profile: Option<crate::models::V1SeccompProfile>,
+    pub seccomp_profile: Option<Box<crate::models::V1SeccompProfile>>,
     #[serde(rename = "windowsOptions", skip_serializing_if = "Option::is_none")]
-    pub windows_options: Option<crate::models::V1WindowsSecurityContextOptions>,
+    pub windows_options: Option<Box<crate::models::V1WindowsSecurityContextOptions>>,
 }
 
 impl V1SecurityContext {

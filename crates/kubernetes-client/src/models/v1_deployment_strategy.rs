@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1DeploymentStrategy {
     #[serde(rename = "rollingUpdate", skip_serializing_if = "Option::is_none")]
-    pub rolling_update: Option<crate::models::V1RollingUpdateDeployment>,
+    pub rolling_update: Option<Box<crate::models::V1RollingUpdateDeployment>>,
     /// Type of deployment. Can be \"Recreate\" or \"RollingUpdate\". Default is RollingUpdate.
     #[serde(rename = "type", skip_serializing_if = "Option::is_none")]
     pub _type: Option<String>,

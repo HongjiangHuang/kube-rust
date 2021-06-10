@@ -4,17 +4,17 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_api_service**](ApiregistrationV1beta1Api.md#create_api_service) | **Post** /apis/apiregistration.k8s.io/v1beta1/apiservices | 
-[**delete_api_service**](ApiregistrationV1beta1Api.md#delete_api_service) | **Delete** /apis/apiregistration.k8s.io/v1beta1/apiservices/{name} | 
-[**delete_collection_api_service**](ApiregistrationV1beta1Api.md#delete_collection_api_service) | **Delete** /apis/apiregistration.k8s.io/v1beta1/apiservices | 
-[**get_api_resources**](ApiregistrationV1beta1Api.md#get_api_resources) | **Get** /apis/apiregistration.k8s.io/v1beta1/ | 
-[**list_api_service**](ApiregistrationV1beta1Api.md#list_api_service) | **Get** /apis/apiregistration.k8s.io/v1beta1/apiservices | 
-[**patch_api_service**](ApiregistrationV1beta1Api.md#patch_api_service) | **Patch** /apis/apiregistration.k8s.io/v1beta1/apiservices/{name} | 
-[**patch_api_service_status**](ApiregistrationV1beta1Api.md#patch_api_service_status) | **Patch** /apis/apiregistration.k8s.io/v1beta1/apiservices/{name}/status | 
-[**read_api_service**](ApiregistrationV1beta1Api.md#read_api_service) | **Get** /apis/apiregistration.k8s.io/v1beta1/apiservices/{name} | 
-[**read_api_service_status**](ApiregistrationV1beta1Api.md#read_api_service_status) | **Get** /apis/apiregistration.k8s.io/v1beta1/apiservices/{name}/status | 
-[**replace_api_service**](ApiregistrationV1beta1Api.md#replace_api_service) | **Put** /apis/apiregistration.k8s.io/v1beta1/apiservices/{name} | 
-[**replace_api_service_status**](ApiregistrationV1beta1Api.md#replace_api_service_status) | **Put** /apis/apiregistration.k8s.io/v1beta1/apiservices/{name}/status | 
+[**create_api_service**](ApiregistrationV1beta1Api.md#create_api_service) | **POST** /apis/apiregistration.k8s.io/v1beta1/apiservices | 
+[**delete_api_service**](ApiregistrationV1beta1Api.md#delete_api_service) | **DELETE** /apis/apiregistration.k8s.io/v1beta1/apiservices/{name} | 
+[**delete_collection_api_service**](ApiregistrationV1beta1Api.md#delete_collection_api_service) | **DELETE** /apis/apiregistration.k8s.io/v1beta1/apiservices | 
+[**get_api_resources**](ApiregistrationV1beta1Api.md#get_api_resources) | **GET** /apis/apiregistration.k8s.io/v1beta1/ | 
+[**list_api_service**](ApiregistrationV1beta1Api.md#list_api_service) | **GET** /apis/apiregistration.k8s.io/v1beta1/apiservices | 
+[**patch_api_service**](ApiregistrationV1beta1Api.md#patch_api_service) | **PATCH** /apis/apiregistration.k8s.io/v1beta1/apiservices/{name} | 
+[**patch_api_service_status**](ApiregistrationV1beta1Api.md#patch_api_service_status) | **PATCH** /apis/apiregistration.k8s.io/v1beta1/apiservices/{name}/status | 
+[**read_api_service**](ApiregistrationV1beta1Api.md#read_api_service) | **GET** /apis/apiregistration.k8s.io/v1beta1/apiservices/{name} | 
+[**read_api_service_status**](ApiregistrationV1beta1Api.md#read_api_service_status) | **GET** /apis/apiregistration.k8s.io/v1beta1/apiservices/{name}/status | 
+[**replace_api_service**](ApiregistrationV1beta1Api.md#replace_api_service) | **PUT** /apis/apiregistration.k8s.io/v1beta1/apiservices/{name} | 
+[**replace_api_service_status**](ApiregistrationV1beta1Api.md#replace_api_service_status) | **PUT** /apis/apiregistration.k8s.io/v1beta1/apiservices/{name}/status | 
 
 
 

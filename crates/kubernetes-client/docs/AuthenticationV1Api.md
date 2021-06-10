@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_token_review**](AuthenticationV1Api.md#create_token_review) | **Post** /apis/authentication.k8s.io/v1/tokenreviews | 
-[**get_api_resources**](AuthenticationV1Api.md#get_api_resources) | **Get** /apis/authentication.k8s.io/v1/ | 
+[**create_token_review**](AuthenticationV1Api.md#create_token_review) | **POST** /apis/authentication.k8s.io/v1/tokenreviews | 
+[**get_api_resources**](AuthenticationV1Api.md#get_api_resources) | **GET** /apis/authentication.k8s.io/v1/ | 
 
 
 

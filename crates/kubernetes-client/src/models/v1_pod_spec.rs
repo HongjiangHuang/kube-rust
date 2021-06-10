@@ -18,7 +18,7 @@ pub struct V1PodSpec {
     #[serde(rename = "activeDeadlineSeconds", skip_serializing_if = "Option::is_none")]
     pub active_deadline_seconds: Option<i64>,
     #[serde(rename = "affinity", skip_serializing_if = "Option::is_none")]
-    pub affinity: Option<crate::models::V1Affinity>,
+    pub affinity: Option<Box<crate::models::V1Affinity>>,
     /// AutomountServiceAccountToken indicates whether a service account token should be automatically mounted.
     #[serde(rename = "automountServiceAccountToken", skip_serializing_if = "Option::is_none")]
     pub automount_service_account_token: Option<bool>,
@@ -26,7 +26,7 @@ pub struct V1PodSpec {
     #[serde(rename = "containers")]
     pub containers: Vec<crate::models::V1Container>,
     #[serde(rename = "dnsConfig", skip_serializing_if = "Option::is_none")]
-    pub dns_config: Option<crate::models::V1PodDnsConfig>,
+    pub dns_config: Option<Box<crate::models::V1PodDnsConfig>>,
     /// Set DNS policy for the pod. Defaults to \"ClusterFirst\". Valid values are 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set along with hostNetwork, you have to specify DNS policy explicitly to 'ClusterFirstWithHostNet'.
     #[serde(rename = "dnsPolicy", skip_serializing_if = "Option::is_none")]
     pub dns_policy: Option<String>,
@@ -88,7 +88,7 @@ pub struct V1PodSpec {
     #[serde(rename = "schedulerName", skip_serializing_if = "Option::is_none")]
     pub scheduler_name: Option<String>,
     #[serde(rename = "securityContext", skip_serializing_if = "Option::is_none")]
-    pub security_context: Option<crate::models::V1PodSecurityContext>,
+    pub security_context: Option<Box<crate::models::V1PodSecurityContext>>,
     /// DeprecatedServiceAccount is a depreciated alias for ServiceAccountName. Deprecated: Use serviceAccountName instead.
     #[serde(rename = "serviceAccount", skip_serializing_if = "Option::is_none")]
     pub service_account: Option<String>,

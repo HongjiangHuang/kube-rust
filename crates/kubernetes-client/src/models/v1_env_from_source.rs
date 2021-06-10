@@ -15,12 +15,12 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1EnvFromSource {
     #[serde(rename = "configMapRef", skip_serializing_if = "Option::is_none")]
-    pub config_map_ref: Option<crate::models::V1ConfigMapEnvSource>,
+    pub config_map_ref: Option<Box<crate::models::V1ConfigMapEnvSource>>,
     /// An optional identifier to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
     #[serde(rename = "prefix", skip_serializing_if = "Option::is_none")]
     pub prefix: Option<String>,
     #[serde(rename = "secretRef", skip_serializing_if = "Option::is_none")]
-    pub secret_ref: Option<crate::models::V1SecretEnvSource>,
+    pub secret_ref: Option<Box<crate::models::V1SecretEnvSource>>,
 }
 
 impl V1EnvFromSource {

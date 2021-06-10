@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1StatefulSetUpdateStrategy {
     #[serde(rename = "rollingUpdate", skip_serializing_if = "Option::is_none")]
-    pub rolling_update: Option<crate::models::V1RollingUpdateStatefulSetStrategy>,
+    pub rolling_update: Option<Box<crate::models::V1RollingUpdateStatefulSetStrategy>>,
     /// Type indicates the type of the StatefulSetUpdateStrategy. Default is RollingUpdate.
     #[serde(rename = "type", skip_serializing_if = "Option::is_none")]
     pub _type: Option<String>,

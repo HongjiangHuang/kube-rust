@@ -24,11 +24,11 @@ pub struct V1beta1RuntimeClass {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     #[serde(rename = "overhead", skip_serializing_if = "Option::is_none")]
-    pub overhead: Option<crate::models::V1beta1Overhead>,
+    pub overhead: Option<Box<crate::models::V1beta1Overhead>>,
     #[serde(rename = "scheduling", skip_serializing_if = "Option::is_none")]
-    pub scheduling: Option<crate::models::V1beta1Scheduling>,
+    pub scheduling: Option<Box<crate::models::V1beta1Scheduling>>,
 }
 
 impl V1beta1RuntimeClass {

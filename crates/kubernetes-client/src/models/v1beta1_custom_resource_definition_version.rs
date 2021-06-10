@@ -27,7 +27,7 @@ pub struct V1beta1CustomResourceDefinitionVersion {
     #[serde(rename = "name")]
     pub name: String,
     #[serde(rename = "schema", skip_serializing_if = "Option::is_none")]
-    pub schema: Option<crate::models::V1beta1CustomResourceValidation>,
+    pub schema: Option<Box<crate::models::V1beta1CustomResourceValidation>>,
     /// served is a flag enabling/disabling this version from being served via REST APIs
     #[serde(rename = "served")]
     pub served: bool,
@@ -35,7 +35,7 @@ pub struct V1beta1CustomResourceDefinitionVersion {
     #[serde(rename = "storage")]
     pub storage: bool,
     #[serde(rename = "subresources", skip_serializing_if = "Option::is_none")]
-    pub subresources: Option<crate::models::V1beta1CustomResourceSubresources>,
+    pub subresources: Option<Box<crate::models::V1beta1CustomResourceSubresources>>,
 }
 
 impl V1beta1CustomResourceDefinitionVersion {

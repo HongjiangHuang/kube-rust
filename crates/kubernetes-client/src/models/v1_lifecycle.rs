@@ -15,9 +15,9 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1Lifecycle {
     #[serde(rename = "postStart", skip_serializing_if = "Option::is_none")]
-    pub post_start: Option<crate::models::V1Handler>,
+    pub post_start: Option<Box<crate::models::V1Handler>>,
     #[serde(rename = "preStop", skip_serializing_if = "Option::is_none")]
-    pub pre_stop: Option<crate::models::V1Handler>,
+    pub pre_stop: Option<Box<crate::models::V1Handler>>,
 }
 
 impl V1Lifecycle {

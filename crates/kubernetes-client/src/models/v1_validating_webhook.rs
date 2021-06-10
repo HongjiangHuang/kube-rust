@@ -18,7 +18,7 @@ pub struct V1ValidatingWebhook {
     #[serde(rename = "admissionReviewVersions")]
     pub admission_review_versions: Vec<String>,
     #[serde(rename = "clientConfig")]
-    pub client_config: crate::models::AdmissionregistrationV1WebhookClientConfig,
+    pub client_config: Box<crate::models::AdmissionregistrationV1WebhookClientConfig>,
     /// FailurePolicy defines how unrecognized errors from the admission endpoint are handled - allowed values are Ignore or Fail. Defaults to Fail.
     #[serde(rename = "failurePolicy", skip_serializing_if = "Option::is_none")]
     pub failure_policy: Option<String>,
@@ -29,9 +29,9 @@ pub struct V1ValidatingWebhook {
     #[serde(rename = "name")]
     pub name: String,
     #[serde(rename = "namespaceSelector", skip_serializing_if = "Option::is_none")]
-    pub namespace_selector: Option<crate::models::V1LabelSelector>,
+    pub namespace_selector: Option<Box<crate::models::V1LabelSelector>>,
     #[serde(rename = "objectSelector", skip_serializing_if = "Option::is_none")]
-    pub object_selector: Option<crate::models::V1LabelSelector>,
+    pub object_selector: Option<Box<crate::models::V1LabelSelector>>,
     /// Rules describes what operations on what resources/subresources the webhook cares about. The webhook cares about an operation if it matches _any_ Rule. However, in order to prevent ValidatingAdmissionWebhooks and MutatingAdmissionWebhooks from putting the cluster in a state which cannot be recovered from without completely disabling the plugin, ValidatingAdmissionWebhooks and MutatingAdmissionWebhooks are never called on admission requests for ValidatingWebhookConfiguration and MutatingWebhookConfiguration objects.
     #[serde(rename = "rules", skip_serializing_if = "Option::is_none")]
     pub rules: Option<Vec<crate::models::V1RuleWithOperations>>,
@@ -48,7 +48,7 @@ impl V1ValidatingWebhook {
     pub fn new(admission_review_versions: Vec<String>, client_config: crate::models::AdmissionregistrationV1WebhookClientConfig, name: String, side_effects: String) -> V1ValidatingWebhook {
         V1ValidatingWebhook {
             admission_review_versions,
-            client_config,
+            client_config: Box::new(client_config),
             failure_policy: None,
             match_policy: None,
             name,

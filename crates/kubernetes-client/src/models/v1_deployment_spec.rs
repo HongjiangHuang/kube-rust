@@ -30,11 +30,11 @@ pub struct V1DeploymentSpec {
     #[serde(rename = "revisionHistoryLimit", skip_serializing_if = "Option::is_none")]
     pub revision_history_limit: Option<i32>,
     #[serde(rename = "selector")]
-    pub selector: crate::models::V1LabelSelector,
+    pub selector: Box<crate::models::V1LabelSelector>,
     #[serde(rename = "strategy", skip_serializing_if = "Option::is_none")]
-    pub strategy: Option<crate::models::V1DeploymentStrategy>,
+    pub strategy: Option<Box<crate::models::V1DeploymentStrategy>>,
     #[serde(rename = "template")]
-    pub template: crate::models::V1PodTemplateSpec,
+    pub template: Box<crate::models::V1PodTemplateSpec>,
 }
 
 impl V1DeploymentSpec {
@@ -46,9 +46,9 @@ impl V1DeploymentSpec {
             progress_deadline_seconds: None,
             replicas: None,
             revision_history_limit: None,
-            selector,
+            selector: Box::new(selector),
             strategy: None,
-            template,
+            template: Box::new(template),
         }
     }
 }

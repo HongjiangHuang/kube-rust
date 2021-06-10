@@ -30,7 +30,7 @@ pub struct V1DeleteOptions {
     #[serde(rename = "orphanDependents", skip_serializing_if = "Option::is_none")]
     pub orphan_dependents: Option<bool>,
     #[serde(rename = "preconditions", skip_serializing_if = "Option::is_none")]
-    pub preconditions: Option<crate::models::V1Preconditions>,
+    pub preconditions: Option<Box<crate::models::V1Preconditions>>,
     /// Whether and how garbage collection will be performed. Either this field or OrphanDependents may be set, but not both. The default policy is decided by the existing finalizer set in the metadata.finalizers and the resource-specific default policy. Acceptable values are: 'Orphan' - orphan the dependents; 'Background' - allow the garbage collector to delete the dependents in the background; 'Foreground' - a cascading policy that deletes all dependents in the foreground.
     #[serde(rename = "propagationPolicy", skip_serializing_if = "Option::is_none")]
     pub propagation_policy: Option<String>,

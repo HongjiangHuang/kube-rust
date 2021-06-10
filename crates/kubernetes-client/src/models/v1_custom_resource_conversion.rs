@@ -18,7 +18,7 @@ pub struct V1CustomResourceConversion {
     #[serde(rename = "strategy")]
     pub strategy: String,
     #[serde(rename = "webhook", skip_serializing_if = "Option::is_none")]
-    pub webhook: Option<crate::models::V1WebhookConversion>,
+    pub webhook: Option<Box<crate::models::V1WebhookConversion>>,
 }
 
 impl V1CustomResourceConversion {

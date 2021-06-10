@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1CustomResourceDefinitionStatus {
     #[serde(rename = "acceptedNames", skip_serializing_if = "Option::is_none")]
-    pub accepted_names: Option<crate::models::V1CustomResourceDefinitionNames>,
+    pub accepted_names: Option<Box<crate::models::V1CustomResourceDefinitionNames>>,
     /// conditions indicate state for particular aspects of a CustomResourceDefinition
     #[serde(rename = "conditions", skip_serializing_if = "Option::is_none")]
     pub conditions: Option<Vec<crate::models::V1CustomResourceDefinitionCondition>>,

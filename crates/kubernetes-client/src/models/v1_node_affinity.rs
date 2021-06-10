@@ -18,7 +18,7 @@ pub struct V1NodeAffinity {
     #[serde(rename = "preferredDuringSchedulingIgnoredDuringExecution", skip_serializing_if = "Option::is_none")]
     pub preferred_during_scheduling_ignored_during_execution: Option<Vec<crate::models::V1PreferredSchedulingTerm>>,
     #[serde(rename = "requiredDuringSchedulingIgnoredDuringExecution", skip_serializing_if = "Option::is_none")]
-    pub required_during_scheduling_ignored_during_execution: Option<crate::models::V1NodeSelector>,
+    pub required_during_scheduling_ignored_during_execution: Option<Box<crate::models::V1NodeSelector>>,
 }
 
 impl V1NodeAffinity {

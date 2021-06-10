@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1beta1PriorityLevelConfigurationSpec {
     #[serde(rename = "limited", skip_serializing_if = "Option::is_none")]
-    pub limited: Option<crate::models::V1beta1LimitedPriorityLevelConfiguration>,
+    pub limited: Option<Box<crate::models::V1beta1LimitedPriorityLevelConfiguration>>,
     /// `type` indicates whether this priority level is subject to limitation on request execution.  A value of `\"Exempt\"` means that requests of this priority level are not subject to a limit (and thus are never queued) and do not detract from the capacity made available to other priority levels.  A value of `\"Limited\"` means that (a) requests of this priority level _are_ subject to limits and (b) some of the server's limited capacity is made available exclusively to this priority level. Required.
     #[serde(rename = "type")]
     pub _type: String,

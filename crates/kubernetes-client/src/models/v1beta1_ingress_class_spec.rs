@@ -18,7 +18,7 @@ pub struct V1beta1IngressClassSpec {
     #[serde(rename = "controller", skip_serializing_if = "Option::is_none")]
     pub controller: Option<String>,
     #[serde(rename = "parameters", skip_serializing_if = "Option::is_none")]
-    pub parameters: Option<crate::models::V1beta1IngressClassParametersReference>,
+    pub parameters: Option<Box<crate::models::V1beta1IngressClassParametersReference>>,
 }
 
 impl V1beta1IngressClassSpec {

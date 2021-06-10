@@ -4,22 +4,22 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_namespaced_csi_storage_capacity**](StorageV1alpha1Api.md#create_namespaced_csi_storage_capacity) | **Post** /apis/storage.k8s.io/v1alpha1/namespaces/{namespace}/csistoragecapacities | 
-[**create_volume_attachment**](StorageV1alpha1Api.md#create_volume_attachment) | **Post** /apis/storage.k8s.io/v1alpha1/volumeattachments | 
-[**delete_collection_namespaced_csi_storage_capacity**](StorageV1alpha1Api.md#delete_collection_namespaced_csi_storage_capacity) | **Delete** /apis/storage.k8s.io/v1alpha1/namespaces/{namespace}/csistoragecapacities | 
-[**delete_collection_volume_attachment**](StorageV1alpha1Api.md#delete_collection_volume_attachment) | **Delete** /apis/storage.k8s.io/v1alpha1/volumeattachments | 
-[**delete_namespaced_csi_storage_capacity**](StorageV1alpha1Api.md#delete_namespaced_csi_storage_capacity) | **Delete** /apis/storage.k8s.io/v1alpha1/namespaces/{namespace}/csistoragecapacities/{name} | 
-[**delete_volume_attachment**](StorageV1alpha1Api.md#delete_volume_attachment) | **Delete** /apis/storage.k8s.io/v1alpha1/volumeattachments/{name} | 
-[**get_api_resources**](StorageV1alpha1Api.md#get_api_resources) | **Get** /apis/storage.k8s.io/v1alpha1/ | 
-[**list_csi_storage_capacity_for_all_namespaces**](StorageV1alpha1Api.md#list_csi_storage_capacity_for_all_namespaces) | **Get** /apis/storage.k8s.io/v1alpha1/csistoragecapacities | 
-[**list_namespaced_csi_storage_capacity**](StorageV1alpha1Api.md#list_namespaced_csi_storage_capacity) | **Get** /apis/storage.k8s.io/v1alpha1/namespaces/{namespace}/csistoragecapacities | 
-[**list_volume_attachment**](StorageV1alpha1Api.md#list_volume_attachment) | **Get** /apis/storage.k8s.io/v1alpha1/volumeattachments | 
-[**patch_namespaced_csi_storage_capacity**](StorageV1alpha1Api.md#patch_namespaced_csi_storage_capacity) | **Patch** /apis/storage.k8s.io/v1alpha1/namespaces/{namespace}/csistoragecapacities/{name} | 
-[**patch_volume_attachment**](StorageV1alpha1Api.md#patch_volume_attachment) | **Patch** /apis/storage.k8s.io/v1alpha1/volumeattachments/{name} | 
-[**read_namespaced_csi_storage_capacity**](StorageV1alpha1Api.md#read_namespaced_csi_storage_capacity) | **Get** /apis/storage.k8s.io/v1alpha1/namespaces/{namespace}/csistoragecapacities/{name} | 
-[**read_volume_attachment**](StorageV1alpha1Api.md#read_volume_attachment) | **Get** /apis/storage.k8s.io/v1alpha1/volumeattachments/{name} | 
-[**replace_namespaced_csi_storage_capacity**](StorageV1alpha1Api.md#replace_namespaced_csi_storage_capacity) | **Put** /apis/storage.k8s.io/v1alpha1/namespaces/{namespace}/csistoragecapacities/{name} | 
-[**replace_volume_attachment**](StorageV1alpha1Api.md#replace_volume_attachment) | **Put** /apis/storage.k8s.io/v1alpha1/volumeattachments/{name} | 
+[**create_namespaced_csi_storage_capacity**](StorageV1alpha1Api.md#create_namespaced_csi_storage_capacity) | **POST** /apis/storage.k8s.io/v1alpha1/namespaces/{namespace}/csistoragecapacities | 
+[**create_volume_attachment**](StorageV1alpha1Api.md#create_volume_attachment) | **POST** /apis/storage.k8s.io/v1alpha1/volumeattachments | 
+[**delete_collection_namespaced_csi_storage_capacity**](StorageV1alpha1Api.md#delete_collection_namespaced_csi_storage_capacity) | **DELETE** /apis/storage.k8s.io/v1alpha1/namespaces/{namespace}/csistoragecapacities | 
+[**delete_collection_volume_attachment**](StorageV1alpha1Api.md#delete_collection_volume_attachment) | **DELETE** /apis/storage.k8s.io/v1alpha1/volumeattachments | 
+[**delete_namespaced_csi_storage_capacity**](StorageV1alpha1Api.md#delete_namespaced_csi_storage_capacity) | **DELETE** /apis/storage.k8s.io/v1alpha1/namespaces/{namespace}/csistoragecapacities/{name} | 
+[**delete_volume_attachment**](StorageV1alpha1Api.md#delete_volume_attachment) | **DELETE** /apis/storage.k8s.io/v1alpha1/volumeattachments/{name} | 
+[**get_api_resources**](StorageV1alpha1Api.md#get_api_resources) | **GET** /apis/storage.k8s.io/v1alpha1/ | 
+[**list_csi_storage_capacity_for_all_namespaces**](StorageV1alpha1Api.md#list_csi_storage_capacity_for_all_namespaces) | **GET** /apis/storage.k8s.io/v1alpha1/csistoragecapacities | 
+[**list_namespaced_csi_storage_capacity**](StorageV1alpha1Api.md#list_namespaced_csi_storage_capacity) | **GET** /apis/storage.k8s.io/v1alpha1/namespaces/{namespace}/csistoragecapacities | 
+[**list_volume_attachment**](StorageV1alpha1Api.md#list_volume_attachment) | **GET** /apis/storage.k8s.io/v1alpha1/volumeattachments | 
+[**patch_namespaced_csi_storage_capacity**](StorageV1alpha1Api.md#patch_namespaced_csi_storage_capacity) | **PATCH** /apis/storage.k8s.io/v1alpha1/namespaces/{namespace}/csistoragecapacities/{name} | 
+[**patch_volume_attachment**](StorageV1alpha1Api.md#patch_volume_attachment) | **PATCH** /apis/storage.k8s.io/v1alpha1/volumeattachments/{name} | 
+[**read_namespaced_csi_storage_capacity**](StorageV1alpha1Api.md#read_namespaced_csi_storage_capacity) | **GET** /apis/storage.k8s.io/v1alpha1/namespaces/{namespace}/csistoragecapacities/{name} | 
+[**read_volume_attachment**](StorageV1alpha1Api.md#read_volume_attachment) | **GET** /apis/storage.k8s.io/v1alpha1/volumeattachments/{name} | 
+[**replace_namespaced_csi_storage_capacity**](StorageV1alpha1Api.md#replace_namespaced_csi_storage_capacity) | **PUT** /apis/storage.k8s.io/v1alpha1/namespaces/{namespace}/csistoragecapacities/{name} | 
+[**replace_volume_attachment**](StorageV1alpha1Api.md#replace_volume_attachment) | **PUT** /apis/storage.k8s.io/v1alpha1/volumeattachments/{name} | 
 
 
 

@@ -4,17 +4,17 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_custom_resource_definition**](ApiextensionsV1Api.md#create_custom_resource_definition) | **Post** /apis/apiextensions.k8s.io/v1/customresourcedefinitions | 
-[**delete_collection_custom_resource_definition**](ApiextensionsV1Api.md#delete_collection_custom_resource_definition) | **Delete** /apis/apiextensions.k8s.io/v1/customresourcedefinitions | 
-[**delete_custom_resource_definition**](ApiextensionsV1Api.md#delete_custom_resource_definition) | **Delete** /apis/apiextensions.k8s.io/v1/customresourcedefinitions/{name} | 
-[**get_api_resources**](ApiextensionsV1Api.md#get_api_resources) | **Get** /apis/apiextensions.k8s.io/v1/ | 
-[**list_custom_resource_definition**](ApiextensionsV1Api.md#list_custom_resource_definition) | **Get** /apis/apiextensions.k8s.io/v1/customresourcedefinitions | 
-[**patch_custom_resource_definition**](ApiextensionsV1Api.md#patch_custom_resource_definition) | **Patch** /apis/apiextensions.k8s.io/v1/customresourcedefinitions/{name} | 
-[**patch_custom_resource_definition_status**](ApiextensionsV1Api.md#patch_custom_resource_definition_status) | **Patch** /apis/apiextensions.k8s.io/v1/customresourcedefinitions/{name}/status | 
-[**read_custom_resource_definition**](ApiextensionsV1Api.md#read_custom_resource_definition) | **Get** /apis/apiextensions.k8s.io/v1/customresourcedefinitions/{name} | 
-[**read_custom_resource_definition_status**](ApiextensionsV1Api.md#read_custom_resource_definition_status) | **Get** /apis/apiextensions.k8s.io/v1/customresourcedefinitions/{name}/status | 
-[**replace_custom_resource_definition**](ApiextensionsV1Api.md#replace_custom_resource_definition) | **Put** /apis/apiextensions.k8s.io/v1/customresourcedefinitions/{name} | 
-[**replace_custom_resource_definition_status**](ApiextensionsV1Api.md#replace_custom_resource_definition_status) | **Put** /apis/apiextensions.k8s.io/v1/customresourcedefinitions/{name}/status | 
+[**create_custom_resource_definition**](ApiextensionsV1Api.md#create_custom_resource_definition) | **POST** /apis/apiextensions.k8s.io/v1/customresourcedefinitions | 
+[**delete_collection_custom_resource_definition**](ApiextensionsV1Api.md#delete_collection_custom_resource_definition) | **DELETE** /apis/apiextensions.k8s.io/v1/customresourcedefinitions | 
+[**delete_custom_resource_definition**](ApiextensionsV1Api.md#delete_custom_resource_definition) | **DELETE** /apis/apiextensions.k8s.io/v1/customresourcedefinitions/{name} | 
+[**get_api_resources**](ApiextensionsV1Api.md#get_api_resources) | **GET** /apis/apiextensions.k8s.io/v1/ | 
+[**list_custom_resource_definition**](ApiextensionsV1Api.md#list_custom_resource_definition) | **GET** /apis/apiextensions.k8s.io/v1/customresourcedefinitions | 
+[**patch_custom_resource_definition**](ApiextensionsV1Api.md#patch_custom_resource_definition) | **PATCH** /apis/apiextensions.k8s.io/v1/customresourcedefinitions/{name} | 
+[**patch_custom_resource_definition_status**](ApiextensionsV1Api.md#patch_custom_resource_definition_status) | **PATCH** /apis/apiextensions.k8s.io/v1/customresourcedefinitions/{name}/status | 
+[**read_custom_resource_definition**](ApiextensionsV1Api.md#read_custom_resource_definition) | **GET** /apis/apiextensions.k8s.io/v1/customresourcedefinitions/{name} | 
+[**read_custom_resource_definition_status**](ApiextensionsV1Api.md#read_custom_resource_definition_status) | **GET** /apis/apiextensions.k8s.io/v1/customresourcedefinitions/{name}/status | 
+[**replace_custom_resource_definition**](ApiextensionsV1Api.md#replace_custom_resource_definition) | **PUT** /apis/apiextensions.k8s.io/v1/customresourcedefinitions/{name} | 
+[**replace_custom_resource_definition_status**](ApiextensionsV1Api.md#replace_custom_resource_definition_status) | **PUT** /apis/apiextensions.k8s.io/v1/customresourcedefinitions/{name}/status | 
 
 
 

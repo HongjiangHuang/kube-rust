@@ -21,11 +21,11 @@ pub struct V1DaemonSetSpec {
     #[serde(rename = "revisionHistoryLimit", skip_serializing_if = "Option::is_none")]
     pub revision_history_limit: Option<i32>,
     #[serde(rename = "selector")]
-    pub selector: crate::models::V1LabelSelector,
+    pub selector: Box<crate::models::V1LabelSelector>,
     #[serde(rename = "template")]
-    pub template: crate::models::V1PodTemplateSpec,
+    pub template: Box<crate::models::V1PodTemplateSpec>,
     #[serde(rename = "updateStrategy", skip_serializing_if = "Option::is_none")]
-    pub update_strategy: Option<crate::models::V1DaemonSetUpdateStrategy>,
+    pub update_strategy: Option<Box<crate::models::V1DaemonSetUpdateStrategy>>,
 }
 
 impl V1DaemonSetSpec {
@@ -34,8 +34,8 @@ impl V1DaemonSetSpec {
         V1DaemonSetSpec {
             min_ready_seconds: None,
             revision_history_limit: None,
-            selector,
-            template,
+            selector: Box::new(selector),
+            template: Box::new(template),
             update_strategy: None,
         }
     }

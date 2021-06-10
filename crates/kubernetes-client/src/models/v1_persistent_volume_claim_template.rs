@@ -15,9 +15,9 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1PersistentVolumeClaimTemplate {
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     #[serde(rename = "spec")]
-    pub spec: crate::models::V1PersistentVolumeClaimSpec,
+    pub spec: Box<crate::models::V1PersistentVolumeClaimSpec>,
 }
 
 impl V1PersistentVolumeClaimTemplate {
@@ -25,7 +25,7 @@ impl V1PersistentVolumeClaimTemplate {
     pub fn new(spec: crate::models::V1PersistentVolumeClaimSpec) -> V1PersistentVolumeClaimTemplate {
         V1PersistentVolumeClaimTemplate {
             metadata: None,
-            spec,
+            spec: Box::new(spec),
         }
     }
 }

@@ -21,7 +21,7 @@ pub struct V1StorageOsPersistentVolumeSource {
     #[serde(rename = "readOnly", skip_serializing_if = "Option::is_none")]
     pub read_only: Option<bool>,
     #[serde(rename = "secretRef", skip_serializing_if = "Option::is_none")]
-    pub secret_ref: Option<crate::models::V1ObjectReference>,
+    pub secret_ref: Option<Box<crate::models::V1ObjectReference>>,
     /// VolumeName is the human-readable name of the StorageOS volume.  Volume names are only unique within a namespace.
     #[serde(rename = "volumeName", skip_serializing_if = "Option::is_none")]
     pub volume_name: Option<String>,

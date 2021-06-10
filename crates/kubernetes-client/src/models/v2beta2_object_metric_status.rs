@@ -15,20 +15,20 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V2beta2ObjectMetricStatus {
     #[serde(rename = "current")]
-    pub current: crate::models::V2beta2MetricValueStatus,
+    pub current: Box<crate::models::V2beta2MetricValueStatus>,
     #[serde(rename = "describedObject")]
-    pub described_object: crate::models::V2beta2CrossVersionObjectReference,
+    pub described_object: Box<crate::models::V2beta2CrossVersionObjectReference>,
     #[serde(rename = "metric")]
-    pub metric: crate::models::V2beta2MetricIdentifier,
+    pub metric: Box<crate::models::V2beta2MetricIdentifier>,
 }
 
 impl V2beta2ObjectMetricStatus {
     /// ObjectMetricStatus indicates the current value of a metric describing a kubernetes object (for example, hits-per-second on an Ingress object).
     pub fn new(current: crate::models::V2beta2MetricValueStatus, described_object: crate::models::V2beta2CrossVersionObjectReference, metric: crate::models::V2beta2MetricIdentifier) -> V2beta2ObjectMetricStatus {
         V2beta2ObjectMetricStatus {
-            current,
-            described_object,
-            metric,
+            current: Box::new(current),
+            described_object: Box::new(described_object),
+            metric: Box::new(metric),
         }
     }
 }

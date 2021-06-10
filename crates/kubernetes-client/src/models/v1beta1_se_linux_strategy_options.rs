@@ -18,7 +18,7 @@ pub struct V1beta1SeLinuxStrategyOptions {
     #[serde(rename = "rule")]
     pub rule: String,
     #[serde(rename = "seLinuxOptions", skip_serializing_if = "Option::is_none")]
-    pub se_linux_options: Option<crate::models::V1SeLinuxOptions>,
+    pub se_linux_options: Option<Box<crate::models::V1SeLinuxOptions>>,
 }
 
 impl V1beta1SeLinuxStrategyOptions {

@@ -27,7 +27,7 @@ pub struct V1PriorityClass {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     /// PreemptionPolicy is the Policy for preempting pods with lower priority. One of Never, PreemptLowerPriority. Defaults to PreemptLowerPriority if unset. This field is beta-level, gated by the NonPreemptingPriority feature-gate.
     #[serde(rename = "preemptionPolicy", skip_serializing_if = "Option::is_none")]
     pub preemption_policy: Option<String>,

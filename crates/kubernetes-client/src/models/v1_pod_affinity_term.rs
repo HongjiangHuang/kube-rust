@@ -15,9 +15,9 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1PodAffinityTerm {
     #[serde(rename = "labelSelector", skip_serializing_if = "Option::is_none")]
-    pub label_selector: Option<crate::models::V1LabelSelector>,
+    pub label_selector: Option<Box<crate::models::V1LabelSelector>>,
     #[serde(rename = "namespaceSelector", skip_serializing_if = "Option::is_none")]
-    pub namespace_selector: Option<crate::models::V1LabelSelector>,
+    pub namespace_selector: Option<Box<crate::models::V1LabelSelector>>,
     /// namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means \"this pod's namespace\"
     #[serde(rename = "namespaces", skip_serializing_if = "Option::is_none")]
     pub namespaces: Option<Vec<String>>,

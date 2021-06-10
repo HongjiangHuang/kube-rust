@@ -21,11 +21,11 @@ pub struct V1HorizontalPodAutoscaler {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     #[serde(rename = "spec", skip_serializing_if = "Option::is_none")]
-    pub spec: Option<crate::models::V1HorizontalPodAutoscalerSpec>,
+    pub spec: Option<Box<crate::models::V1HorizontalPodAutoscalerSpec>>,
     #[serde(rename = "status", skip_serializing_if = "Option::is_none")]
-    pub status: Option<crate::models::V1HorizontalPodAutoscalerStatus>,
+    pub status: Option<Box<crate::models::V1HorizontalPodAutoscalerStatus>>,
 }
 
 impl V1HorizontalPodAutoscaler {

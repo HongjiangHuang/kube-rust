@@ -21,7 +21,7 @@ pub struct V1beta1CustomResourceConversion {
     #[serde(rename = "strategy")]
     pub strategy: String,
     #[serde(rename = "webhookClientConfig", skip_serializing_if = "Option::is_none")]
-    pub webhook_client_config: Option<crate::models::ApiextensionsV1beta1WebhookClientConfig>,
+    pub webhook_client_config: Option<Box<crate::models::ApiextensionsV1beta1WebhookClientConfig>>,
 }
 
 impl V1beta1CustomResourceConversion {

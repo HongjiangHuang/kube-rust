@@ -15,17 +15,17 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V2beta2PodsMetricSource {
     #[serde(rename = "metric")]
-    pub metric: crate::models::V2beta2MetricIdentifier,
+    pub metric: Box<crate::models::V2beta2MetricIdentifier>,
     #[serde(rename = "target")]
-    pub target: crate::models::V2beta2MetricTarget,
+    pub target: Box<crate::models::V2beta2MetricTarget>,
 }
 
 impl V2beta2PodsMetricSource {
     /// PodsMetricSource indicates how to scale on a metric describing each pod in the current scale target (for example, transactions-processed-per-second). The values will be averaged together before being compared to the target value.
     pub fn new(metric: crate::models::V2beta2MetricIdentifier, target: crate::models::V2beta2MetricTarget) -> V2beta2PodsMetricSource {
         V2beta2PodsMetricSource {
-            metric,
-            target,
+            metric: Box::new(metric),
+            target: Box::new(target),
         }
     }
 }

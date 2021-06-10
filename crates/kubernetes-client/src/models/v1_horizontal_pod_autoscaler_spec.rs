@@ -21,7 +21,7 @@ pub struct V1HorizontalPodAutoscalerSpec {
     #[serde(rename = "minReplicas", skip_serializing_if = "Option::is_none")]
     pub min_replicas: Option<i32>,
     #[serde(rename = "scaleTargetRef")]
-    pub scale_target_ref: crate::models::V1CrossVersionObjectReference,
+    pub scale_target_ref: Box<crate::models::V1CrossVersionObjectReference>,
     /// target average CPU utilization (represented as a percentage of requested CPU) over all the pods; if not specified the default autoscaling policy will be used.
     #[serde(rename = "targetCPUUtilizationPercentage", skip_serializing_if = "Option::is_none")]
     pub target_cpu_utilization_percentage: Option<i32>,
@@ -33,7 +33,7 @@ impl V1HorizontalPodAutoscalerSpec {
         V1HorizontalPodAutoscalerSpec {
             max_replicas,
             min_replicas: None,
-            scale_target_ref,
+            scale_target_ref: Box::new(scale_target_ref),
             target_cpu_utilization_percentage: None,
         }
     }

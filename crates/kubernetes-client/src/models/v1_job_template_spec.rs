@@ -15,9 +15,9 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1JobTemplateSpec {
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     #[serde(rename = "spec", skip_serializing_if = "Option::is_none")]
-    pub spec: Option<crate::models::V1JobSpec>,
+    pub spec: Option<Box<crate::models::V1JobSpec>>,
 }
 
 impl V1JobTemplateSpec {

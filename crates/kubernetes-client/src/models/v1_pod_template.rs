@@ -21,9 +21,9 @@ pub struct V1PodTemplate {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     #[serde(rename = "template", skip_serializing_if = "Option::is_none")]
-    pub template: Option<crate::models::V1PodTemplateSpec>,
+    pub template: Option<Box<crate::models::V1PodTemplateSpec>>,
 }
 
 impl V1PodTemplate {

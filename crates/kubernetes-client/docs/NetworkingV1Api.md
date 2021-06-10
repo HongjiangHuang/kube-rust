@@ -4,33 +4,33 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_ingress_class**](NetworkingV1Api.md#create_ingress_class) | **Post** /apis/networking.k8s.io/v1/ingressclasses | 
-[**create_namespaced_ingress**](NetworkingV1Api.md#create_namespaced_ingress) | **Post** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses | 
-[**create_namespaced_network_policy**](NetworkingV1Api.md#create_namespaced_network_policy) | **Post** /apis/networking.k8s.io/v1/namespaces/{namespace}/networkpolicies | 
-[**delete_collection_ingress_class**](NetworkingV1Api.md#delete_collection_ingress_class) | **Delete** /apis/networking.k8s.io/v1/ingressclasses | 
-[**delete_collection_namespaced_ingress**](NetworkingV1Api.md#delete_collection_namespaced_ingress) | **Delete** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses | 
-[**delete_collection_namespaced_network_policy**](NetworkingV1Api.md#delete_collection_namespaced_network_policy) | **Delete** /apis/networking.k8s.io/v1/namespaces/{namespace}/networkpolicies | 
-[**delete_ingress_class**](NetworkingV1Api.md#delete_ingress_class) | **Delete** /apis/networking.k8s.io/v1/ingressclasses/{name} | 
-[**delete_namespaced_ingress**](NetworkingV1Api.md#delete_namespaced_ingress) | **Delete** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses/{name} | 
-[**delete_namespaced_network_policy**](NetworkingV1Api.md#delete_namespaced_network_policy) | **Delete** /apis/networking.k8s.io/v1/namespaces/{namespace}/networkpolicies/{name} | 
-[**get_api_resources**](NetworkingV1Api.md#get_api_resources) | **Get** /apis/networking.k8s.io/v1/ | 
-[**list_ingress_class**](NetworkingV1Api.md#list_ingress_class) | **Get** /apis/networking.k8s.io/v1/ingressclasses | 
-[**list_ingress_for_all_namespaces**](NetworkingV1Api.md#list_ingress_for_all_namespaces) | **Get** /apis/networking.k8s.io/v1/ingresses | 
-[**list_namespaced_ingress**](NetworkingV1Api.md#list_namespaced_ingress) | **Get** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses | 
-[**list_namespaced_network_policy**](NetworkingV1Api.md#list_namespaced_network_policy) | **Get** /apis/networking.k8s.io/v1/namespaces/{namespace}/networkpolicies | 
-[**list_network_policy_for_all_namespaces**](NetworkingV1Api.md#list_network_policy_for_all_namespaces) | **Get** /apis/networking.k8s.io/v1/networkpolicies | 
-[**patch_ingress_class**](NetworkingV1Api.md#patch_ingress_class) | **Patch** /apis/networking.k8s.io/v1/ingressclasses/{name} | 
-[**patch_namespaced_ingress**](NetworkingV1Api.md#patch_namespaced_ingress) | **Patch** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses/{name} | 
-[**patch_namespaced_ingress_status**](NetworkingV1Api.md#patch_namespaced_ingress_status) | **Patch** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses/{name}/status | 
-[**patch_namespaced_network_policy**](NetworkingV1Api.md#patch_namespaced_network_policy) | **Patch** /apis/networking.k8s.io/v1/namespaces/{namespace}/networkpolicies/{name} | 
-[**read_ingress_class**](NetworkingV1Api.md#read_ingress_class) | **Get** /apis/networking.k8s.io/v1/ingressclasses/{name} | 
-[**read_namespaced_ingress**](NetworkingV1Api.md#read_namespaced_ingress) | **Get** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses/{name} | 
-[**read_namespaced_ingress_status**](NetworkingV1Api.md#read_namespaced_ingress_status) | **Get** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses/{name}/status | 
-[**read_namespaced_network_policy**](NetworkingV1Api.md#read_namespaced_network_policy) | **Get** /apis/networking.k8s.io/v1/namespaces/{namespace}/networkpolicies/{name} | 
-[**replace_ingress_class**](NetworkingV1Api.md#replace_ingress_class) | **Put** /apis/networking.k8s.io/v1/ingressclasses/{name} | 
-[**replace_namespaced_ingress**](NetworkingV1Api.md#replace_namespaced_ingress) | **Put** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses/{name} | 
-[**replace_namespaced_ingress_status**](NetworkingV1Api.md#replace_namespaced_ingress_status) | **Put** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses/{name}/status | 
-[**replace_namespaced_network_policy**](NetworkingV1Api.md#replace_namespaced_network_policy) | **Put** /apis/networking.k8s.io/v1/namespaces/{namespace}/networkpolicies/{name} | 
+[**create_ingress_class**](NetworkingV1Api.md#create_ingress_class) | **POST** /apis/networking.k8s.io/v1/ingressclasses | 
+[**create_namespaced_ingress**](NetworkingV1Api.md#create_namespaced_ingress) | **POST** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses | 
+[**create_namespaced_network_policy**](NetworkingV1Api.md#create_namespaced_network_policy) | **POST** /apis/networking.k8s.io/v1/namespaces/{namespace}/networkpolicies | 
+[**delete_collection_ingress_class**](NetworkingV1Api.md#delete_collection_ingress_class) | **DELETE** /apis/networking.k8s.io/v1/ingressclasses | 
+[**delete_collection_namespaced_ingress**](NetworkingV1Api.md#delete_collection_namespaced_ingress) | **DELETE** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses | 
+[**delete_collection_namespaced_network_policy**](NetworkingV1Api.md#delete_collection_namespaced_network_policy) | **DELETE** /apis/networking.k8s.io/v1/namespaces/{namespace}/networkpolicies | 
+[**delete_ingress_class**](NetworkingV1Api.md#delete_ingress_class) | **DELETE** /apis/networking.k8s.io/v1/ingressclasses/{name} | 
+[**delete_namespaced_ingress**](NetworkingV1Api.md#delete_namespaced_ingress) | **DELETE** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses/{name} | 
+[**delete_namespaced_network_policy**](NetworkingV1Api.md#delete_namespaced_network_policy) | **DELETE** /apis/networking.k8s.io/v1/namespaces/{namespace}/networkpolicies/{name} | 
+[**get_api_resources**](NetworkingV1Api.md#get_api_resources) | **GET** /apis/networking.k8s.io/v1/ | 
+[**list_ingress_class**](NetworkingV1Api.md#list_ingress_class) | **GET** /apis/networking.k8s.io/v1/ingressclasses | 
+[**list_ingress_for_all_namespaces**](NetworkingV1Api.md#list_ingress_for_all_namespaces) | **GET** /apis/networking.k8s.io/v1/ingresses | 
+[**list_namespaced_ingress**](NetworkingV1Api.md#list_namespaced_ingress) | **GET** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses | 
+[**list_namespaced_network_policy**](NetworkingV1Api.md#list_namespaced_network_policy) | **GET** /apis/networking.k8s.io/v1/namespaces/{namespace}/networkpolicies | 
+[**list_network_policy_for_all_namespaces**](NetworkingV1Api.md#list_network_policy_for_all_namespaces) | **GET** /apis/networking.k8s.io/v1/networkpolicies | 
+[**patch_ingress_class**](NetworkingV1Api.md#patch_ingress_class) | **PATCH** /apis/networking.k8s.io/v1/ingressclasses/{name} | 
+[**patch_namespaced_ingress**](NetworkingV1Api.md#patch_namespaced_ingress) | **PATCH** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses/{name} | 
+[**patch_namespaced_ingress_status**](NetworkingV1Api.md#patch_namespaced_ingress_status) | **PATCH** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses/{name}/status | 
+[**patch_namespaced_network_policy**](NetworkingV1Api.md#patch_namespaced_network_policy) | **PATCH** /apis/networking.k8s.io/v1/namespaces/{namespace}/networkpolicies/{name} | 
+[**read_ingress_class**](NetworkingV1Api.md#read_ingress_class) | **GET** /apis/networking.k8s.io/v1/ingressclasses/{name} | 
+[**read_namespaced_ingress**](NetworkingV1Api.md#read_namespaced_ingress) | **GET** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses/{name} | 
+[**read_namespaced_ingress_status**](NetworkingV1Api.md#read_namespaced_ingress_status) | **GET** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses/{name}/status | 
+[**read_namespaced_network_policy**](NetworkingV1Api.md#read_namespaced_network_policy) | **GET** /apis/networking.k8s.io/v1/namespaces/{namespace}/networkpolicies/{name} | 
+[**replace_ingress_class**](NetworkingV1Api.md#replace_ingress_class) | **PUT** /apis/networking.k8s.io/v1/ingressclasses/{name} | 
+[**replace_namespaced_ingress**](NetworkingV1Api.md#replace_namespaced_ingress) | **PUT** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses/{name} | 
+[**replace_namespaced_ingress_status**](NetworkingV1Api.md#replace_namespaced_ingress_status) | **PUT** /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses/{name}/status | 
+[**replace_namespaced_network_policy**](NetworkingV1Api.md#replace_namespaced_network_policy) | **PUT** /apis/networking.k8s.io/v1/namespaces/{namespace}/networkpolicies/{name} | 
 
 
 

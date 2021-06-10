@@ -4,25 +4,25 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_ingress_class**](NetworkingV1beta1Api.md#create_ingress_class) | **Post** /apis/networking.k8s.io/v1beta1/ingressclasses | 
-[**create_namespaced_ingress**](NetworkingV1beta1Api.md#create_namespaced_ingress) | **Post** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses | 
-[**delete_collection_ingress_class**](NetworkingV1beta1Api.md#delete_collection_ingress_class) | **Delete** /apis/networking.k8s.io/v1beta1/ingressclasses | 
-[**delete_collection_namespaced_ingress**](NetworkingV1beta1Api.md#delete_collection_namespaced_ingress) | **Delete** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses | 
-[**delete_ingress_class**](NetworkingV1beta1Api.md#delete_ingress_class) | **Delete** /apis/networking.k8s.io/v1beta1/ingressclasses/{name} | 
-[**delete_namespaced_ingress**](NetworkingV1beta1Api.md#delete_namespaced_ingress) | **Delete** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses/{name} | 
-[**get_api_resources**](NetworkingV1beta1Api.md#get_api_resources) | **Get** /apis/networking.k8s.io/v1beta1/ | 
-[**list_ingress_class**](NetworkingV1beta1Api.md#list_ingress_class) | **Get** /apis/networking.k8s.io/v1beta1/ingressclasses | 
-[**list_ingress_for_all_namespaces**](NetworkingV1beta1Api.md#list_ingress_for_all_namespaces) | **Get** /apis/networking.k8s.io/v1beta1/ingresses | 
-[**list_namespaced_ingress**](NetworkingV1beta1Api.md#list_namespaced_ingress) | **Get** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses | 
-[**patch_ingress_class**](NetworkingV1beta1Api.md#patch_ingress_class) | **Patch** /apis/networking.k8s.io/v1beta1/ingressclasses/{name} | 
-[**patch_namespaced_ingress**](NetworkingV1beta1Api.md#patch_namespaced_ingress) | **Patch** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses/{name} | 
-[**patch_namespaced_ingress_status**](NetworkingV1beta1Api.md#patch_namespaced_ingress_status) | **Patch** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses/{name}/status | 
-[**read_ingress_class**](NetworkingV1beta1Api.md#read_ingress_class) | **Get** /apis/networking.k8s.io/v1beta1/ingressclasses/{name} | 
-[**read_namespaced_ingress**](NetworkingV1beta1Api.md#read_namespaced_ingress) | **Get** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses/{name} | 
-[**read_namespaced_ingress_status**](NetworkingV1beta1Api.md#read_namespaced_ingress_status) | **Get** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses/{name}/status | 
-[**replace_ingress_class**](NetworkingV1beta1Api.md#replace_ingress_class) | **Put** /apis/networking.k8s.io/v1beta1/ingressclasses/{name} | 
-[**replace_namespaced_ingress**](NetworkingV1beta1Api.md#replace_namespaced_ingress) | **Put** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses/{name} | 
-[**replace_namespaced_ingress_status**](NetworkingV1beta1Api.md#replace_namespaced_ingress_status) | **Put** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses/{name}/status | 
+[**create_ingress_class**](NetworkingV1beta1Api.md#create_ingress_class) | **POST** /apis/networking.k8s.io/v1beta1/ingressclasses | 
+[**create_namespaced_ingress**](NetworkingV1beta1Api.md#create_namespaced_ingress) | **POST** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses | 
+[**delete_collection_ingress_class**](NetworkingV1beta1Api.md#delete_collection_ingress_class) | **DELETE** /apis/networking.k8s.io/v1beta1/ingressclasses | 
+[**delete_collection_namespaced_ingress**](NetworkingV1beta1Api.md#delete_collection_namespaced_ingress) | **DELETE** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses | 
+[**delete_ingress_class**](NetworkingV1beta1Api.md#delete_ingress_class) | **DELETE** /apis/networking.k8s.io/v1beta1/ingressclasses/{name} | 
+[**delete_namespaced_ingress**](NetworkingV1beta1Api.md#delete_namespaced_ingress) | **DELETE** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses/{name} | 
+[**get_api_resources**](NetworkingV1beta1Api.md#get_api_resources) | **GET** /apis/networking.k8s.io/v1beta1/ | 
+[**list_ingress_class**](NetworkingV1beta1Api.md#list_ingress_class) | **GET** /apis/networking.k8s.io/v1beta1/ingressclasses | 
+[**list_ingress_for_all_namespaces**](NetworkingV1beta1Api.md#list_ingress_for_all_namespaces) | **GET** /apis/networking.k8s.io/v1beta1/ingresses | 
+[**list_namespaced_ingress**](NetworkingV1beta1Api.md#list_namespaced_ingress) | **GET** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses | 
+[**patch_ingress_class**](NetworkingV1beta1Api.md#patch_ingress_class) | **PATCH** /apis/networking.k8s.io/v1beta1/ingressclasses/{name} | 
+[**patch_namespaced_ingress**](NetworkingV1beta1Api.md#patch_namespaced_ingress) | **PATCH** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses/{name} | 
+[**patch_namespaced_ingress_status**](NetworkingV1beta1Api.md#patch_namespaced_ingress_status) | **PATCH** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses/{name}/status | 
+[**read_ingress_class**](NetworkingV1beta1Api.md#read_ingress_class) | **GET** /apis/networking.k8s.io/v1beta1/ingressclasses/{name} | 
+[**read_namespaced_ingress**](NetworkingV1beta1Api.md#read_namespaced_ingress) | **GET** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses/{name} | 
+[**read_namespaced_ingress_status**](NetworkingV1beta1Api.md#read_namespaced_ingress_status) | **GET** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses/{name}/status | 
+[**replace_ingress_class**](NetworkingV1beta1Api.md#replace_ingress_class) | **PUT** /apis/networking.k8s.io/v1beta1/ingressclasses/{name} | 
+[**replace_namespaced_ingress**](NetworkingV1beta1Api.md#replace_namespaced_ingress) | **PUT** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses/{name} | 
+[**replace_namespaced_ingress_status**](NetworkingV1beta1Api.md#replace_namespaced_ingress_status) | **PUT** /apis/networking.k8s.io/v1beta1/namespaces/{namespace}/ingresses/{name}/status | 
 
 
 

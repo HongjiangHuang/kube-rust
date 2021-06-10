@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_api_group**](ExtensionsApi.md#get_api_group) | **Get** /apis/extensions/ | 
+[**get_api_group**](ExtensionsApi.md#get_api_group) | **GET** /apis/extensions/ | 
 
 
 

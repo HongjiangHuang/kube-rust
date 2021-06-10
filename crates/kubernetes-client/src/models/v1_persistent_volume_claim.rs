@@ -21,11 +21,11 @@ pub struct V1PersistentVolumeClaim {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     #[serde(rename = "spec", skip_serializing_if = "Option::is_none")]
-    pub spec: Option<crate::models::V1PersistentVolumeClaimSpec>,
+    pub spec: Option<Box<crate::models::V1PersistentVolumeClaimSpec>>,
     #[serde(rename = "status", skip_serializing_if = "Option::is_none")]
-    pub status: Option<crate::models::V1PersistentVolumeClaimStatus>,
+    pub status: Option<Box<crate::models::V1PersistentVolumeClaimStatus>>,
 }
 
 impl V1PersistentVolumeClaim {

@@ -21,9 +21,9 @@ pub struct V2beta1ObjectMetricSource {
     #[serde(rename = "metricName")]
     pub metric_name: String,
     #[serde(rename = "selector", skip_serializing_if = "Option::is_none")]
-    pub selector: Option<crate::models::V1LabelSelector>,
+    pub selector: Option<Box<crate::models::V1LabelSelector>>,
     #[serde(rename = "target")]
-    pub target: crate::models::V2beta1CrossVersionObjectReference,
+    pub target: Box<crate::models::V2beta1CrossVersionObjectReference>,
     /// targetValue is the target value of the metric (as a quantity).
     #[serde(rename = "targetValue")]
     pub target_value: String,
@@ -36,7 +36,7 @@ impl V2beta1ObjectMetricSource {
             average_value: None,
             metric_name,
             selector: None,
-            target,
+            target: Box::new(target),
             target_value,
         }
     }

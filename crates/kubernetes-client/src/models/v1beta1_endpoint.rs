@@ -18,9 +18,9 @@ pub struct V1beta1Endpoint {
     #[serde(rename = "addresses")]
     pub addresses: Vec<String>,
     #[serde(rename = "conditions", skip_serializing_if = "Option::is_none")]
-    pub conditions: Option<crate::models::V1beta1EndpointConditions>,
+    pub conditions: Option<Box<crate::models::V1beta1EndpointConditions>>,
     #[serde(rename = "hints", skip_serializing_if = "Option::is_none")]
-    pub hints: Option<crate::models::V1beta1EndpointHints>,
+    pub hints: Option<Box<crate::models::V1beta1EndpointHints>>,
     /// hostname of this endpoint. This field may be used by consumers of endpoints to distinguish endpoints from each other (e.g. in DNS names). Multiple endpoints which use the same hostname should be considered fungible (e.g. multiple A values in DNS). Must be lowercase and pass DNS Label (RFC 1123) validation.
     #[serde(rename = "hostname", skip_serializing_if = "Option::is_none")]
     pub hostname: Option<String>,
@@ -28,7 +28,7 @@ pub struct V1beta1Endpoint {
     #[serde(rename = "nodeName", skip_serializing_if = "Option::is_none")]
     pub node_name: Option<String>,
     #[serde(rename = "targetRef", skip_serializing_if = "Option::is_none")]
-    pub target_ref: Option<crate::models::V1ObjectReference>,
+    pub target_ref: Option<Box<crate::models::V1ObjectReference>>,
     /// topology contains arbitrary topology information associated with the endpoint. These key/value pairs must conform with the label format. https://kubernetes.io/docs/concepts/overview/working-with-objects/labels Topology may include a maximum of 16 key/value pairs. This includes, but is not limited to the following well known keys: * kubernetes.io/hostname: the value indicates the hostname of the node   where the endpoint is located. This should match the corresponding   node label. * topology.kubernetes.io/zone: the value indicates the zone where the   endpoint is located. This should match the corresponding node label. * topology.kubernetes.io/region: the value indicates the region where the   endpoint is located. This should match the corresponding node label. This field is deprecated and will be removed in future api versions.
     #[serde(rename = "topology", skip_serializing_if = "Option::is_none")]
     pub topology: Option<::std::collections::HashMap<String, String>>,

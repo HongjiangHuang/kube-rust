@@ -4,27 +4,27 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_flow_schema**](FlowcontrolApiserverV1beta1Api.md#create_flow_schema) | **Post** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas | 
-[**create_priority_level_configuration**](FlowcontrolApiserverV1beta1Api.md#create_priority_level_configuration) | **Post** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations | 
-[**delete_collection_flow_schema**](FlowcontrolApiserverV1beta1Api.md#delete_collection_flow_schema) | **Delete** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas | 
-[**delete_collection_priority_level_configuration**](FlowcontrolApiserverV1beta1Api.md#delete_collection_priority_level_configuration) | **Delete** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations | 
-[**delete_flow_schema**](FlowcontrolApiserverV1beta1Api.md#delete_flow_schema) | **Delete** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas/{name} | 
-[**delete_priority_level_configuration**](FlowcontrolApiserverV1beta1Api.md#delete_priority_level_configuration) | **Delete** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations/{name} | 
-[**get_api_resources**](FlowcontrolApiserverV1beta1Api.md#get_api_resources) | **Get** /apis/flowcontrol.apiserver.k8s.io/v1beta1/ | 
-[**list_flow_schema**](FlowcontrolApiserverV1beta1Api.md#list_flow_schema) | **Get** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas | 
-[**list_priority_level_configuration**](FlowcontrolApiserverV1beta1Api.md#list_priority_level_configuration) | **Get** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations | 
-[**patch_flow_schema**](FlowcontrolApiserverV1beta1Api.md#patch_flow_schema) | **Patch** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas/{name} | 
-[**patch_flow_schema_status**](FlowcontrolApiserverV1beta1Api.md#patch_flow_schema_status) | **Patch** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas/{name}/status | 
-[**patch_priority_level_configuration**](FlowcontrolApiserverV1beta1Api.md#patch_priority_level_configuration) | **Patch** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations/{name} | 
-[**patch_priority_level_configuration_status**](FlowcontrolApiserverV1beta1Api.md#patch_priority_level_configuration_status) | **Patch** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations/{name}/status | 
-[**read_flow_schema**](FlowcontrolApiserverV1beta1Api.md#read_flow_schema) | **Get** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas/{name} | 
-[**read_flow_schema_status**](FlowcontrolApiserverV1beta1Api.md#read_flow_schema_status) | **Get** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas/{name}/status | 
-[**read_priority_level_configuration**](FlowcontrolApiserverV1beta1Api.md#read_priority_level_configuration) | **Get** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations/{name} | 
-[**read_priority_level_configuration_status**](FlowcontrolApiserverV1beta1Api.md#read_priority_level_configuration_status) | **Get** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations/{name}/status | 
-[**replace_flow_schema**](FlowcontrolApiserverV1beta1Api.md#replace_flow_schema) | **Put** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas/{name} | 
-[**replace_flow_schema_status**](FlowcontrolApiserverV1beta1Api.md#replace_flow_schema_status) | **Put** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas/{name}/status | 
-[**replace_priority_level_configuration**](FlowcontrolApiserverV1beta1Api.md#replace_priority_level_configuration) | **Put** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations/{name} | 
-[**replace_priority_level_configuration_status**](FlowcontrolApiserverV1beta1Api.md#replace_priority_level_configuration_status) | **Put** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations/{name}/status | 
+[**create_flow_schema**](FlowcontrolApiserverV1beta1Api.md#create_flow_schema) | **POST** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas | 
+[**create_priority_level_configuration**](FlowcontrolApiserverV1beta1Api.md#create_priority_level_configuration) | **POST** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations | 
+[**delete_collection_flow_schema**](FlowcontrolApiserverV1beta1Api.md#delete_collection_flow_schema) | **DELETE** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas | 
+[**delete_collection_priority_level_configuration**](FlowcontrolApiserverV1beta1Api.md#delete_collection_priority_level_configuration) | **DELETE** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations | 
+[**delete_flow_schema**](FlowcontrolApiserverV1beta1Api.md#delete_flow_schema) | **DELETE** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas/{name} | 
+[**delete_priority_level_configuration**](FlowcontrolApiserverV1beta1Api.md#delete_priority_level_configuration) | **DELETE** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations/{name} | 
+[**get_api_resources**](FlowcontrolApiserverV1beta1Api.md#get_api_resources) | **GET** /apis/flowcontrol.apiserver.k8s.io/v1beta1/ | 
+[**list_flow_schema**](FlowcontrolApiserverV1beta1Api.md#list_flow_schema) | **GET** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas | 
+[**list_priority_level_configuration**](FlowcontrolApiserverV1beta1Api.md#list_priority_level_configuration) | **GET** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations | 
+[**patch_flow_schema**](FlowcontrolApiserverV1beta1Api.md#patch_flow_schema) | **PATCH** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas/{name} | 
+[**patch_flow_schema_status**](FlowcontrolApiserverV1beta1Api.md#patch_flow_schema_status) | **PATCH** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas/{name}/status | 
+[**patch_priority_level_configuration**](FlowcontrolApiserverV1beta1Api.md#patch_priority_level_configuration) | **PATCH** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations/{name} | 
+[**patch_priority_level_configuration_status**](FlowcontrolApiserverV1beta1Api.md#patch_priority_level_configuration_status) | **PATCH** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations/{name}/status | 
+[**read_flow_schema**](FlowcontrolApiserverV1beta1Api.md#read_flow_schema) | **GET** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas/{name} | 
+[**read_flow_schema_status**](FlowcontrolApiserverV1beta1Api.md#read_flow_schema_status) | **GET** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas/{name}/status | 
+[**read_priority_level_configuration**](FlowcontrolApiserverV1beta1Api.md#read_priority_level_configuration) | **GET** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations/{name} | 
+[**read_priority_level_configuration_status**](FlowcontrolApiserverV1beta1Api.md#read_priority_level_configuration_status) | **GET** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations/{name}/status | 
+[**replace_flow_schema**](FlowcontrolApiserverV1beta1Api.md#replace_flow_schema) | **PUT** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas/{name} | 
+[**replace_flow_schema_status**](FlowcontrolApiserverV1beta1Api.md#replace_flow_schema_status) | **PUT** /apis/flowcontrol.apiserver.k8s.io/v1beta1/flowschemas/{name}/status | 
+[**replace_priority_level_configuration**](FlowcontrolApiserverV1beta1Api.md#replace_priority_level_configuration) | **PUT** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations/{name} | 
+[**replace_priority_level_configuration_status**](FlowcontrolApiserverV1beta1Api.md#replace_priority_level_configuration_status) | **PUT** /apis/flowcontrol.apiserver.k8s.io/v1beta1/prioritylevelconfigurations/{name}/status | 
 
 
 

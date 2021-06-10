@@ -42,7 +42,7 @@ pub struct V1IscsiVolumeSource {
     #[serde(rename = "readOnly", skip_serializing_if = "Option::is_none")]
     pub read_only: Option<bool>,
     #[serde(rename = "secretRef", skip_serializing_if = "Option::is_none")]
-    pub secret_ref: Option<crate::models::V1LocalObjectReference>,
+    pub secret_ref: Option<Box<crate::models::V1LocalObjectReference>>,
     /// iSCSI Target Portal. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
     #[serde(rename = "targetPortal")]
     pub target_portal: String,

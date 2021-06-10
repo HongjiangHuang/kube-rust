@@ -18,7 +18,7 @@ pub struct V2beta1PodsMetricSource {
     #[serde(rename = "metricName")]
     pub metric_name: String,
     #[serde(rename = "selector", skip_serializing_if = "Option::is_none")]
-    pub selector: Option<crate::models::V1LabelSelector>,
+    pub selector: Option<Box<crate::models::V1LabelSelector>>,
     /// targetAverageValue is the target value of the average of the metric across all relevant pods (as a quantity)
     #[serde(rename = "targetAverageValue")]
     pub target_average_value: String,

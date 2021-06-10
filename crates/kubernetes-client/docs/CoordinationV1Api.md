@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_namespaced_lease**](CoordinationV1Api.md#create_namespaced_lease) | **Post** /apis/coordination.k8s.io/v1/namespaces/{namespace}/leases | 
-[**delete_collection_namespaced_lease**](CoordinationV1Api.md#delete_collection_namespaced_lease) | **Delete** /apis/coordination.k8s.io/v1/namespaces/{namespace}/leases | 
-[**delete_namespaced_lease**](CoordinationV1Api.md#delete_namespaced_lease) | **Delete** /apis/coordination.k8s.io/v1/namespaces/{namespace}/leases/{name} | 
-[**get_api_resources**](CoordinationV1Api.md#get_api_resources) | **Get** /apis/coordination.k8s.io/v1/ | 
-[**list_lease_for_all_namespaces**](CoordinationV1Api.md#list_lease_for_all_namespaces) | **Get** /apis/coordination.k8s.io/v1/leases | 
-[**list_namespaced_lease**](CoordinationV1Api.md#list_namespaced_lease) | **Get** /apis/coordination.k8s.io/v1/namespaces/{namespace}/leases | 
-[**patch_namespaced_lease**](CoordinationV1Api.md#patch_namespaced_lease) | **Patch** /apis/coordination.k8s.io/v1/namespaces/{namespace}/leases/{name} | 
-[**read_namespaced_lease**](CoordinationV1Api.md#read_namespaced_lease) | **Get** /apis/coordination.k8s.io/v1/namespaces/{namespace}/leases/{name} | 
-[**replace_namespaced_lease**](CoordinationV1Api.md#replace_namespaced_lease) | **Put** /apis/coordination.k8s.io/v1/namespaces/{namespace}/leases/{name} | 
+[**create_namespaced_lease**](CoordinationV1Api.md#create_namespaced_lease) | **POST** /apis/coordination.k8s.io/v1/namespaces/{namespace}/leases | 
+[**delete_collection_namespaced_lease**](CoordinationV1Api.md#delete_collection_namespaced_lease) | **DELETE** /apis/coordination.k8s.io/v1/namespaces/{namespace}/leases | 
+[**delete_namespaced_lease**](CoordinationV1Api.md#delete_namespaced_lease) | **DELETE** /apis/coordination.k8s.io/v1/namespaces/{namespace}/leases/{name} | 
+[**get_api_resources**](CoordinationV1Api.md#get_api_resources) | **GET** /apis/coordination.k8s.io/v1/ | 
+[**list_lease_for_all_namespaces**](CoordinationV1Api.md#list_lease_for_all_namespaces) | **GET** /apis/coordination.k8s.io/v1/leases | 
+[**list_namespaced_lease**](CoordinationV1Api.md#list_namespaced_lease) | **GET** /apis/coordination.k8s.io/v1/namespaces/{namespace}/leases | 
+[**patch_namespaced_lease**](CoordinationV1Api.md#patch_namespaced_lease) | **PATCH** /apis/coordination.k8s.io/v1/namespaces/{namespace}/leases/{name} | 
+[**read_namespaced_lease**](CoordinationV1Api.md#read_namespaced_lease) | **GET** /apis/coordination.k8s.io/v1/namespaces/{namespace}/leases/{name} | 
+[**replace_namespaced_lease**](CoordinationV1Api.md#replace_namespaced_lease) | **PUT** /apis/coordination.k8s.io/v1/namespaces/{namespace}/leases/{name} | 
 
 
 

@@ -25,7 +25,7 @@ pub struct V1FcVolumeSource {
     pub read_only: Option<bool>,
     /// Optional: FC target worldwide names (WWNs)
     #[serde(rename = "targetWWNs", skip_serializing_if = "Option::is_none")]
-    pub target_ww_ns: Option<Vec<String>>,
+    pub target_wwns: Option<Vec<String>>,
     /// Optional: FC volume world wide identifiers (wwids) Either wwids or combination of targetWWNs and lun must be set, but not both simultaneously.
     #[serde(rename = "wwids", skip_serializing_if = "Option::is_none")]
     pub wwids: Option<Vec<String>>,
@@ -38,7 +38,7 @@ impl V1FcVolumeSource {
             fs_type: None,
             lun: None,
             read_only: None,
-            target_ww_ns: None,
+            target_wwns: None,
             wwids: None,
         }
     }

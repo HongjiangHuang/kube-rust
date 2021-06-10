@@ -21,7 +21,7 @@ pub struct V1CinderVolumeSource {
     #[serde(rename = "readOnly", skip_serializing_if = "Option::is_none")]
     pub read_only: Option<bool>,
     #[serde(rename = "secretRef", skip_serializing_if = "Option::is_none")]
-    pub secret_ref: Option<crate::models::V1LocalObjectReference>,
+    pub secret_ref: Option<Box<crate::models::V1LocalObjectReference>>,
     /// volume id used to identify the volume in cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
     #[serde(rename = "volumeID")]
     pub volume_id: String,

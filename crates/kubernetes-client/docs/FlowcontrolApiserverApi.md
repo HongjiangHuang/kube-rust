@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_api_group**](FlowcontrolApiserverApi.md#get_api_group) | **Get** /apis/flowcontrol.apiserver.k8s.io/ | 
+[**get_api_group**](FlowcontrolApiserverApi.md#get_api_group) | **GET** /apis/flowcontrol.apiserver.k8s.io/ | 
 
 
 

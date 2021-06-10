@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_namespaced_local_subject_access_review**](AuthorizationV1Api.md#create_namespaced_local_subject_access_review) | **Post** /apis/authorization.k8s.io/v1/namespaces/{namespace}/localsubjectaccessreviews | 
-[**create_self_subject_access_review**](AuthorizationV1Api.md#create_self_subject_access_review) | **Post** /apis/authorization.k8s.io/v1/selfsubjectaccessreviews | 
-[**create_self_subject_rules_review**](AuthorizationV1Api.md#create_self_subject_rules_review) | **Post** /apis/authorization.k8s.io/v1/selfsubjectrulesreviews | 
-[**create_subject_access_review**](AuthorizationV1Api.md#create_subject_access_review) | **Post** /apis/authorization.k8s.io/v1/subjectaccessreviews | 
-[**get_api_resources**](AuthorizationV1Api.md#get_api_resources) | **Get** /apis/authorization.k8s.io/v1/ | 
+[**create_namespaced_local_subject_access_review**](AuthorizationV1Api.md#create_namespaced_local_subject_access_review) | **POST** /apis/authorization.k8s.io/v1/namespaces/{namespace}/localsubjectaccessreviews | 
+[**create_self_subject_access_review**](AuthorizationV1Api.md#create_self_subject_access_review) | **POST** /apis/authorization.k8s.io/v1/selfsubjectaccessreviews | 
+[**create_self_subject_rules_review**](AuthorizationV1Api.md#create_self_subject_rules_review) | **POST** /apis/authorization.k8s.io/v1/selfsubjectrulesreviews | 
+[**create_subject_access_review**](AuthorizationV1Api.md#create_subject_access_review) | **POST** /apis/authorization.k8s.io/v1/subjectaccessreviews | 
+[**get_api_resources**](AuthorizationV1Api.md#get_api_resources) | **GET** /apis/authorization.k8s.io/v1/ | 
 
 
 

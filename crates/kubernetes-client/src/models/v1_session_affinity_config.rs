@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1SessionAffinityConfig {
     #[serde(rename = "clientIP", skip_serializing_if = "Option::is_none")]
-    pub client_ip: Option<crate::models::V1ClientIpConfig>,
+    pub client_ip: Option<Box<crate::models::V1ClientIpConfig>>,
 }
 
 impl V1SessionAffinityConfig {

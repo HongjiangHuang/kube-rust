@@ -27,7 +27,7 @@ pub struct V1ServiceAccount {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     /// Secrets is the list of secrets allowed to be used by pods running using this ServiceAccount. More info: https://kubernetes.io/docs/concepts/configuration/secret
     #[serde(rename = "secrets", skip_serializing_if = "Option::is_none")]
     pub secrets: Option<Vec<crate::models::V1ObjectReference>>,

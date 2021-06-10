@@ -18,7 +18,7 @@ pub struct V2beta2MetricIdentifier {
     #[serde(rename = "name")]
     pub name: String,
     #[serde(rename = "selector", skip_serializing_if = "Option::is_none")]
-    pub selector: Option<crate::models::V1LabelSelector>,
+    pub selector: Option<Box<crate::models::V1LabelSelector>>,
 }
 
 impl V2beta2MetricIdentifier {

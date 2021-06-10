@@ -21,7 +21,7 @@ pub struct V1EnvVar {
     #[serde(rename = "value", skip_serializing_if = "Option::is_none")]
     pub value: Option<String>,
     #[serde(rename = "valueFrom", skip_serializing_if = "Option::is_none")]
-    pub value_from: Option<crate::models::V1EnvVarSource>,
+    pub value_from: Option<Box<crate::models::V1EnvVarSource>>,
 }
 
 impl V1EnvVar {

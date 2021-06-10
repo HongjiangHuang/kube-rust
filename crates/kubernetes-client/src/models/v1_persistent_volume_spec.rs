@@ -18,68 +18,68 @@ pub struct V1PersistentVolumeSpec {
     #[serde(rename = "accessModes", skip_serializing_if = "Option::is_none")]
     pub access_modes: Option<Vec<String>>,
     #[serde(rename = "awsElasticBlockStore", skip_serializing_if = "Option::is_none")]
-    pub aws_elastic_block_store: Option<crate::models::V1AwsElasticBlockStoreVolumeSource>,
+    pub aws_elastic_block_store: Option<Box<crate::models::V1AwsElasticBlockStoreVolumeSource>>,
     #[serde(rename = "azureDisk", skip_serializing_if = "Option::is_none")]
-    pub azure_disk: Option<crate::models::V1AzureDiskVolumeSource>,
+    pub azure_disk: Option<Box<crate::models::V1AzureDiskVolumeSource>>,
     #[serde(rename = "azureFile", skip_serializing_if = "Option::is_none")]
-    pub azure_file: Option<crate::models::V1AzureFilePersistentVolumeSource>,
+    pub azure_file: Option<Box<crate::models::V1AzureFilePersistentVolumeSource>>,
     /// A description of the persistent volume's resources and capacity. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity
     #[serde(rename = "capacity", skip_serializing_if = "Option::is_none")]
     pub capacity: Option<::std::collections::HashMap<String, String>>,
     #[serde(rename = "cephfs", skip_serializing_if = "Option::is_none")]
-    pub cephfs: Option<crate::models::V1CephFsPersistentVolumeSource>,
+    pub cephfs: Option<Box<crate::models::V1CephFsPersistentVolumeSource>>,
     #[serde(rename = "cinder", skip_serializing_if = "Option::is_none")]
-    pub cinder: Option<crate::models::V1CinderPersistentVolumeSource>,
+    pub cinder: Option<Box<crate::models::V1CinderPersistentVolumeSource>>,
     #[serde(rename = "claimRef", skip_serializing_if = "Option::is_none")]
-    pub claim_ref: Option<crate::models::V1ObjectReference>,
+    pub claim_ref: Option<Box<crate::models::V1ObjectReference>>,
     #[serde(rename = "csi", skip_serializing_if = "Option::is_none")]
-    pub csi: Option<crate::models::V1CsiPersistentVolumeSource>,
+    pub csi: Option<Box<crate::models::V1CsiPersistentVolumeSource>>,
     #[serde(rename = "fc", skip_serializing_if = "Option::is_none")]
-    pub fc: Option<crate::models::V1FcVolumeSource>,
+    pub fc: Option<Box<crate::models::V1FcVolumeSource>>,
     #[serde(rename = "flexVolume", skip_serializing_if = "Option::is_none")]
-    pub flex_volume: Option<crate::models::V1FlexPersistentVolumeSource>,
+    pub flex_volume: Option<Box<crate::models::V1FlexPersistentVolumeSource>>,
     #[serde(rename = "flocker", skip_serializing_if = "Option::is_none")]
-    pub flocker: Option<crate::models::V1FlockerVolumeSource>,
+    pub flocker: Option<Box<crate::models::V1FlockerVolumeSource>>,
     #[serde(rename = "gcePersistentDisk", skip_serializing_if = "Option::is_none")]
-    pub gce_persistent_disk: Option<crate::models::V1GcePersistentDiskVolumeSource>,
+    pub gce_persistent_disk: Option<Box<crate::models::V1GcePersistentDiskVolumeSource>>,
     #[serde(rename = "glusterfs", skip_serializing_if = "Option::is_none")]
-    pub glusterfs: Option<crate::models::V1GlusterfsPersistentVolumeSource>,
+    pub glusterfs: Option<Box<crate::models::V1GlusterfsPersistentVolumeSource>>,
     #[serde(rename = "hostPath", skip_serializing_if = "Option::is_none")]
-    pub host_path: Option<crate::models::V1HostPathVolumeSource>,
+    pub host_path: Option<Box<crate::models::V1HostPathVolumeSource>>,
     #[serde(rename = "iscsi", skip_serializing_if = "Option::is_none")]
-    pub iscsi: Option<crate::models::V1IscsiPersistentVolumeSource>,
+    pub iscsi: Option<Box<crate::models::V1IscsiPersistentVolumeSource>>,
     #[serde(rename = "local", skip_serializing_if = "Option::is_none")]
-    pub local: Option<crate::models::V1LocalVolumeSource>,
+    pub local: Option<Box<crate::models::V1LocalVolumeSource>>,
     /// A list of mount options, e.g. [\"ro\", \"soft\"]. Not validated - mount will simply fail if one is invalid. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#mount-options
     #[serde(rename = "mountOptions", skip_serializing_if = "Option::is_none")]
     pub mount_options: Option<Vec<String>>,
     #[serde(rename = "nfs", skip_serializing_if = "Option::is_none")]
-    pub nfs: Option<crate::models::V1NfsVolumeSource>,
+    pub nfs: Option<Box<crate::models::V1NfsVolumeSource>>,
     #[serde(rename = "nodeAffinity", skip_serializing_if = "Option::is_none")]
-    pub node_affinity: Option<crate::models::V1VolumeNodeAffinity>,
+    pub node_affinity: Option<Box<crate::models::V1VolumeNodeAffinity>>,
     /// What happens to a persistent volume when released from its claim. Valid options are Retain (default for manually created PersistentVolumes), Delete (default for dynamically provisioned PersistentVolumes), and Recycle (deprecated). Recycle must be supported by the volume plugin underlying this PersistentVolume. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#reclaiming
     #[serde(rename = "persistentVolumeReclaimPolicy", skip_serializing_if = "Option::is_none")]
     pub persistent_volume_reclaim_policy: Option<String>,
     #[serde(rename = "photonPersistentDisk", skip_serializing_if = "Option::is_none")]
-    pub photon_persistent_disk: Option<crate::models::V1PhotonPersistentDiskVolumeSource>,
+    pub photon_persistent_disk: Option<Box<crate::models::V1PhotonPersistentDiskVolumeSource>>,
     #[serde(rename = "portworxVolume", skip_serializing_if = "Option::is_none")]
-    pub portworx_volume: Option<crate::models::V1PortworxVolumeSource>,
+    pub portworx_volume: Option<Box<crate::models::V1PortworxVolumeSource>>,
     #[serde(rename = "quobyte", skip_serializing_if = "Option::is_none")]
-    pub quobyte: Option<crate::models::V1QuobyteVolumeSource>,
+    pub quobyte: Option<Box<crate::models::V1QuobyteVolumeSource>>,
     #[serde(rename = "rbd", skip_serializing_if = "Option::is_none")]
-    pub rbd: Option<crate::models::V1RbdPersistentVolumeSource>,
+    pub rbd: Option<Box<crate::models::V1RbdPersistentVolumeSource>>,
     #[serde(rename = "scaleIO", skip_serializing_if = "Option::is_none")]
-    pub scale_io: Option<crate::models::V1ScaleIoPersistentVolumeSource>,
+    pub scale_io: Option<Box<crate::models::V1ScaleIoPersistentVolumeSource>>,
     /// Name of StorageClass to which this persistent volume belongs. Empty value means that this volume does not belong to any StorageClass.
     #[serde(rename = "storageClassName", skip_serializing_if = "Option::is_none")]
     pub storage_class_name: Option<String>,
     #[serde(rename = "storageos", skip_serializing_if = "Option::is_none")]
-    pub storageos: Option<crate::models::V1StorageOsPersistentVolumeSource>,
+    pub storageos: Option<Box<crate::models::V1StorageOsPersistentVolumeSource>>,
     /// volumeMode defines if a volume is intended to be used with a formatted filesystem or to remain in raw block state. Value of Filesystem is implied when not included in spec.
     #[serde(rename = "volumeMode", skip_serializing_if = "Option::is_none")]
     pub volume_mode: Option<String>,
     #[serde(rename = "vsphereVolume", skip_serializing_if = "Option::is_none")]
-    pub vsphere_volume: Option<crate::models::V1VsphereVirtualDiskVolumeSource>,
+    pub vsphere_volume: Option<Box<crate::models::V1VsphereVirtualDiskVolumeSource>>,
 }
 
 impl V1PersistentVolumeSpec {

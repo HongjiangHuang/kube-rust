@@ -33,12 +33,12 @@ pub struct V1JobSpec {
     #[serde(rename = "parallelism", skip_serializing_if = "Option::is_none")]
     pub parallelism: Option<i32>,
     #[serde(rename = "selector", skip_serializing_if = "Option::is_none")]
-    pub selector: Option<crate::models::V1LabelSelector>,
+    pub selector: Option<Box<crate::models::V1LabelSelector>>,
     /// Suspend specifies whether the Job controller should create Pods or not. If a Job is created with suspend set to true, no Pods are created by the Job controller. If a Job is suspended after creation (i.e. the flag goes from false to true), the Job controller will delete all active Pods associated with this Job. Users must design their workload to gracefully handle this. Suspending a Job will reset the StartTime field of the Job, effectively resetting the ActiveDeadlineSeconds timer too. This is an alpha field and requires the SuspendJob feature gate to be enabled; otherwise this field may not be set to true. Defaults to false.
     #[serde(rename = "suspend", skip_serializing_if = "Option::is_none")]
     pub suspend: Option<bool>,
     #[serde(rename = "template")]
-    pub template: crate::models::V1PodTemplateSpec,
+    pub template: Box<crate::models::V1PodTemplateSpec>,
     /// ttlSecondsAfterFinished limits the lifetime of a Job that has finished execution (either Complete or Failed). If this field is set, ttlSecondsAfterFinished after the Job finishes, it is eligible to be automatically deleted. When the Job is being deleted, its lifecycle guarantees (e.g. finalizers) will be honored. If this field is unset, the Job won't be automatically deleted. If this field is set to zero, the Job becomes eligible to be deleted immediately after it finishes. This field is alpha-level and is only honored by servers that enable the TTLAfterFinished feature.
     #[serde(rename = "ttlSecondsAfterFinished", skip_serializing_if = "Option::is_none")]
     pub ttl_seconds_after_finished: Option<i32>,
@@ -56,7 +56,7 @@ impl V1JobSpec {
             parallelism: None,
             selector: None,
             suspend: None,
-            template,
+            template: Box::new(template),
             ttl_seconds_after_finished: None,
         }
     }

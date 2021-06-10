@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**log_file_handler**](LogsApi.md#log_file_handler) | **Get** /logs/{logpath} | 
-[**log_file_list_handler**](LogsApi.md#log_file_list_handler) | **Get** /logs/ | 
+[**log_file_handler**](LogsApi.md#log_file_handler) | **GET** /logs/{logpath} | 
+[**log_file_list_handler**](LogsApi.md#log_file_list_handler) | **GET** /logs/ | 
 
 
 

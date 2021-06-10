@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1CustomResourceValidation {
     #[serde(rename = "openAPIV3Schema", skip_serializing_if = "Option::is_none")]
-    pub open_apiv3_schema: Option<crate::models::V1JsonSchemaProps>,
+    pub open_apiv3_schema: Option<Box<crate::models::V1JsonSchemaProps>>,
 }
 
 impl V1CustomResourceValidation {

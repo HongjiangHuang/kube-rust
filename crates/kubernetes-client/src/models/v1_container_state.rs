@@ -15,11 +15,11 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1ContainerState {
     #[serde(rename = "running", skip_serializing_if = "Option::is_none")]
-    pub running: Option<crate::models::V1ContainerStateRunning>,
+    pub running: Option<Box<crate::models::V1ContainerStateRunning>>,
     #[serde(rename = "terminated", skip_serializing_if = "Option::is_none")]
-    pub terminated: Option<crate::models::V1ContainerStateTerminated>,
+    pub terminated: Option<Box<crate::models::V1ContainerStateTerminated>>,
     #[serde(rename = "waiting", skip_serializing_if = "Option::is_none")]
-    pub waiting: Option<crate::models::V1ContainerStateWaiting>,
+    pub waiting: Option<Box<crate::models::V1ContainerStateWaiting>>,
 }
 
 impl V1ContainerState {

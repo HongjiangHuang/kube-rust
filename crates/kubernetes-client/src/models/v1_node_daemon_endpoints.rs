@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1NodeDaemonEndpoints {
     #[serde(rename = "kubeletEndpoint", skip_serializing_if = "Option::is_none")]
-    pub kubelet_endpoint: Option<crate::models::V1DaemonEndpoint>,
+    pub kubelet_endpoint: Option<Box<crate::models::V1DaemonEndpoint>>,
 }
 
 impl V1NodeDaemonEndpoints {

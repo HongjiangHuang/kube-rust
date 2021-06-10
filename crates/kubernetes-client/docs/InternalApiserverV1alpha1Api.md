@@ -4,17 +4,17 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_storage_version**](InternalApiserverV1alpha1Api.md#create_storage_version) | **Post** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions | 
-[**delete_collection_storage_version**](InternalApiserverV1alpha1Api.md#delete_collection_storage_version) | **Delete** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions | 
-[**delete_storage_version**](InternalApiserverV1alpha1Api.md#delete_storage_version) | **Delete** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions/{name} | 
-[**get_api_resources**](InternalApiserverV1alpha1Api.md#get_api_resources) | **Get** /apis/internal.apiserver.k8s.io/v1alpha1/ | 
-[**list_storage_version**](InternalApiserverV1alpha1Api.md#list_storage_version) | **Get** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions | 
-[**patch_storage_version**](InternalApiserverV1alpha1Api.md#patch_storage_version) | **Patch** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions/{name} | 
-[**patch_storage_version_status**](InternalApiserverV1alpha1Api.md#patch_storage_version_status) | **Patch** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions/{name}/status | 
-[**read_storage_version**](InternalApiserverV1alpha1Api.md#read_storage_version) | **Get** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions/{name} | 
-[**read_storage_version_status**](InternalApiserverV1alpha1Api.md#read_storage_version_status) | **Get** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions/{name}/status | 
-[**replace_storage_version**](InternalApiserverV1alpha1Api.md#replace_storage_version) | **Put** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions/{name} | 
-[**replace_storage_version_status**](InternalApiserverV1alpha1Api.md#replace_storage_version_status) | **Put** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions/{name}/status | 
+[**create_storage_version**](InternalApiserverV1alpha1Api.md#create_storage_version) | **POST** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions | 
+[**delete_collection_storage_version**](InternalApiserverV1alpha1Api.md#delete_collection_storage_version) | **DELETE** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions | 
+[**delete_storage_version**](InternalApiserverV1alpha1Api.md#delete_storage_version) | **DELETE** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions/{name} | 
+[**get_api_resources**](InternalApiserverV1alpha1Api.md#get_api_resources) | **GET** /apis/internal.apiserver.k8s.io/v1alpha1/ | 
+[**list_storage_version**](InternalApiserverV1alpha1Api.md#list_storage_version) | **GET** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions | 
+[**patch_storage_version**](InternalApiserverV1alpha1Api.md#patch_storage_version) | **PATCH** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions/{name} | 
+[**patch_storage_version_status**](InternalApiserverV1alpha1Api.md#patch_storage_version_status) | **PATCH** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions/{name}/status | 
+[**read_storage_version**](InternalApiserverV1alpha1Api.md#read_storage_version) | **GET** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions/{name} | 
+[**read_storage_version_status**](InternalApiserverV1alpha1Api.md#read_storage_version_status) | **GET** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions/{name}/status | 
+[**replace_storage_version**](InternalApiserverV1alpha1Api.md#replace_storage_version) | **PUT** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions/{name} | 
+[**replace_storage_version_status**](InternalApiserverV1alpha1Api.md#replace_storage_version_status) | **PUT** /apis/internal.apiserver.k8s.io/v1alpha1/storageversions/{name}/status | 
 
 
 

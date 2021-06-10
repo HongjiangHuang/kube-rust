@@ -4,14 +4,14 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_priority_class**](SchedulingV1alpha1Api.md#create_priority_class) | **Post** /apis/scheduling.k8s.io/v1alpha1/priorityclasses | 
-[**delete_collection_priority_class**](SchedulingV1alpha1Api.md#delete_collection_priority_class) | **Delete** /apis/scheduling.k8s.io/v1alpha1/priorityclasses | 
-[**delete_priority_class**](SchedulingV1alpha1Api.md#delete_priority_class) | **Delete** /apis/scheduling.k8s.io/v1alpha1/priorityclasses/{name} | 
-[**get_api_resources**](SchedulingV1alpha1Api.md#get_api_resources) | **Get** /apis/scheduling.k8s.io/v1alpha1/ | 
-[**list_priority_class**](SchedulingV1alpha1Api.md#list_priority_class) | **Get** /apis/scheduling.k8s.io/v1alpha1/priorityclasses | 
-[**patch_priority_class**](SchedulingV1alpha1Api.md#patch_priority_class) | **Patch** /apis/scheduling.k8s.io/v1alpha1/priorityclasses/{name} | 
-[**read_priority_class**](SchedulingV1alpha1Api.md#read_priority_class) | **Get** /apis/scheduling.k8s.io/v1alpha1/priorityclasses/{name} | 
-[**replace_priority_class**](SchedulingV1alpha1Api.md#replace_priority_class) | **Put** /apis/scheduling.k8s.io/v1alpha1/priorityclasses/{name} | 
+[**create_priority_class**](SchedulingV1alpha1Api.md#create_priority_class) | **POST** /apis/scheduling.k8s.io/v1alpha1/priorityclasses | 
+[**delete_collection_priority_class**](SchedulingV1alpha1Api.md#delete_collection_priority_class) | **DELETE** /apis/scheduling.k8s.io/v1alpha1/priorityclasses | 
+[**delete_priority_class**](SchedulingV1alpha1Api.md#delete_priority_class) | **DELETE** /apis/scheduling.k8s.io/v1alpha1/priorityclasses/{name} | 
+[**get_api_resources**](SchedulingV1alpha1Api.md#get_api_resources) | **GET** /apis/scheduling.k8s.io/v1alpha1/ | 
+[**list_priority_class**](SchedulingV1alpha1Api.md#list_priority_class) | **GET** /apis/scheduling.k8s.io/v1alpha1/priorityclasses | 
+[**patch_priority_class**](SchedulingV1alpha1Api.md#patch_priority_class) | **PATCH** /apis/scheduling.k8s.io/v1alpha1/priorityclasses/{name} | 
+[**read_priority_class**](SchedulingV1alpha1Api.md#read_priority_class) | **GET** /apis/scheduling.k8s.io/v1alpha1/priorityclasses/{name} | 
+[**replace_priority_class**](SchedulingV1alpha1Api.md#replace_priority_class) | **PUT** /apis/scheduling.k8s.io/v1alpha1/priorityclasses/{name} | 
 
 
 

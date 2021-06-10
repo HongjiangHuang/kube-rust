@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_api_group**](StorageApi.md#get_api_group) | **Get** /apis/storage.k8s.io/ | 
+[**get_api_group**](StorageApi.md#get_api_group) | **GET** /apis/storage.k8s.io/ | 
 
 
 

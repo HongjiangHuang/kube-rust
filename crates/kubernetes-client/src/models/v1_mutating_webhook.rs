@@ -18,7 +18,7 @@ pub struct V1MutatingWebhook {
     #[serde(rename = "admissionReviewVersions")]
     pub admission_review_versions: Vec<String>,
     #[serde(rename = "clientConfig")]
-    pub client_config: crate::models::AdmissionregistrationV1WebhookClientConfig,
+    pub client_config: Box<crate::models::AdmissionregistrationV1WebhookClientConfig>,
     /// FailurePolicy defines how unrecognized errors from the admission endpoint are handled - allowed values are Ignore or Fail. Defaults to Fail.
     #[serde(rename = "failurePolicy", skip_serializing_if = "Option::is_none")]
     pub failure_policy: Option<String>,
@@ -29,9 +29,9 @@ pub struct V1MutatingWebhook {
     #[serde(rename = "name")]
     pub name: String,
     #[serde(rename = "namespaceSelector", skip_serializing_if = "Option::is_none")]
-    pub namespace_selector: Option<crate::models::V1LabelSelector>,
+    pub namespace_selector: Option<Box<crate::models::V1LabelSelector>>,
     #[serde(rename = "objectSelector", skip_serializing_if = "Option::is_none")]
-    pub object_selector: Option<crate::models::V1LabelSelector>,
+    pub object_selector: Option<Box<crate::models::V1LabelSelector>>,
     /// reinvocationPolicy indicates whether this webhook should be called multiple times as part of a single admission evaluation. Allowed values are \"Never\" and \"IfNeeded\".  Never: the webhook will not be called more than once in a single admission evaluation.  IfNeeded: the webhook will be called at least one additional time as part of the admission evaluation if the object being admitted is modified by other admission plugins after the initial webhook call. Webhooks that specify this option *must* be idempotent, able to process objects they previously admitted. Note: * the number of additional invocations is not guaranteed to be exactly one. * if additional invocations result in further modifications to the object, webhooks are not guaranteed to be invoked again. * webhooks that use this option may be reordered to minimize the number of additional invocations. * to validate an object after all mutations are guaranteed complete, use a validating admission webhook instead.  Defaults to \"Never\".
     #[serde(rename = "reinvocationPolicy", skip_serializing_if = "Option::is_none")]
     pub reinvocation_policy: Option<String>,
@@ -51,7 +51,7 @@ impl V1MutatingWebhook {
     pub fn new(admission_review_versions: Vec<String>, client_config: crate::models::AdmissionregistrationV1WebhookClientConfig, name: String, side_effects: String) -> V1MutatingWebhook {
         V1MutatingWebhook {
             admission_review_versions,
-            client_config,
+            client_config: Box::new(client_config),
             failure_policy: None,
             match_policy: None,
             name,

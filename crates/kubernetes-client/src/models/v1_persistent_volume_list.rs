@@ -24,7 +24,7 @@ pub struct V1PersistentVolumeList {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ListMeta>,
+    pub metadata: Option<Box<crate::models::V1ListMeta>>,
 }
 
 impl V1PersistentVolumeList {

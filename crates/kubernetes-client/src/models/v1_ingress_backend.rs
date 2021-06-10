@@ -15,9 +15,9 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1IngressBackend {
     #[serde(rename = "resource", skip_serializing_if = "Option::is_none")]
-    pub resource: Option<crate::models::V1TypedLocalObjectReference>,
+    pub resource: Option<Box<crate::models::V1TypedLocalObjectReference>>,
     #[serde(rename = "service", skip_serializing_if = "Option::is_none")]
-    pub service: Option<crate::models::V1IngressServiceBackend>,
+    pub service: Option<Box<crate::models::V1IngressServiceBackend>>,
 }
 
 impl V1IngressBackend {

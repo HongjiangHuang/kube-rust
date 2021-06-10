@@ -21,9 +21,9 @@ pub struct V1beta1RoleBinding {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     #[serde(rename = "roleRef")]
-    pub role_ref: crate::models::V1beta1RoleRef,
+    pub role_ref: Box<crate::models::V1beta1RoleRef>,
     /// Subjects holds references to the objects the role applies to.
     #[serde(rename = "subjects", skip_serializing_if = "Option::is_none")]
     pub subjects: Option<Vec<crate::models::RbacV1beta1Subject>>,
@@ -36,7 +36,7 @@ impl V1beta1RoleBinding {
             api_version: None,
             kind: None,
             metadata: None,
-            role_ref,
+            role_ref: Box::new(role_ref),
             subjects: None,
         }
     }

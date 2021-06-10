@@ -21,7 +21,7 @@ pub struct V2beta2ContainerResourceMetricSource {
     #[serde(rename = "name")]
     pub name: String,
     #[serde(rename = "target")]
-    pub target: crate::models::V2beta2MetricTarget,
+    pub target: Box<crate::models::V2beta2MetricTarget>,
 }
 
 impl V2beta2ContainerResourceMetricSource {
@@ -30,7 +30,7 @@ impl V2beta2ContainerResourceMetricSource {
         V2beta2ContainerResourceMetricSource {
             container,
             name,
-            target,
+            target: Box::new(target),
         }
     }
 }

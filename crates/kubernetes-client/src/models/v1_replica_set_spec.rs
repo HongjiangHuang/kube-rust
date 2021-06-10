@@ -21,9 +21,9 @@ pub struct V1ReplicaSetSpec {
     #[serde(rename = "replicas", skip_serializing_if = "Option::is_none")]
     pub replicas: Option<i32>,
     #[serde(rename = "selector")]
-    pub selector: crate::models::V1LabelSelector,
+    pub selector: Box<crate::models::V1LabelSelector>,
     #[serde(rename = "template", skip_serializing_if = "Option::is_none")]
-    pub template: Option<crate::models::V1PodTemplateSpec>,
+    pub template: Option<Box<crate::models::V1PodTemplateSpec>>,
 }
 
 impl V1ReplicaSetSpec {
@@ -32,7 +32,7 @@ impl V1ReplicaSetSpec {
         V1ReplicaSetSpec {
             min_ready_seconds: None,
             replicas: None,
-            selector,
+            selector: Box::new(selector),
             template: None,
         }
     }

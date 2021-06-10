@@ -15,15 +15,15 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V2beta1MetricSpec {
     #[serde(rename = "containerResource", skip_serializing_if = "Option::is_none")]
-    pub container_resource: Option<crate::models::V2beta1ContainerResourceMetricSource>,
+    pub container_resource: Option<Box<crate::models::V2beta1ContainerResourceMetricSource>>,
     #[serde(rename = "external", skip_serializing_if = "Option::is_none")]
-    pub external: Option<crate::models::V2beta1ExternalMetricSource>,
+    pub external: Option<Box<crate::models::V2beta1ExternalMetricSource>>,
     #[serde(rename = "object", skip_serializing_if = "Option::is_none")]
-    pub object: Option<crate::models::V2beta1ObjectMetricSource>,
+    pub object: Option<Box<crate::models::V2beta1ObjectMetricSource>>,
     #[serde(rename = "pods", skip_serializing_if = "Option::is_none")]
-    pub pods: Option<crate::models::V2beta1PodsMetricSource>,
+    pub pods: Option<Box<crate::models::V2beta1PodsMetricSource>>,
     #[serde(rename = "resource", skip_serializing_if = "Option::is_none")]
-    pub resource: Option<crate::models::V2beta1ResourceMetricSource>,
+    pub resource: Option<Box<crate::models::V2beta1ResourceMetricSource>>,
     /// type is the type of metric source.  It should be one of \"ContainerResource\", \"External\", \"Object\", \"Pods\" or \"Resource\", each mapping to a matching field in the object. Note: \"ContainerResource\" type is available on when the feature-gate HPAContainerMetrics is enabled
     #[serde(rename = "type")]
     pub _type: String,

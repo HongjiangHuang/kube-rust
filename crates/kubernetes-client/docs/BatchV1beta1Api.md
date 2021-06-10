@@ -4,18 +4,18 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_namespaced_cron_job**](BatchV1beta1Api.md#create_namespaced_cron_job) | **Post** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs | 
-[**delete_collection_namespaced_cron_job**](BatchV1beta1Api.md#delete_collection_namespaced_cron_job) | **Delete** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs | 
-[**delete_namespaced_cron_job**](BatchV1beta1Api.md#delete_namespaced_cron_job) | **Delete** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs/{name} | 
-[**get_api_resources**](BatchV1beta1Api.md#get_api_resources) | **Get** /apis/batch/v1beta1/ | 
-[**list_cron_job_for_all_namespaces**](BatchV1beta1Api.md#list_cron_job_for_all_namespaces) | **Get** /apis/batch/v1beta1/cronjobs | 
-[**list_namespaced_cron_job**](BatchV1beta1Api.md#list_namespaced_cron_job) | **Get** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs | 
-[**patch_namespaced_cron_job**](BatchV1beta1Api.md#patch_namespaced_cron_job) | **Patch** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs/{name} | 
-[**patch_namespaced_cron_job_status**](BatchV1beta1Api.md#patch_namespaced_cron_job_status) | **Patch** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs/{name}/status | 
-[**read_namespaced_cron_job**](BatchV1beta1Api.md#read_namespaced_cron_job) | **Get** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs/{name} | 
-[**read_namespaced_cron_job_status**](BatchV1beta1Api.md#read_namespaced_cron_job_status) | **Get** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs/{name}/status | 
-[**replace_namespaced_cron_job**](BatchV1beta1Api.md#replace_namespaced_cron_job) | **Put** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs/{name} | 
-[**replace_namespaced_cron_job_status**](BatchV1beta1Api.md#replace_namespaced_cron_job_status) | **Put** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs/{name}/status | 
+[**create_namespaced_cron_job**](BatchV1beta1Api.md#create_namespaced_cron_job) | **POST** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs | 
+[**delete_collection_namespaced_cron_job**](BatchV1beta1Api.md#delete_collection_namespaced_cron_job) | **DELETE** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs | 
+[**delete_namespaced_cron_job**](BatchV1beta1Api.md#delete_namespaced_cron_job) | **DELETE** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs/{name} | 
+[**get_api_resources**](BatchV1beta1Api.md#get_api_resources) | **GET** /apis/batch/v1beta1/ | 
+[**list_cron_job_for_all_namespaces**](BatchV1beta1Api.md#list_cron_job_for_all_namespaces) | **GET** /apis/batch/v1beta1/cronjobs | 
+[**list_namespaced_cron_job**](BatchV1beta1Api.md#list_namespaced_cron_job) | **GET** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs | 
+[**patch_namespaced_cron_job**](BatchV1beta1Api.md#patch_namespaced_cron_job) | **PATCH** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs/{name} | 
+[**patch_namespaced_cron_job_status**](BatchV1beta1Api.md#patch_namespaced_cron_job_status) | **PATCH** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs/{name}/status | 
+[**read_namespaced_cron_job**](BatchV1beta1Api.md#read_namespaced_cron_job) | **GET** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs/{name} | 
+[**read_namespaced_cron_job_status**](BatchV1beta1Api.md#read_namespaced_cron_job_status) | **GET** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs/{name}/status | 
+[**replace_namespaced_cron_job**](BatchV1beta1Api.md#replace_namespaced_cron_job) | **PUT** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs/{name} | 
+[**replace_namespaced_cron_job_status**](BatchV1beta1Api.md#replace_namespaced_cron_job_status) | **PUT** /apis/batch/v1beta1/namespaces/{namespace}/cronjobs/{name}/status | 
 
 
 

@@ -4,32 +4,32 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_cluster_custom_object**](CustomObjectsApi.md#create_cluster_custom_object) | **Post** /apis/{group}/{version}/{plural} | 
-[**create_namespaced_custom_object**](CustomObjectsApi.md#create_namespaced_custom_object) | **Post** /apis/{group}/{version}/namespaces/{namespace}/{plural} | 
-[**delete_cluster_custom_object**](CustomObjectsApi.md#delete_cluster_custom_object) | **Delete** /apis/{group}/{version}/{plural}/{name} | 
-[**delete_collection_cluster_custom_object**](CustomObjectsApi.md#delete_collection_cluster_custom_object) | **Delete** /apis/{group}/{version}/{plural} | 
-[**delete_collection_namespaced_custom_object**](CustomObjectsApi.md#delete_collection_namespaced_custom_object) | **Delete** /apis/{group}/{version}/namespaces/{namespace}/{plural} | 
-[**delete_namespaced_custom_object**](CustomObjectsApi.md#delete_namespaced_custom_object) | **Delete** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name} | 
-[**get_cluster_custom_object**](CustomObjectsApi.md#get_cluster_custom_object) | **Get** /apis/{group}/{version}/{plural}/{name} | 
-[**get_cluster_custom_object_scale**](CustomObjectsApi.md#get_cluster_custom_object_scale) | **Get** /apis/{group}/{version}/{plural}/{name}/scale | 
-[**get_cluster_custom_object_status**](CustomObjectsApi.md#get_cluster_custom_object_status) | **Get** /apis/{group}/{version}/{plural}/{name}/status | 
-[**get_namespaced_custom_object**](CustomObjectsApi.md#get_namespaced_custom_object) | **Get** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name} | 
-[**get_namespaced_custom_object_scale**](CustomObjectsApi.md#get_namespaced_custom_object_scale) | **Get** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name}/scale | 
-[**get_namespaced_custom_object_status**](CustomObjectsApi.md#get_namespaced_custom_object_status) | **Get** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name}/status | 
-[**list_cluster_custom_object**](CustomObjectsApi.md#list_cluster_custom_object) | **Get** /apis/{group}/{version}/{plural} | 
-[**list_namespaced_custom_object**](CustomObjectsApi.md#list_namespaced_custom_object) | **Get** /apis/{group}/{version}/namespaces/{namespace}/{plural} | 
-[**patch_cluster_custom_object**](CustomObjectsApi.md#patch_cluster_custom_object) | **Patch** /apis/{group}/{version}/{plural}/{name} | 
-[**patch_cluster_custom_object_scale**](CustomObjectsApi.md#patch_cluster_custom_object_scale) | **Patch** /apis/{group}/{version}/{plural}/{name}/scale | 
-[**patch_cluster_custom_object_status**](CustomObjectsApi.md#patch_cluster_custom_object_status) | **Patch** /apis/{group}/{version}/{plural}/{name}/status | 
-[**patch_namespaced_custom_object**](CustomObjectsApi.md#patch_namespaced_custom_object) | **Patch** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name} | 
-[**patch_namespaced_custom_object_scale**](CustomObjectsApi.md#patch_namespaced_custom_object_scale) | **Patch** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name}/scale | 
-[**patch_namespaced_custom_object_status**](CustomObjectsApi.md#patch_namespaced_custom_object_status) | **Patch** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name}/status | 
-[**replace_cluster_custom_object**](CustomObjectsApi.md#replace_cluster_custom_object) | **Put** /apis/{group}/{version}/{plural}/{name} | 
-[**replace_cluster_custom_object_scale**](CustomObjectsApi.md#replace_cluster_custom_object_scale) | **Put** /apis/{group}/{version}/{plural}/{name}/scale | 
-[**replace_cluster_custom_object_status**](CustomObjectsApi.md#replace_cluster_custom_object_status) | **Put** /apis/{group}/{version}/{plural}/{name}/status | 
-[**replace_namespaced_custom_object**](CustomObjectsApi.md#replace_namespaced_custom_object) | **Put** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name} | 
-[**replace_namespaced_custom_object_scale**](CustomObjectsApi.md#replace_namespaced_custom_object_scale) | **Put** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name}/scale | 
-[**replace_namespaced_custom_object_status**](CustomObjectsApi.md#replace_namespaced_custom_object_status) | **Put** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name}/status | 
+[**create_cluster_custom_object**](CustomObjectsApi.md#create_cluster_custom_object) | **POST** /apis/{group}/{version}/{plural} | 
+[**create_namespaced_custom_object**](CustomObjectsApi.md#create_namespaced_custom_object) | **POST** /apis/{group}/{version}/namespaces/{namespace}/{plural} | 
+[**delete_cluster_custom_object**](CustomObjectsApi.md#delete_cluster_custom_object) | **DELETE** /apis/{group}/{version}/{plural}/{name} | 
+[**delete_collection_cluster_custom_object**](CustomObjectsApi.md#delete_collection_cluster_custom_object) | **DELETE** /apis/{group}/{version}/{plural} | 
+[**delete_collection_namespaced_custom_object**](CustomObjectsApi.md#delete_collection_namespaced_custom_object) | **DELETE** /apis/{group}/{version}/namespaces/{namespace}/{plural} | 
+[**delete_namespaced_custom_object**](CustomObjectsApi.md#delete_namespaced_custom_object) | **DELETE** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name} | 
+[**get_cluster_custom_object**](CustomObjectsApi.md#get_cluster_custom_object) | **GET** /apis/{group}/{version}/{plural}/{name} | 
+[**get_cluster_custom_object_scale**](CustomObjectsApi.md#get_cluster_custom_object_scale) | **GET** /apis/{group}/{version}/{plural}/{name}/scale | 
+[**get_cluster_custom_object_status**](CustomObjectsApi.md#get_cluster_custom_object_status) | **GET** /apis/{group}/{version}/{plural}/{name}/status | 
+[**get_namespaced_custom_object**](CustomObjectsApi.md#get_namespaced_custom_object) | **GET** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name} | 
+[**get_namespaced_custom_object_scale**](CustomObjectsApi.md#get_namespaced_custom_object_scale) | **GET** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name}/scale | 
+[**get_namespaced_custom_object_status**](CustomObjectsApi.md#get_namespaced_custom_object_status) | **GET** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name}/status | 
+[**list_cluster_custom_object**](CustomObjectsApi.md#list_cluster_custom_object) | **GET** /apis/{group}/{version}/{plural} | 
+[**list_namespaced_custom_object**](CustomObjectsApi.md#list_namespaced_custom_object) | **GET** /apis/{group}/{version}/namespaces/{namespace}/{plural} | 
+[**patch_cluster_custom_object**](CustomObjectsApi.md#patch_cluster_custom_object) | **PATCH** /apis/{group}/{version}/{plural}/{name} | 
+[**patch_cluster_custom_object_scale**](CustomObjectsApi.md#patch_cluster_custom_object_scale) | **PATCH** /apis/{group}/{version}/{plural}/{name}/scale | 
+[**patch_cluster_custom_object_status**](CustomObjectsApi.md#patch_cluster_custom_object_status) | **PATCH** /apis/{group}/{version}/{plural}/{name}/status | 
+[**patch_namespaced_custom_object**](CustomObjectsApi.md#patch_namespaced_custom_object) | **PATCH** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name} | 
+[**patch_namespaced_custom_object_scale**](CustomObjectsApi.md#patch_namespaced_custom_object_scale) | **PATCH** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name}/scale | 
+[**patch_namespaced_custom_object_status**](CustomObjectsApi.md#patch_namespaced_custom_object_status) | **PATCH** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name}/status | 
+[**replace_cluster_custom_object**](CustomObjectsApi.md#replace_cluster_custom_object) | **PUT** /apis/{group}/{version}/{plural}/{name} | 
+[**replace_cluster_custom_object_scale**](CustomObjectsApi.md#replace_cluster_custom_object_scale) | **PUT** /apis/{group}/{version}/{plural}/{name}/scale | 
+[**replace_cluster_custom_object_status**](CustomObjectsApi.md#replace_cluster_custom_object_status) | **PUT** /apis/{group}/{version}/{plural}/{name}/status | 
+[**replace_namespaced_custom_object**](CustomObjectsApi.md#replace_namespaced_custom_object) | **PUT** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name} | 
+[**replace_namespaced_custom_object_scale**](CustomObjectsApi.md#replace_namespaced_custom_object_scale) | **PUT** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name}/scale | 
+[**replace_namespaced_custom_object_status**](CustomObjectsApi.md#replace_namespaced_custom_object_status) | **PUT** /apis/{group}/{version}/namespaces/{namespace}/{plural}/{name}/status | 
 
 
 

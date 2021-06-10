@@ -18,7 +18,7 @@ pub struct V1ServiceStatus {
     #[serde(rename = "conditions", skip_serializing_if = "Option::is_none")]
     pub conditions: Option<Vec<crate::models::V1Condition>>,
     #[serde(rename = "loadBalancer", skip_serializing_if = "Option::is_none")]
-    pub load_balancer: Option<crate::models::V1LoadBalancerStatus>,
+    pub load_balancer: Option<Box<crate::models::V1LoadBalancerStatus>>,
 }
 
 impl V1ServiceStatus {

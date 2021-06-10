@@ -18,7 +18,7 @@ pub struct V1ResourceQuotaSpec {
     #[serde(rename = "hard", skip_serializing_if = "Option::is_none")]
     pub hard: Option<::std::collections::HashMap<String, String>>,
     #[serde(rename = "scopeSelector", skip_serializing_if = "Option::is_none")]
-    pub scope_selector: Option<crate::models::V1ScopeSelector>,
+    pub scope_selector: Option<Box<crate::models::V1ScopeSelector>>,
     /// A collection of filters that must match each object tracked by a quota. If not specified, the quota matches all objects.
     #[serde(rename = "scopes", skip_serializing_if = "Option::is_none")]
     pub scopes: Option<Vec<String>>,

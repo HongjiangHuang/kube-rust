@@ -18,12 +18,12 @@ pub struct V1beta1Eviction {
     #[serde(rename = "apiVersion", skip_serializing_if = "Option::is_none")]
     pub api_version: Option<String>,
     #[serde(rename = "deleteOptions", skip_serializing_if = "Option::is_none")]
-    pub delete_options: Option<crate::models::V1DeleteOptions>,
+    pub delete_options: Option<Box<crate::models::V1DeleteOptions>>,
     /// Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
 }
 
 impl V1beta1Eviction {

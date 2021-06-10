@@ -27,7 +27,7 @@ pub struct V1ScaleIoPersistentVolumeSource {
     #[serde(rename = "readOnly", skip_serializing_if = "Option::is_none")]
     pub read_only: Option<bool>,
     #[serde(rename = "secretRef")]
-    pub secret_ref: crate::models::V1SecretReference,
+    pub secret_ref: Box<crate::models::V1SecretReference>,
     /// Flag to enable/disable SSL communication with Gateway, default false
     #[serde(rename = "sslEnabled", skip_serializing_if = "Option::is_none")]
     pub ssl_enabled: Option<bool>,
@@ -53,7 +53,7 @@ impl V1ScaleIoPersistentVolumeSource {
             gateway,
             protection_domain: None,
             read_only: None,
-            secret_ref,
+            secret_ref: Box::new(secret_ref),
             ssl_enabled: None,
             storage_mode: None,
             storage_pool: None,

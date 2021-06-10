@@ -4,21 +4,21 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_mutating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#create_mutating_webhook_configuration) | **Post** /apis/admissionregistration.k8s.io/v1beta1/mutatingwebhookconfigurations | 
-[**create_validating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#create_validating_webhook_configuration) | **Post** /apis/admissionregistration.k8s.io/v1beta1/validatingwebhookconfigurations | 
-[**delete_collection_mutating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#delete_collection_mutating_webhook_configuration) | **Delete** /apis/admissionregistration.k8s.io/v1beta1/mutatingwebhookconfigurations | 
-[**delete_collection_validating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#delete_collection_validating_webhook_configuration) | **Delete** /apis/admissionregistration.k8s.io/v1beta1/validatingwebhookconfigurations | 
-[**delete_mutating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#delete_mutating_webhook_configuration) | **Delete** /apis/admissionregistration.k8s.io/v1beta1/mutatingwebhookconfigurations/{name} | 
-[**delete_validating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#delete_validating_webhook_configuration) | **Delete** /apis/admissionregistration.k8s.io/v1beta1/validatingwebhookconfigurations/{name} | 
-[**get_api_resources**](AdmissionregistrationV1beta1Api.md#get_api_resources) | **Get** /apis/admissionregistration.k8s.io/v1beta1/ | 
-[**list_mutating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#list_mutating_webhook_configuration) | **Get** /apis/admissionregistration.k8s.io/v1beta1/mutatingwebhookconfigurations | 
-[**list_validating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#list_validating_webhook_configuration) | **Get** /apis/admissionregistration.k8s.io/v1beta1/validatingwebhookconfigurations | 
-[**patch_mutating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#patch_mutating_webhook_configuration) | **Patch** /apis/admissionregistration.k8s.io/v1beta1/mutatingwebhookconfigurations/{name} | 
-[**patch_validating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#patch_validating_webhook_configuration) | **Patch** /apis/admissionregistration.k8s.io/v1beta1/validatingwebhookconfigurations/{name} | 
-[**read_mutating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#read_mutating_webhook_configuration) | **Get** /apis/admissionregistration.k8s.io/v1beta1/mutatingwebhookconfigurations/{name} | 
-[**read_validating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#read_validating_webhook_configuration) | **Get** /apis/admissionregistration.k8s.io/v1beta1/validatingwebhookconfigurations/{name} | 
-[**replace_mutating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#replace_mutating_webhook_configuration) | **Put** /apis/admissionregistration.k8s.io/v1beta1/mutatingwebhookconfigurations/{name} | 
-[**replace_validating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#replace_validating_webhook_configuration) | **Put** /apis/admissionregistration.k8s.io/v1beta1/validatingwebhookconfigurations/{name} | 
+[**create_mutating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#create_mutating_webhook_configuration) | **POST** /apis/admissionregistration.k8s.io/v1beta1/mutatingwebhookconfigurations | 
+[**create_validating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#create_validating_webhook_configuration) | **POST** /apis/admissionregistration.k8s.io/v1beta1/validatingwebhookconfigurations | 
+[**delete_collection_mutating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#delete_collection_mutating_webhook_configuration) | **DELETE** /apis/admissionregistration.k8s.io/v1beta1/mutatingwebhookconfigurations | 
+[**delete_collection_validating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#delete_collection_validating_webhook_configuration) | **DELETE** /apis/admissionregistration.k8s.io/v1beta1/validatingwebhookconfigurations | 
+[**delete_mutating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#delete_mutating_webhook_configuration) | **DELETE** /apis/admissionregistration.k8s.io/v1beta1/mutatingwebhookconfigurations/{name} | 
+[**delete_validating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#delete_validating_webhook_configuration) | **DELETE** /apis/admissionregistration.k8s.io/v1beta1/validatingwebhookconfigurations/{name} | 
+[**get_api_resources**](AdmissionregistrationV1beta1Api.md#get_api_resources) | **GET** /apis/admissionregistration.k8s.io/v1beta1/ | 
+[**list_mutating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#list_mutating_webhook_configuration) | **GET** /apis/admissionregistration.k8s.io/v1beta1/mutatingwebhookconfigurations | 
+[**list_validating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#list_validating_webhook_configuration) | **GET** /apis/admissionregistration.k8s.io/v1beta1/validatingwebhookconfigurations | 
+[**patch_mutating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#patch_mutating_webhook_configuration) | **PATCH** /apis/admissionregistration.k8s.io/v1beta1/mutatingwebhookconfigurations/{name} | 
+[**patch_validating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#patch_validating_webhook_configuration) | **PATCH** /apis/admissionregistration.k8s.io/v1beta1/validatingwebhookconfigurations/{name} | 
+[**read_mutating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#read_mutating_webhook_configuration) | **GET** /apis/admissionregistration.k8s.io/v1beta1/mutatingwebhookconfigurations/{name} | 
+[**read_validating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#read_validating_webhook_configuration) | **GET** /apis/admissionregistration.k8s.io/v1beta1/validatingwebhookconfigurations/{name} | 
+[**replace_mutating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#replace_mutating_webhook_configuration) | **PUT** /apis/admissionregistration.k8s.io/v1beta1/mutatingwebhookconfigurations/{name} | 
+[**replace_validating_webhook_configuration**](AdmissionregistrationV1beta1Api.md#replace_validating_webhook_configuration) | **PUT** /apis/admissionregistration.k8s.io/v1beta1/validatingwebhookconfigurations/{name} | 
 
 
 

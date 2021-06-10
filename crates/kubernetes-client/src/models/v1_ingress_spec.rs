@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1IngressSpec {
     #[serde(rename = "defaultBackend", skip_serializing_if = "Option::is_none")]
-    pub default_backend: Option<crate::models::V1IngressBackend>,
+    pub default_backend: Option<Box<crate::models::V1IngressBackend>>,
     /// IngressClassName is the name of the IngressClass cluster resource. The associated IngressClass defines which controller will implement the resource. This replaces the deprecated `kubernetes.io/ingress.class` annotation. For backwards compatibility, when that annotation is set, it must be given precedence over this field. The controller may emit a warning if the field and annotation have different values. Implementations of this API should ignore Ingresses without a class specified. An IngressClass resource may be marked as default, which can be used to set a default value for this field. For more information, refer to the IngressClass documentation.
     #[serde(rename = "ingressClassName", skip_serializing_if = "Option::is_none")]
     pub ingress_class_name: Option<String>,

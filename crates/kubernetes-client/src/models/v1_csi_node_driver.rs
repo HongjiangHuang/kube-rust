@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1CsiNodeDriver {
     #[serde(rename = "allocatable", skip_serializing_if = "Option::is_none")]
-    pub allocatable: Option<crate::models::V1VolumeNodeResources>,
+    pub allocatable: Option<Box<crate::models::V1VolumeNodeResources>>,
     /// This is the name of the CSI driver that this object refers to. This MUST be the same name returned by the CSI GetPluginName() call for that driver.
     #[serde(rename = "name")]
     pub name: String,

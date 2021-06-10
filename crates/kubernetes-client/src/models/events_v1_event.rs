@@ -30,7 +30,7 @@ pub struct EventsV1Event {
     #[serde(rename = "deprecatedLastTimestamp", skip_serializing_if = "Option::is_none")]
     pub deprecated_last_timestamp: Option<String>,
     #[serde(rename = "deprecatedSource", skip_serializing_if = "Option::is_none")]
-    pub deprecated_source: Option<crate::models::V1EventSource>,
+    pub deprecated_source: Option<Box<crate::models::V1EventSource>>,
     /// eventTime is the time when this Event was first observed. It is required.
     #[serde(rename = "eventTime")]
     pub event_time: String,
@@ -38,7 +38,7 @@ pub struct EventsV1Event {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     /// note is a human-readable description of the status of this operation. Maximal length of the note is 1kB, but libraries should be prepared to handle values up to 64kB.
     #[serde(rename = "note", skip_serializing_if = "Option::is_none")]
     pub note: Option<String>,
@@ -46,9 +46,9 @@ pub struct EventsV1Event {
     #[serde(rename = "reason", skip_serializing_if = "Option::is_none")]
     pub reason: Option<String>,
     #[serde(rename = "regarding", skip_serializing_if = "Option::is_none")]
-    pub regarding: Option<crate::models::V1ObjectReference>,
+    pub regarding: Option<Box<crate::models::V1ObjectReference>>,
     #[serde(rename = "related", skip_serializing_if = "Option::is_none")]
-    pub related: Option<crate::models::V1ObjectReference>,
+    pub related: Option<Box<crate::models::V1ObjectReference>>,
     /// reportingController is the name of the controller that emitted this Event, e.g. `kubernetes.io/kubelet`. This field cannot be empty for new Events.
     #[serde(rename = "reportingController", skip_serializing_if = "Option::is_none")]
     pub reporting_controller: Option<String>,
@@ -56,7 +56,7 @@ pub struct EventsV1Event {
     #[serde(rename = "reportingInstance", skip_serializing_if = "Option::is_none")]
     pub reporting_instance: Option<String>,
     #[serde(rename = "series", skip_serializing_if = "Option::is_none")]
-    pub series: Option<crate::models::EventsV1EventSeries>,
+    pub series: Option<Box<crate::models::EventsV1EventSeries>>,
     /// type is the type of this event (Normal, Warning), new types could be added in the future. It is machine-readable. This field cannot be empty for new Events.
     #[serde(rename = "type", skip_serializing_if = "Option::is_none")]
     pub _type: Option<String>,

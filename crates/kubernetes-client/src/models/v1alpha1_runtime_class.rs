@@ -21,9 +21,9 @@ pub struct V1alpha1RuntimeClass {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     #[serde(rename = "spec")]
-    pub spec: crate::models::V1alpha1RuntimeClassSpec,
+    pub spec: Box<crate::models::V1alpha1RuntimeClassSpec>,
 }
 
 impl V1alpha1RuntimeClass {
@@ -33,7 +33,7 @@ impl V1alpha1RuntimeClass {
             api_version: None,
             kind: None,
             metadata: None,
-            spec,
+            spec: Box::new(spec),
         }
     }
 }

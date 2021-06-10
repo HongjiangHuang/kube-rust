@@ -30,7 +30,7 @@ pub struct CoreV1Event {
     #[serde(rename = "firstTimestamp", skip_serializing_if = "Option::is_none")]
     pub first_timestamp: Option<String>,
     #[serde(rename = "involvedObject")]
-    pub involved_object: crate::models::V1ObjectReference,
+    pub involved_object: Box<crate::models::V1ObjectReference>,
     /// Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
@@ -41,12 +41,12 @@ pub struct CoreV1Event {
     #[serde(rename = "message", skip_serializing_if = "Option::is_none")]
     pub message: Option<String>,
     #[serde(rename = "metadata")]
-    pub metadata: crate::models::V1ObjectMeta,
+    pub metadata: Box<crate::models::V1ObjectMeta>,
     /// This should be a short, machine understandable string that gives the reason for the transition into the object's current status.
     #[serde(rename = "reason", skip_serializing_if = "Option::is_none")]
     pub reason: Option<String>,
     #[serde(rename = "related", skip_serializing_if = "Option::is_none")]
-    pub related: Option<crate::models::V1ObjectReference>,
+    pub related: Option<Box<crate::models::V1ObjectReference>>,
     /// Name of the controller that emitted this Event, e.g. `kubernetes.io/kubelet`.
     #[serde(rename = "reportingComponent", skip_serializing_if = "Option::is_none")]
     pub reporting_component: Option<String>,
@@ -54,9 +54,9 @@ pub struct CoreV1Event {
     #[serde(rename = "reportingInstance", skip_serializing_if = "Option::is_none")]
     pub reporting_instance: Option<String>,
     #[serde(rename = "series", skip_serializing_if = "Option::is_none")]
-    pub series: Option<crate::models::CoreV1EventSeries>,
+    pub series: Option<Box<crate::models::CoreV1EventSeries>>,
     #[serde(rename = "source", skip_serializing_if = "Option::is_none")]
-    pub source: Option<crate::models::V1EventSource>,
+    pub source: Option<Box<crate::models::V1EventSource>>,
     /// Type of this event (Normal, Warning), new types could be added in the future
     #[serde(rename = "type", skip_serializing_if = "Option::is_none")]
     pub _type: Option<String>,
@@ -71,11 +71,11 @@ impl CoreV1Event {
             count: None,
             event_time: None,
             first_timestamp: None,
-            involved_object,
+            involved_object: Box::new(involved_object),
             kind: None,
             last_timestamp: None,
             message: None,
-            metadata,
+            metadata: Box::new(metadata),
             reason: None,
             related: None,
             reporting_component: None,

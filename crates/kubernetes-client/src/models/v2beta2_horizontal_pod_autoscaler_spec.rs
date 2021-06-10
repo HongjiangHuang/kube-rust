@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V2beta2HorizontalPodAutoscalerSpec {
     #[serde(rename = "behavior", skip_serializing_if = "Option::is_none")]
-    pub behavior: Option<crate::models::V2beta2HorizontalPodAutoscalerBehavior>,
+    pub behavior: Option<Box<crate::models::V2beta2HorizontalPodAutoscalerBehavior>>,
     /// maxReplicas is the upper limit for the number of replicas to which the autoscaler can scale up. It cannot be less that minReplicas.
     #[serde(rename = "maxReplicas")]
     pub max_replicas: i32,
@@ -26,7 +26,7 @@ pub struct V2beta2HorizontalPodAutoscalerSpec {
     #[serde(rename = "minReplicas", skip_serializing_if = "Option::is_none")]
     pub min_replicas: Option<i32>,
     #[serde(rename = "scaleTargetRef")]
-    pub scale_target_ref: crate::models::V2beta2CrossVersionObjectReference,
+    pub scale_target_ref: Box<crate::models::V2beta2CrossVersionObjectReference>,
 }
 
 impl V2beta2HorizontalPodAutoscalerSpec {
@@ -37,7 +37,7 @@ impl V2beta2HorizontalPodAutoscalerSpec {
             max_replicas,
             metrics: None,
             min_replicas: None,
-            scale_target_ref,
+            scale_target_ref: Box::new(scale_target_ref),
         }
     }
 }

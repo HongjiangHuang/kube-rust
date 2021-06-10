@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct NetworkingV1beta1IngressBackend {
     #[serde(rename = "resource", skip_serializing_if = "Option::is_none")]
-    pub resource: Option<crate::models::V1TypedLocalObjectReference>,
+    pub resource: Option<Box<crate::models::V1TypedLocalObjectReference>>,
     /// Specifies the name of the referenced service.
     #[serde(rename = "serviceName", skip_serializing_if = "Option::is_none")]
     pub service_name: Option<String>,

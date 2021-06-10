@@ -45,7 +45,7 @@ pub struct V1beta1PodSecurityPolicySpec {
     #[serde(rename = "forbiddenSysctls", skip_serializing_if = "Option::is_none")]
     pub forbidden_sysctls: Option<Vec<String>>,
     #[serde(rename = "fsGroup")]
-    pub fs_group: crate::models::V1beta1FsGroupStrategyOptions,
+    pub fs_group: Box<crate::models::V1beta1FsGroupStrategyOptions>,
     /// hostIPC determines if the policy allows the use of HostIPC in the pod spec.
     #[serde(rename = "hostIPC", skip_serializing_if = "Option::is_none")]
     pub host_ipc: Option<bool>,
@@ -68,15 +68,15 @@ pub struct V1beta1PodSecurityPolicySpec {
     #[serde(rename = "requiredDropCapabilities", skip_serializing_if = "Option::is_none")]
     pub required_drop_capabilities: Option<Vec<String>>,
     #[serde(rename = "runAsGroup", skip_serializing_if = "Option::is_none")]
-    pub run_as_group: Option<crate::models::V1beta1RunAsGroupStrategyOptions>,
+    pub run_as_group: Option<Box<crate::models::V1beta1RunAsGroupStrategyOptions>>,
     #[serde(rename = "runAsUser")]
-    pub run_as_user: crate::models::V1beta1RunAsUserStrategyOptions,
+    pub run_as_user: Box<crate::models::V1beta1RunAsUserStrategyOptions>,
     #[serde(rename = "runtimeClass", skip_serializing_if = "Option::is_none")]
-    pub runtime_class: Option<crate::models::V1beta1RuntimeClassStrategyOptions>,
+    pub runtime_class: Option<Box<crate::models::V1beta1RuntimeClassStrategyOptions>>,
     #[serde(rename = "seLinux")]
-    pub se_linux: crate::models::V1beta1SeLinuxStrategyOptions,
+    pub se_linux: Box<crate::models::V1beta1SeLinuxStrategyOptions>,
     #[serde(rename = "supplementalGroups")]
-    pub supplemental_groups: crate::models::V1beta1SupplementalGroupsStrategyOptions,
+    pub supplemental_groups: Box<crate::models::V1beta1SupplementalGroupsStrategyOptions>,
     /// volumes is an allowlist of volume plugins. Empty indicates that no volumes may be used. To allow all volumes you may use '*'.
     #[serde(rename = "volumes", skip_serializing_if = "Option::is_none")]
     pub volumes: Option<Vec<String>>,
@@ -96,7 +96,7 @@ impl V1beta1PodSecurityPolicySpec {
             default_add_capabilities: None,
             default_allow_privilege_escalation: None,
             forbidden_sysctls: None,
-            fs_group,
+            fs_group: Box::new(fs_group),
             host_ipc: None,
             host_network: None,
             host_pid: None,
@@ -105,10 +105,10 @@ impl V1beta1PodSecurityPolicySpec {
             read_only_root_filesystem: None,
             required_drop_capabilities: None,
             run_as_group: None,
-            run_as_user,
+            run_as_user: Box::new(run_as_user),
             runtime_class: None,
-            se_linux,
-            supplemental_groups,
+            se_linux: Box::new(se_linux),
+            supplemental_groups: Box::new(supplemental_groups),
             volumes: None,
         }
     }

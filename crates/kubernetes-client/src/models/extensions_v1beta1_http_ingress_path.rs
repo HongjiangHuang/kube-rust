@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct ExtensionsV1beta1HttpIngressPath {
     #[serde(rename = "backend")]
-    pub backend: crate::models::ExtensionsV1beta1IngressBackend,
+    pub backend: Box<crate::models::ExtensionsV1beta1IngressBackend>,
     /// Path is matched against the path of an incoming request. Currently it can contain characters disallowed from the conventional \"path\" part of a URL as defined by RFC 3986. Paths must begin with a '/'. When unspecified, all paths from incoming requests are matched.
     #[serde(rename = "path", skip_serializing_if = "Option::is_none")]
     pub path: Option<String>,
@@ -28,7 +28,7 @@ impl ExtensionsV1beta1HttpIngressPath {
     /// HTTPIngressPath associates a path with a backend. Incoming urls matching the path are forwarded to the backend.
     pub fn new(backend: crate::models::ExtensionsV1beta1IngressBackend) -> ExtensionsV1beta1HttpIngressPath {
         ExtensionsV1beta1HttpIngressPath {
-            backend,
+            backend: Box::new(backend),
             path: None,
             path_type: None,
         }

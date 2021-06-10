@@ -22,10 +22,10 @@ pub struct V1ServiceSpec {
     pub cluster_ip: Option<String>,
     /// ClusterIPs is a list of IP addresses assigned to this service, and are usually assigned randomly.  If an address is specified manually, is in-range (as per system configuration), and is not in use, it will be allocated to the service; otherwise creation of the service will fail. This field may not be changed through updates unless the type field is also being changed to ExternalName (which requires this field to be empty) or the type field is being changed from ExternalName (in which case this field may optionally be specified, as describe above).  Valid values are \"None\", empty string (\"\"), or a valid IP address.  Setting this to \"None\" makes a \"headless service\" (no virtual IP), which is useful when direct endpoint connections are preferred and proxying is not required.  Only applies to types ClusterIP, NodePort, and LoadBalancer. If this field is specified when creating a Service of type ExternalName, creation will fail. This field will be wiped when updating a Service to type ExternalName.  If this field is not specified, it will be initialized from the clusterIP field.  If this field is specified, clients must ensure that clusterIPs[0] and clusterIP have the same value.  Unless the \"IPv6DualStack\" feature gate is enabled, this field is limited to one value, which must be the same as the clusterIP field.  If the feature gate is enabled, this field may hold a maximum of two entries (dual-stack IPs, in either order).  These IPs must correspond to the values of the ipFamilies field. Both clusterIPs and ipFamilies are governed by the ipFamilyPolicy field. More info: https://kubernetes.io/docs/concepts/services-networking/service/#virtual-ips-and-service-proxies
     #[serde(rename = "clusterIPs", skip_serializing_if = "Option::is_none")]
-    pub cluster_i_ps: Option<Vec<String>>,
+    pub cluster_ips: Option<Vec<String>>,
     /// externalIPs is a list of IP addresses for which nodes in the cluster will also accept traffic for this service.  These IPs are not managed by Kubernetes.  The user is responsible for ensuring that traffic arrives at a node with this IP.  A common example is external load-balancers that are not part of the Kubernetes system.
     #[serde(rename = "externalIPs", skip_serializing_if = "Option::is_none")]
-    pub external_i_ps: Option<Vec<String>>,
+    pub external_ips: Option<Vec<String>>,
     /// externalName is the external reference that discovery mechanisms will return as an alias for this service (e.g. a DNS CNAME record). No proxying will be involved.  Must be a lowercase RFC-1123 hostname (https://tools.ietf.org/html/rfc1123) and requires `type` to be \"ExternalName\".
     #[serde(rename = "externalName", skip_serializing_if = "Option::is_none")]
     pub external_name: Option<String>,
@@ -66,7 +66,7 @@ pub struct V1ServiceSpec {
     #[serde(rename = "sessionAffinity", skip_serializing_if = "Option::is_none")]
     pub session_affinity: Option<String>,
     #[serde(rename = "sessionAffinityConfig", skip_serializing_if = "Option::is_none")]
-    pub session_affinity_config: Option<crate::models::V1SessionAffinityConfig>,
+    pub session_affinity_config: Option<Box<crate::models::V1SessionAffinityConfig>>,
     /// topologyKeys is a preference-order list of topology keys which implementations of services should use to preferentially sort endpoints when accessing this Service, it can not be used at the same time as externalTrafficPolicy=Local. Topology keys must be valid label keys and at most 16 keys may be specified. Endpoints are chosen based on the first topology key with available backends. If this field is specified and all entries have no backends that match the topology of the client, the service has no backends for that client and connections should fail. The special value \"*\" may be used to mean \"any topology\". This catch-all value, if used, only makes sense as the last value in the list. If this is not specified or empty, no topology constraints will be applied. This field is alpha-level and is only honored by servers that enable the ServiceTopology feature. This field is deprecated and will be removed in a future version.
     #[serde(rename = "topologyKeys", skip_serializing_if = "Option::is_none")]
     pub topology_keys: Option<Vec<String>>,
@@ -81,8 +81,8 @@ impl V1ServiceSpec {
         V1ServiceSpec {
             allocate_load_balancer_node_ports: None,
             cluster_ip: None,
-            cluster_i_ps: None,
-            external_i_ps: None,
+            cluster_ips: None,
+            external_ips: None,
             external_name: None,
             external_traffic_policy: None,
             health_check_node_port: None,

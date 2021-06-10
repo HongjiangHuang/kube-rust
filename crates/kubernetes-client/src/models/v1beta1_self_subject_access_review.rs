@@ -21,11 +21,11 @@ pub struct V1beta1SelfSubjectAccessReview {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     #[serde(rename = "spec")]
-    pub spec: crate::models::V1beta1SelfSubjectAccessReviewSpec,
+    pub spec: Box<crate::models::V1beta1SelfSubjectAccessReviewSpec>,
     #[serde(rename = "status", skip_serializing_if = "Option::is_none")]
-    pub status: Option<crate::models::V1beta1SubjectAccessReviewStatus>,
+    pub status: Option<Box<crate::models::V1beta1SubjectAccessReviewStatus>>,
 }
 
 impl V1beta1SelfSubjectAccessReview {
@@ -35,7 +35,7 @@ impl V1beta1SelfSubjectAccessReview {
             api_version: None,
             kind: None,
             metadata: None,
-            spec,
+            spec: Box::new(spec),
             status: None,
         }
     }

@@ -15,9 +15,9 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1SelfSubjectAccessReviewSpec {
     #[serde(rename = "nonResourceAttributes", skip_serializing_if = "Option::is_none")]
-    pub non_resource_attributes: Option<crate::models::V1NonResourceAttributes>,
+    pub non_resource_attributes: Option<Box<crate::models::V1NonResourceAttributes>>,
     #[serde(rename = "resourceAttributes", skip_serializing_if = "Option::is_none")]
-    pub resource_attributes: Option<crate::models::V1ResourceAttributes>,
+    pub resource_attributes: Option<Box<crate::models::V1ResourceAttributes>>,
 }
 
 impl V1SelfSubjectAccessReviewSpec {

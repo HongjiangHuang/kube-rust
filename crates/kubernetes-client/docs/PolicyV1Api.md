@@ -4,18 +4,18 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_namespaced_pod_disruption_budget**](PolicyV1Api.md#create_namespaced_pod_disruption_budget) | **Post** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets | 
-[**delete_collection_namespaced_pod_disruption_budget**](PolicyV1Api.md#delete_collection_namespaced_pod_disruption_budget) | **Delete** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets | 
-[**delete_namespaced_pod_disruption_budget**](PolicyV1Api.md#delete_namespaced_pod_disruption_budget) | **Delete** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets/{name} | 
-[**get_api_resources**](PolicyV1Api.md#get_api_resources) | **Get** /apis/policy/v1/ | 
-[**list_namespaced_pod_disruption_budget**](PolicyV1Api.md#list_namespaced_pod_disruption_budget) | **Get** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets | 
-[**list_pod_disruption_budget_for_all_namespaces**](PolicyV1Api.md#list_pod_disruption_budget_for_all_namespaces) | **Get** /apis/policy/v1/poddisruptionbudgets | 
-[**patch_namespaced_pod_disruption_budget**](PolicyV1Api.md#patch_namespaced_pod_disruption_budget) | **Patch** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets/{name} | 
-[**patch_namespaced_pod_disruption_budget_status**](PolicyV1Api.md#patch_namespaced_pod_disruption_budget_status) | **Patch** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets/{name}/status | 
-[**read_namespaced_pod_disruption_budget**](PolicyV1Api.md#read_namespaced_pod_disruption_budget) | **Get** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets/{name} | 
-[**read_namespaced_pod_disruption_budget_status**](PolicyV1Api.md#read_namespaced_pod_disruption_budget_status) | **Get** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets/{name}/status | 
-[**replace_namespaced_pod_disruption_budget**](PolicyV1Api.md#replace_namespaced_pod_disruption_budget) | **Put** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets/{name} | 
-[**replace_namespaced_pod_disruption_budget_status**](PolicyV1Api.md#replace_namespaced_pod_disruption_budget_status) | **Put** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets/{name}/status | 
+[**create_namespaced_pod_disruption_budget**](PolicyV1Api.md#create_namespaced_pod_disruption_budget) | **POST** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets | 
+[**delete_collection_namespaced_pod_disruption_budget**](PolicyV1Api.md#delete_collection_namespaced_pod_disruption_budget) | **DELETE** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets | 
+[**delete_namespaced_pod_disruption_budget**](PolicyV1Api.md#delete_namespaced_pod_disruption_budget) | **DELETE** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets/{name} | 
+[**get_api_resources**](PolicyV1Api.md#get_api_resources) | **GET** /apis/policy/v1/ | 
+[**list_namespaced_pod_disruption_budget**](PolicyV1Api.md#list_namespaced_pod_disruption_budget) | **GET** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets | 
+[**list_pod_disruption_budget_for_all_namespaces**](PolicyV1Api.md#list_pod_disruption_budget_for_all_namespaces) | **GET** /apis/policy/v1/poddisruptionbudgets | 
+[**patch_namespaced_pod_disruption_budget**](PolicyV1Api.md#patch_namespaced_pod_disruption_budget) | **PATCH** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets/{name} | 
+[**patch_namespaced_pod_disruption_budget_status**](PolicyV1Api.md#patch_namespaced_pod_disruption_budget_status) | **PATCH** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets/{name}/status | 
+[**read_namespaced_pod_disruption_budget**](PolicyV1Api.md#read_namespaced_pod_disruption_budget) | **GET** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets/{name} | 
+[**read_namespaced_pod_disruption_budget_status**](PolicyV1Api.md#read_namespaced_pod_disruption_budget_status) | **GET** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets/{name}/status | 
+[**replace_namespaced_pod_disruption_budget**](PolicyV1Api.md#replace_namespaced_pod_disruption_budget) | **PUT** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets/{name} | 
+[**replace_namespaced_pod_disruption_budget_status**](PolicyV1Api.md#replace_namespaced_pod_disruption_budget_status) | **PUT** /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets/{name}/status | 
 
 
 

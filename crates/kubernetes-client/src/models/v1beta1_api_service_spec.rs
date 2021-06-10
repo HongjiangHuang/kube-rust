@@ -27,7 +27,7 @@ pub struct V1beta1ApiServiceSpec {
     #[serde(rename = "insecureSkipTLSVerify", skip_serializing_if = "Option::is_none")]
     pub insecure_skip_tls_verify: Option<bool>,
     #[serde(rename = "service", skip_serializing_if = "Option::is_none")]
-    pub service: Option<crate::models::ApiregistrationV1beta1ServiceReference>,
+    pub service: Option<Box<crate::models::ApiregistrationV1beta1ServiceReference>>,
     /// Version is the API version this server hosts.  For example, \"v1\"
     #[serde(rename = "version", skip_serializing_if = "Option::is_none")]
     pub version: Option<String>,

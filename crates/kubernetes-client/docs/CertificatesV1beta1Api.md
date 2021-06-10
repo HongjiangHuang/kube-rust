@@ -4,20 +4,20 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_certificate_signing_request**](CertificatesV1beta1Api.md#create_certificate_signing_request) | **Post** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests | 
-[**delete_certificate_signing_request**](CertificatesV1beta1Api.md#delete_certificate_signing_request) | **Delete** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name} | 
-[**delete_collection_certificate_signing_request**](CertificatesV1beta1Api.md#delete_collection_certificate_signing_request) | **Delete** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests | 
-[**get_api_resources**](CertificatesV1beta1Api.md#get_api_resources) | **Get** /apis/certificates.k8s.io/v1beta1/ | 
-[**list_certificate_signing_request**](CertificatesV1beta1Api.md#list_certificate_signing_request) | **Get** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests | 
-[**patch_certificate_signing_request**](CertificatesV1beta1Api.md#patch_certificate_signing_request) | **Patch** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name} | 
-[**patch_certificate_signing_request_approval**](CertificatesV1beta1Api.md#patch_certificate_signing_request_approval) | **Patch** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name}/approval | 
-[**patch_certificate_signing_request_status**](CertificatesV1beta1Api.md#patch_certificate_signing_request_status) | **Patch** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name}/status | 
-[**read_certificate_signing_request**](CertificatesV1beta1Api.md#read_certificate_signing_request) | **Get** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name} | 
-[**read_certificate_signing_request_approval**](CertificatesV1beta1Api.md#read_certificate_signing_request_approval) | **Get** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name}/approval | 
-[**read_certificate_signing_request_status**](CertificatesV1beta1Api.md#read_certificate_signing_request_status) | **Get** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name}/status | 
-[**replace_certificate_signing_request**](CertificatesV1beta1Api.md#replace_certificate_signing_request) | **Put** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name} | 
-[**replace_certificate_signing_request_approval**](CertificatesV1beta1Api.md#replace_certificate_signing_request_approval) | **Put** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name}/approval | 
-[**replace_certificate_signing_request_status**](CertificatesV1beta1Api.md#replace_certificate_signing_request_status) | **Put** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name}/status | 
+[**create_certificate_signing_request**](CertificatesV1beta1Api.md#create_certificate_signing_request) | **POST** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests | 
+[**delete_certificate_signing_request**](CertificatesV1beta1Api.md#delete_certificate_signing_request) | **DELETE** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name} | 
+[**delete_collection_certificate_signing_request**](CertificatesV1beta1Api.md#delete_collection_certificate_signing_request) | **DELETE** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests | 
+[**get_api_resources**](CertificatesV1beta1Api.md#get_api_resources) | **GET** /apis/certificates.k8s.io/v1beta1/ | 
+[**list_certificate_signing_request**](CertificatesV1beta1Api.md#list_certificate_signing_request) | **GET** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests | 
+[**patch_certificate_signing_request**](CertificatesV1beta1Api.md#patch_certificate_signing_request) | **PATCH** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name} | 
+[**patch_certificate_signing_request_approval**](CertificatesV1beta1Api.md#patch_certificate_signing_request_approval) | **PATCH** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name}/approval | 
+[**patch_certificate_signing_request_status**](CertificatesV1beta1Api.md#patch_certificate_signing_request_status) | **PATCH** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name}/status | 
+[**read_certificate_signing_request**](CertificatesV1beta1Api.md#read_certificate_signing_request) | **GET** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name} | 
+[**read_certificate_signing_request_approval**](CertificatesV1beta1Api.md#read_certificate_signing_request_approval) | **GET** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name}/approval | 
+[**read_certificate_signing_request_status**](CertificatesV1beta1Api.md#read_certificate_signing_request_status) | **GET** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name}/status | 
+[**replace_certificate_signing_request**](CertificatesV1beta1Api.md#replace_certificate_signing_request) | **PUT** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name} | 
+[**replace_certificate_signing_request_approval**](CertificatesV1beta1Api.md#replace_certificate_signing_request_approval) | **PUT** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name}/approval | 
+[**replace_certificate_signing_request_status**](CertificatesV1beta1Api.md#replace_certificate_signing_request_status) | **PUT** /apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name}/status | 
 
 
 

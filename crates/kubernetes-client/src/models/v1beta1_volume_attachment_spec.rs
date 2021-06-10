@@ -21,7 +21,7 @@ pub struct V1beta1VolumeAttachmentSpec {
     #[serde(rename = "nodeName")]
     pub node_name: String,
     #[serde(rename = "source")]
-    pub source: crate::models::V1beta1VolumeAttachmentSource,
+    pub source: Box<crate::models::V1beta1VolumeAttachmentSource>,
 }
 
 impl V1beta1VolumeAttachmentSpec {
@@ -30,7 +30,7 @@ impl V1beta1VolumeAttachmentSpec {
         V1beta1VolumeAttachmentSpec {
             attacher,
             node_name,
-            source,
+            source: Box::new(source),
         }
     }
 }

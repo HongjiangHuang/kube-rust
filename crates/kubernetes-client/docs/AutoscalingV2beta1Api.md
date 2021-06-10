@@ -4,18 +4,18 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_namespaced_horizontal_pod_autoscaler**](AutoscalingV2beta1Api.md#create_namespaced_horizontal_pod_autoscaler) | **Post** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers | 
-[**delete_collection_namespaced_horizontal_pod_autoscaler**](AutoscalingV2beta1Api.md#delete_collection_namespaced_horizontal_pod_autoscaler) | **Delete** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers | 
-[**delete_namespaced_horizontal_pod_autoscaler**](AutoscalingV2beta1Api.md#delete_namespaced_horizontal_pod_autoscaler) | **Delete** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers/{name} | 
-[**get_api_resources**](AutoscalingV2beta1Api.md#get_api_resources) | **Get** /apis/autoscaling/v2beta1/ | 
-[**list_horizontal_pod_autoscaler_for_all_namespaces**](AutoscalingV2beta1Api.md#list_horizontal_pod_autoscaler_for_all_namespaces) | **Get** /apis/autoscaling/v2beta1/horizontalpodautoscalers | 
-[**list_namespaced_horizontal_pod_autoscaler**](AutoscalingV2beta1Api.md#list_namespaced_horizontal_pod_autoscaler) | **Get** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers | 
-[**patch_namespaced_horizontal_pod_autoscaler**](AutoscalingV2beta1Api.md#patch_namespaced_horizontal_pod_autoscaler) | **Patch** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers/{name} | 
-[**patch_namespaced_horizontal_pod_autoscaler_status**](AutoscalingV2beta1Api.md#patch_namespaced_horizontal_pod_autoscaler_status) | **Patch** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers/{name}/status | 
-[**read_namespaced_horizontal_pod_autoscaler**](AutoscalingV2beta1Api.md#read_namespaced_horizontal_pod_autoscaler) | **Get** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers/{name} | 
-[**read_namespaced_horizontal_pod_autoscaler_status**](AutoscalingV2beta1Api.md#read_namespaced_horizontal_pod_autoscaler_status) | **Get** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers/{name}/status | 
-[**replace_namespaced_horizontal_pod_autoscaler**](AutoscalingV2beta1Api.md#replace_namespaced_horizontal_pod_autoscaler) | **Put** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers/{name} | 
-[**replace_namespaced_horizontal_pod_autoscaler_status**](AutoscalingV2beta1Api.md#replace_namespaced_horizontal_pod_autoscaler_status) | **Put** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers/{name}/status | 
+[**create_namespaced_horizontal_pod_autoscaler**](AutoscalingV2beta1Api.md#create_namespaced_horizontal_pod_autoscaler) | **POST** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers | 
+[**delete_collection_namespaced_horizontal_pod_autoscaler**](AutoscalingV2beta1Api.md#delete_collection_namespaced_horizontal_pod_autoscaler) | **DELETE** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers | 
+[**delete_namespaced_horizontal_pod_autoscaler**](AutoscalingV2beta1Api.md#delete_namespaced_horizontal_pod_autoscaler) | **DELETE** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers/{name} | 
+[**get_api_resources**](AutoscalingV2beta1Api.md#get_api_resources) | **GET** /apis/autoscaling/v2beta1/ | 
+[**list_horizontal_pod_autoscaler_for_all_namespaces**](AutoscalingV2beta1Api.md#list_horizontal_pod_autoscaler_for_all_namespaces) | **GET** /apis/autoscaling/v2beta1/horizontalpodautoscalers | 
+[**list_namespaced_horizontal_pod_autoscaler**](AutoscalingV2beta1Api.md#list_namespaced_horizontal_pod_autoscaler) | **GET** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers | 
+[**patch_namespaced_horizontal_pod_autoscaler**](AutoscalingV2beta1Api.md#patch_namespaced_horizontal_pod_autoscaler) | **PATCH** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers/{name} | 
+[**patch_namespaced_horizontal_pod_autoscaler_status**](AutoscalingV2beta1Api.md#patch_namespaced_horizontal_pod_autoscaler_status) | **PATCH** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers/{name}/status | 
+[**read_namespaced_horizontal_pod_autoscaler**](AutoscalingV2beta1Api.md#read_namespaced_horizontal_pod_autoscaler) | **GET** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers/{name} | 
+[**read_namespaced_horizontal_pod_autoscaler_status**](AutoscalingV2beta1Api.md#read_namespaced_horizontal_pod_autoscaler_status) | **GET** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers/{name}/status | 
+[**replace_namespaced_horizontal_pod_autoscaler**](AutoscalingV2beta1Api.md#replace_namespaced_horizontal_pod_autoscaler) | **PUT** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers/{name} | 
+[**replace_namespaced_horizontal_pod_autoscaler_status**](AutoscalingV2beta1Api.md#replace_namespaced_horizontal_pod_autoscaler_status) | **PUT** /apis/autoscaling/v2beta1/namespaces/{namespace}/horizontalpodautoscalers/{name}/status | 
 
 
 

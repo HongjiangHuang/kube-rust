@@ -24,10 +24,10 @@ pub struct V1ApiGroup {
     #[serde(rename = "name")]
     pub name: String,
     #[serde(rename = "preferredVersion", skip_serializing_if = "Option::is_none")]
-    pub preferred_version: Option<crate::models::V1GroupVersionForDiscovery>,
+    pub preferred_version: Option<Box<crate::models::V1GroupVersionForDiscovery>>,
     /// a map of client CIDR to server address that is serving this group. This is to help clients reach servers in the most network-efficient way possible. Clients can use the appropriate server address as per the CIDR that they match. In case of multiple matches, clients should use the longest matching CIDR. The server returns only those CIDRs that it thinks that the client can match. For example: the master will return an internal IP CIDR only, if the client reaches the server using an internal IP. Server looks at X-Forwarded-For header or X-Real-Ip header or request.RemoteAddr (in that order) to get the client IP.
     #[serde(rename = "serverAddressByClientCIDRs", skip_serializing_if = "Option::is_none")]
-    pub server_address_by_client_cid_rs: Option<Vec<crate::models::V1ServerAddressByClientCidr>>,
+    pub server_address_by_client_cidrs: Option<Vec<crate::models::V1ServerAddressByClientCidr>>,
     /// versions are the versions supported in this group.
     #[serde(rename = "versions")]
     pub versions: Vec<crate::models::V1GroupVersionForDiscovery>,
@@ -41,7 +41,7 @@ impl V1ApiGroup {
             kind: None,
             name,
             preferred_version: None,
-            server_address_by_client_cid_rs: None,
+            server_address_by_client_cidrs: None,
             versions,
         }
     }

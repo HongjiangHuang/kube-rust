@@ -15,14 +15,14 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1NodeConfigStatus {
     #[serde(rename = "active", skip_serializing_if = "Option::is_none")]
-    pub active: Option<crate::models::V1NodeConfigSource>,
+    pub active: Option<Box<crate::models::V1NodeConfigSource>>,
     #[serde(rename = "assigned", skip_serializing_if = "Option::is_none")]
-    pub assigned: Option<crate::models::V1NodeConfigSource>,
+    pub assigned: Option<Box<crate::models::V1NodeConfigSource>>,
     /// Error describes any problems reconciling the Spec.ConfigSource to the Active config. Errors may occur, for example, attempting to checkpoint Spec.ConfigSource to the local Assigned record, attempting to checkpoint the payload associated with Spec.ConfigSource, attempting to load or validate the Assigned config, etc. Errors may occur at different points while syncing config. Earlier errors (e.g. download or checkpointing errors) will not result in a rollback to LastKnownGood, and may resolve across Kubelet retries. Later errors (e.g. loading or validating a checkpointed config) will result in a rollback to LastKnownGood. In the latter case, it is usually possible to resolve the error by fixing the config assigned in Spec.ConfigSource. You can find additional information for debugging by searching the error message in the Kubelet log. Error is a human-readable description of the error state; machines can check whether or not Error is empty, but should not rely on the stability of the Error text across Kubelet versions.
     #[serde(rename = "error", skip_serializing_if = "Option::is_none")]
     pub error: Option<String>,
     #[serde(rename = "lastKnownGood", skip_serializing_if = "Option::is_none")]
-    pub last_known_good: Option<crate::models::V1NodeConfigSource>,
+    pub last_known_good: Option<Box<crate::models::V1NodeConfigSource>>,
 }
 
 impl V1NodeConfigStatus {

@@ -4,14 +4,14 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_runtime_class**](NodeV1Api.md#create_runtime_class) | **Post** /apis/node.k8s.io/v1/runtimeclasses | 
-[**delete_collection_runtime_class**](NodeV1Api.md#delete_collection_runtime_class) | **Delete** /apis/node.k8s.io/v1/runtimeclasses | 
-[**delete_runtime_class**](NodeV1Api.md#delete_runtime_class) | **Delete** /apis/node.k8s.io/v1/runtimeclasses/{name} | 
-[**get_api_resources**](NodeV1Api.md#get_api_resources) | **Get** /apis/node.k8s.io/v1/ | 
-[**list_runtime_class**](NodeV1Api.md#list_runtime_class) | **Get** /apis/node.k8s.io/v1/runtimeclasses | 
-[**patch_runtime_class**](NodeV1Api.md#patch_runtime_class) | **Patch** /apis/node.k8s.io/v1/runtimeclasses/{name} | 
-[**read_runtime_class**](NodeV1Api.md#read_runtime_class) | **Get** /apis/node.k8s.io/v1/runtimeclasses/{name} | 
-[**replace_runtime_class**](NodeV1Api.md#replace_runtime_class) | **Put** /apis/node.k8s.io/v1/runtimeclasses/{name} | 
+[**create_runtime_class**](NodeV1Api.md#create_runtime_class) | **POST** /apis/node.k8s.io/v1/runtimeclasses | 
+[**delete_collection_runtime_class**](NodeV1Api.md#delete_collection_runtime_class) | **DELETE** /apis/node.k8s.io/v1/runtimeclasses | 
+[**delete_runtime_class**](NodeV1Api.md#delete_runtime_class) | **DELETE** /apis/node.k8s.io/v1/runtimeclasses/{name} | 
+[**get_api_resources**](NodeV1Api.md#get_api_resources) | **GET** /apis/node.k8s.io/v1/ | 
+[**list_runtime_class**](NodeV1Api.md#list_runtime_class) | **GET** /apis/node.k8s.io/v1/runtimeclasses | 
+[**patch_runtime_class**](NodeV1Api.md#patch_runtime_class) | **PATCH** /apis/node.k8s.io/v1/runtimeclasses/{name} | 
+[**read_runtime_class**](NodeV1Api.md#read_runtime_class) | **GET** /apis/node.k8s.io/v1/runtimeclasses/{name} | 
+[**replace_runtime_class**](NodeV1Api.md#replace_runtime_class) | **PUT** /apis/node.k8s.io/v1/runtimeclasses/{name} | 
 
 
 

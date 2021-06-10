@@ -15,20 +15,20 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V2beta2ObjectMetricSource {
     #[serde(rename = "describedObject")]
-    pub described_object: crate::models::V2beta2CrossVersionObjectReference,
+    pub described_object: Box<crate::models::V2beta2CrossVersionObjectReference>,
     #[serde(rename = "metric")]
-    pub metric: crate::models::V2beta2MetricIdentifier,
+    pub metric: Box<crate::models::V2beta2MetricIdentifier>,
     #[serde(rename = "target")]
-    pub target: crate::models::V2beta2MetricTarget,
+    pub target: Box<crate::models::V2beta2MetricTarget>,
 }
 
 impl V2beta2ObjectMetricSource {
     /// ObjectMetricSource indicates how to scale on a metric describing a kubernetes object (for example, hits-per-second on an Ingress object).
     pub fn new(described_object: crate::models::V2beta2CrossVersionObjectReference, metric: crate::models::V2beta2MetricIdentifier, target: crate::models::V2beta2MetricTarget) -> V2beta2ObjectMetricSource {
         V2beta2ObjectMetricSource {
-            described_object,
-            metric,
-            target,
+            described_object: Box::new(described_object),
+            metric: Box::new(metric),
+            target: Box::new(target),
         }
     }
 }

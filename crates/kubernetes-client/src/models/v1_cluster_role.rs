@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1ClusterRole {
     #[serde(rename = "aggregationRule", skip_serializing_if = "Option::is_none")]
-    pub aggregation_rule: Option<crate::models::V1AggregationRule>,
+    pub aggregation_rule: Option<Box<crate::models::V1AggregationRule>>,
     /// APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     #[serde(rename = "apiVersion", skip_serializing_if = "Option::is_none")]
     pub api_version: Option<String>,
@@ -23,7 +23,7 @@ pub struct V1ClusterRole {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     /// Rules holds all the PolicyRules for this ClusterRole
     #[serde(rename = "rules", skip_serializing_if = "Option::is_none")]
     pub rules: Option<Vec<crate::models::V1PolicyRule>>,

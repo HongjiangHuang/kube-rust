@@ -15,9 +15,9 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V2beta2HorizontalPodAutoscalerBehavior {
     #[serde(rename = "scaleDown", skip_serializing_if = "Option::is_none")]
-    pub scale_down: Option<crate::models::V2beta2HpaScalingRules>,
+    pub scale_down: Option<Box<crate::models::V2beta2HpaScalingRules>>,
     #[serde(rename = "scaleUp", skip_serializing_if = "Option::is_none")]
-    pub scale_up: Option<crate::models::V2beta2HpaScalingRules>,
+    pub scale_up: Option<Box<crate::models::V2beta2HpaScalingRules>>,
 }
 
 impl V2beta2HorizontalPodAutoscalerBehavior {

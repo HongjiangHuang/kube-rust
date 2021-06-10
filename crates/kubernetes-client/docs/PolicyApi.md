@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_api_group**](PolicyApi.md#get_api_group) | **Get** /apis/policy/ | 
+[**get_api_group**](PolicyApi.md#get_api_group) | **GET** /apis/policy/ | 
 
 
 

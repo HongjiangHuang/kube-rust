@@ -21,9 +21,9 @@ pub struct V1SubjectAccessReviewSpec {
     #[serde(rename = "groups", skip_serializing_if = "Option::is_none")]
     pub groups: Option<Vec<String>>,
     #[serde(rename = "nonResourceAttributes", skip_serializing_if = "Option::is_none")]
-    pub non_resource_attributes: Option<crate::models::V1NonResourceAttributes>,
+    pub non_resource_attributes: Option<Box<crate::models::V1NonResourceAttributes>>,
     #[serde(rename = "resourceAttributes", skip_serializing_if = "Option::is_none")]
-    pub resource_attributes: Option<crate::models::V1ResourceAttributes>,
+    pub resource_attributes: Option<Box<crate::models::V1ResourceAttributes>>,
     /// UID information about the requesting user.
     #[serde(rename = "uid", skip_serializing_if = "Option::is_none")]
     pub uid: Option<String>,

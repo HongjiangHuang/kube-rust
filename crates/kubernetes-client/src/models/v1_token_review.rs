@@ -21,11 +21,11 @@ pub struct V1TokenReview {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     #[serde(rename = "spec")]
-    pub spec: crate::models::V1TokenReviewSpec,
+    pub spec: Box<crate::models::V1TokenReviewSpec>,
     #[serde(rename = "status", skip_serializing_if = "Option::is_none")]
-    pub status: Option<crate::models::V1TokenReviewStatus>,
+    pub status: Option<Box<crate::models::V1TokenReviewStatus>>,
 }
 
 impl V1TokenReview {
@@ -35,7 +35,7 @@ impl V1TokenReview {
             api_version: None,
             kind: None,
             metadata: None,
-            spec,
+            spec: Box::new(spec),
             status: None,
         }
     }

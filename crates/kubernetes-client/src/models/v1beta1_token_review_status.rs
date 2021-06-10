@@ -24,7 +24,7 @@ pub struct V1beta1TokenReviewStatus {
     #[serde(rename = "error", skip_serializing_if = "Option::is_none")]
     pub error: Option<String>,
     #[serde(rename = "user", skip_serializing_if = "Option::is_none")]
-    pub user: Option<crate::models::V1beta1UserInfo>,
+    pub user: Option<Box<crate::models::V1beta1UserInfo>>,
 }
 
 impl V1beta1TokenReviewStatus {

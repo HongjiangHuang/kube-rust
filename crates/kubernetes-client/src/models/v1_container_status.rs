@@ -24,7 +24,7 @@ pub struct V1ContainerStatus {
     #[serde(rename = "imageID")]
     pub image_id: String,
     #[serde(rename = "lastState", skip_serializing_if = "Option::is_none")]
-    pub last_state: Option<crate::models::V1ContainerState>,
+    pub last_state: Option<Box<crate::models::V1ContainerState>>,
     /// This must be a DNS_LABEL. Each container in a pod must have a unique name. Cannot be updated.
     #[serde(rename = "name")]
     pub name: String,
@@ -38,7 +38,7 @@ pub struct V1ContainerStatus {
     #[serde(rename = "started", skip_serializing_if = "Option::is_none")]
     pub started: Option<bool>,
     #[serde(rename = "state", skip_serializing_if = "Option::is_none")]
-    pub state: Option<crate::models::V1ContainerState>,
+    pub state: Option<Box<crate::models::V1ContainerState>>,
 }
 
 impl V1ContainerStatus {

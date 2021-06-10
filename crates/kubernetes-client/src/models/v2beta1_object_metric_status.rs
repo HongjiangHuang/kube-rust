@@ -24,9 +24,9 @@ pub struct V2beta1ObjectMetricStatus {
     #[serde(rename = "metricName")]
     pub metric_name: String,
     #[serde(rename = "selector", skip_serializing_if = "Option::is_none")]
-    pub selector: Option<crate::models::V1LabelSelector>,
+    pub selector: Option<Box<crate::models::V1LabelSelector>>,
     #[serde(rename = "target")]
-    pub target: crate::models::V2beta1CrossVersionObjectReference,
+    pub target: Box<crate::models::V2beta1CrossVersionObjectReference>,
 }
 
 impl V2beta1ObjectMetricStatus {
@@ -37,7 +37,7 @@ impl V2beta1ObjectMetricStatus {
             current_value,
             metric_name,
             selector: None,
-            target,
+            target: Box::new(target),
         }
     }
 }

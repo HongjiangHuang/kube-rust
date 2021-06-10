@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1DaemonSetUpdateStrategy {
     #[serde(rename = "rollingUpdate", skip_serializing_if = "Option::is_none")]
-    pub rolling_update: Option<crate::models::V1RollingUpdateDaemonSet>,
+    pub rolling_update: Option<Box<crate::models::V1RollingUpdateDaemonSet>>,
     /// Type of daemon set update. Can be \"RollingUpdate\" or \"OnDelete\". Default is RollingUpdate.
     #[serde(rename = "type", skip_serializing_if = "Option::is_none")]
     pub _type: Option<String>,

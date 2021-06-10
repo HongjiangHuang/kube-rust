@@ -15,11 +15,11 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1Handler {
     #[serde(rename = "exec", skip_serializing_if = "Option::is_none")]
-    pub exec: Option<crate::models::V1ExecAction>,
+    pub exec: Option<Box<crate::models::V1ExecAction>>,
     #[serde(rename = "httpGet", skip_serializing_if = "Option::is_none")]
-    pub http_get: Option<crate::models::V1HttpGetAction>,
+    pub http_get: Option<Box<crate::models::V1HttpGetAction>>,
     #[serde(rename = "tcpSocket", skip_serializing_if = "Option::is_none")]
-    pub tcp_socket: Option<crate::models::V1TcpSocketAction>,
+    pub tcp_socket: Option<Box<crate::models::V1TcpSocketAction>>,
 }
 
 impl V1Handler {

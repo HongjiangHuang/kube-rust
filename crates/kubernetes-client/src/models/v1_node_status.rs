@@ -27,14 +27,14 @@ pub struct V1NodeStatus {
     #[serde(rename = "conditions", skip_serializing_if = "Option::is_none")]
     pub conditions: Option<Vec<crate::models::V1NodeCondition>>,
     #[serde(rename = "config", skip_serializing_if = "Option::is_none")]
-    pub config: Option<crate::models::V1NodeConfigStatus>,
+    pub config: Option<Box<crate::models::V1NodeConfigStatus>>,
     #[serde(rename = "daemonEndpoints", skip_serializing_if = "Option::is_none")]
-    pub daemon_endpoints: Option<crate::models::V1NodeDaemonEndpoints>,
+    pub daemon_endpoints: Option<Box<crate::models::V1NodeDaemonEndpoints>>,
     /// List of container images on this node
     #[serde(rename = "images", skip_serializing_if = "Option::is_none")]
     pub images: Option<Vec<crate::models::V1ContainerImage>>,
     #[serde(rename = "nodeInfo", skip_serializing_if = "Option::is_none")]
-    pub node_info: Option<crate::models::V1NodeSystemInfo>,
+    pub node_info: Option<Box<crate::models::V1NodeSystemInfo>>,
     /// NodePhase is the recently observed lifecycle phase of the node. More info: https://kubernetes.io/docs/concepts/nodes/node/#phase The field is never populated, and now is deprecated.
     #[serde(rename = "phase", skip_serializing_if = "Option::is_none")]
     pub phase: Option<String>,

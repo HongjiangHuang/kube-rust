@@ -19,7 +19,7 @@ pub struct V1PolicyRule {
     pub api_groups: Option<Vec<String>>,
     /// NonResourceURLs is a set of partial urls that a user should have access to.  *s are allowed, but only as the full, final step in the path Since non-resource URLs are not namespaced, this field is only applicable for ClusterRoles referenced from a ClusterRoleBinding. Rules can either apply to API resources (such as \"pods\" or \"secrets\") or non-resource URL paths (such as \"/api\"),  but not both.
     #[serde(rename = "nonResourceURLs", skip_serializing_if = "Option::is_none")]
-    pub non_resource_ur_ls: Option<Vec<String>>,
+    pub non_resource_urls: Option<Vec<String>>,
     /// ResourceNames is an optional white list of names that the rule applies to.  An empty set means that everything is allowed.
     #[serde(rename = "resourceNames", skip_serializing_if = "Option::is_none")]
     pub resource_names: Option<Vec<String>>,
@@ -36,7 +36,7 @@ impl V1PolicyRule {
     pub fn new(verbs: Vec<String>) -> V1PolicyRule {
         V1PolicyRule {
             api_groups: None,
-            non_resource_ur_ls: None,
+            non_resource_urls: None,
             resource_names: None,
             resources: None,
             verbs,

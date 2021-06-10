@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1WeightedPodAffinityTerm {
     #[serde(rename = "podAffinityTerm")]
-    pub pod_affinity_term: crate::models::V1PodAffinityTerm,
+    pub pod_affinity_term: Box<crate::models::V1PodAffinityTerm>,
     /// weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
     #[serde(rename = "weight")]
     pub weight: i32,
@@ -25,7 +25,7 @@ impl V1WeightedPodAffinityTerm {
     /// The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)
     pub fn new(pod_affinity_term: crate::models::V1PodAffinityTerm, weight: i32) -> V1WeightedPodAffinityTerm {
         V1WeightedPodAffinityTerm {
-            pod_affinity_term,
+            pod_affinity_term: Box::new(pod_affinity_term),
             weight,
         }
     }

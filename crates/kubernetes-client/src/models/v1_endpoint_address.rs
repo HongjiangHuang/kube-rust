@@ -24,7 +24,7 @@ pub struct V1EndpointAddress {
     #[serde(rename = "nodeName", skip_serializing_if = "Option::is_none")]
     pub node_name: Option<String>,
     #[serde(rename = "targetRef", skip_serializing_if = "Option::is_none")]
-    pub target_ref: Option<crate::models::V1ObjectReference>,
+    pub target_ref: Option<Box<crate::models::V1ObjectReference>>,
 }
 
 impl V1EndpointAddress {

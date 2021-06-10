@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_namespaced_event**](EventsV1Api.md#create_namespaced_event) | **Post** /apis/events.k8s.io/v1/namespaces/{namespace}/events | 
-[**delete_collection_namespaced_event**](EventsV1Api.md#delete_collection_namespaced_event) | **Delete** /apis/events.k8s.io/v1/namespaces/{namespace}/events | 
-[**delete_namespaced_event**](EventsV1Api.md#delete_namespaced_event) | **Delete** /apis/events.k8s.io/v1/namespaces/{namespace}/events/{name} | 
-[**get_api_resources**](EventsV1Api.md#get_api_resources) | **Get** /apis/events.k8s.io/v1/ | 
-[**list_event_for_all_namespaces**](EventsV1Api.md#list_event_for_all_namespaces) | **Get** /apis/events.k8s.io/v1/events | 
-[**list_namespaced_event**](EventsV1Api.md#list_namespaced_event) | **Get** /apis/events.k8s.io/v1/namespaces/{namespace}/events | 
-[**patch_namespaced_event**](EventsV1Api.md#patch_namespaced_event) | **Patch** /apis/events.k8s.io/v1/namespaces/{namespace}/events/{name} | 
-[**read_namespaced_event**](EventsV1Api.md#read_namespaced_event) | **Get** /apis/events.k8s.io/v1/namespaces/{namespace}/events/{name} | 
-[**replace_namespaced_event**](EventsV1Api.md#replace_namespaced_event) | **Put** /apis/events.k8s.io/v1/namespaces/{namespace}/events/{name} | 
+[**create_namespaced_event**](EventsV1Api.md#create_namespaced_event) | **POST** /apis/events.k8s.io/v1/namespaces/{namespace}/events | 
+[**delete_collection_namespaced_event**](EventsV1Api.md#delete_collection_namespaced_event) | **DELETE** /apis/events.k8s.io/v1/namespaces/{namespace}/events | 
+[**delete_namespaced_event**](EventsV1Api.md#delete_namespaced_event) | **DELETE** /apis/events.k8s.io/v1/namespaces/{namespace}/events/{name} | 
+[**get_api_resources**](EventsV1Api.md#get_api_resources) | **GET** /apis/events.k8s.io/v1/ | 
+[**list_event_for_all_namespaces**](EventsV1Api.md#list_event_for_all_namespaces) | **GET** /apis/events.k8s.io/v1/events | 
+[**list_namespaced_event**](EventsV1Api.md#list_namespaced_event) | **GET** /apis/events.k8s.io/v1/namespaces/{namespace}/events | 
+[**patch_namespaced_event**](EventsV1Api.md#patch_namespaced_event) | **PATCH** /apis/events.k8s.io/v1/namespaces/{namespace}/events/{name} | 
+[**read_namespaced_event**](EventsV1Api.md#read_namespaced_event) | **GET** /apis/events.k8s.io/v1/namespaces/{namespace}/events/{name} | 
+[**replace_namespaced_event**](EventsV1Api.md#replace_namespaced_event) | **PUT** /apis/events.k8s.io/v1/namespaces/{namespace}/events/{name} | 
 
 
 

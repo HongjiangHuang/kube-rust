@@ -18,7 +18,7 @@ pub struct V1TokenRequestSpec {
     #[serde(rename = "audiences")]
     pub audiences: Vec<String>,
     #[serde(rename = "boundObjectRef", skip_serializing_if = "Option::is_none")]
-    pub bound_object_ref: Option<crate::models::V1BoundObjectReference>,
+    pub bound_object_ref: Option<Box<crate::models::V1BoundObjectReference>>,
     /// ExpirationSeconds is the requested duration of validity of the request. The token issuer may return a token with a different validity duration so a client needs to check the 'expiration' field in a response.
     #[serde(rename = "expirationSeconds", skip_serializing_if = "Option::is_none")]
     pub expiration_seconds: Option<i64>,

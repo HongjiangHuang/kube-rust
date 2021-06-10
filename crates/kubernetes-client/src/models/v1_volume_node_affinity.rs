@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1VolumeNodeAffinity {
     #[serde(rename = "required", skip_serializing_if = "Option::is_none")]
-    pub required: Option<crate::models::V1NodeSelector>,
+    pub required: Option<Box<crate::models::V1NodeSelector>>,
 }
 
 impl V1VolumeNodeAffinity {

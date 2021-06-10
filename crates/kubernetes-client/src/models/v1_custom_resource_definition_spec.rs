@@ -15,12 +15,12 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1CustomResourceDefinitionSpec {
     #[serde(rename = "conversion", skip_serializing_if = "Option::is_none")]
-    pub conversion: Option<crate::models::V1CustomResourceConversion>,
+    pub conversion: Option<Box<crate::models::V1CustomResourceConversion>>,
     /// group is the API group of the defined custom resource. The custom resources are served under `/apis/<group>/...`. Must match the name of the CustomResourceDefinition (in the form `<names.plural>.<group>`).
     #[serde(rename = "group")]
     pub group: String,
     #[serde(rename = "names")]
-    pub names: crate::models::V1CustomResourceDefinitionNames,
+    pub names: Box<crate::models::V1CustomResourceDefinitionNames>,
     /// preserveUnknownFields indicates that object fields which are not specified in the OpenAPI schema should be preserved when persisting to storage. apiVersion, kind, metadata and known fields inside metadata are always preserved. This field is deprecated in favor of setting `x-preserve-unknown-fields` to true in `spec.versions[*].schema.openAPIV3Schema`. See https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions/#pruning-versus-preserving-unknown-fields for details.
     #[serde(rename = "preserveUnknownFields", skip_serializing_if = "Option::is_none")]
     pub preserve_unknown_fields: Option<bool>,
@@ -38,7 +38,7 @@ impl V1CustomResourceDefinitionSpec {
         V1CustomResourceDefinitionSpec {
             conversion: None,
             group,
-            names,
+            names: Box::new(names),
             preserve_unknown_fields: None,
             scope,
             versions,

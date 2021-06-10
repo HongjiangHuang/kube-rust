@@ -18,12 +18,12 @@ pub struct V1beta1CustomResourceDefinitionSpec {
     #[serde(rename = "additionalPrinterColumns", skip_serializing_if = "Option::is_none")]
     pub additional_printer_columns: Option<Vec<crate::models::V1beta1CustomResourceColumnDefinition>>,
     #[serde(rename = "conversion", skip_serializing_if = "Option::is_none")]
-    pub conversion: Option<crate::models::V1beta1CustomResourceConversion>,
+    pub conversion: Option<Box<crate::models::V1beta1CustomResourceConversion>>,
     /// group is the API group of the defined custom resource. The custom resources are served under `/apis/<group>/...`. Must match the name of the CustomResourceDefinition (in the form `<names.plural>.<group>`).
     #[serde(rename = "group")]
     pub group: String,
     #[serde(rename = "names")]
-    pub names: crate::models::V1beta1CustomResourceDefinitionNames,
+    pub names: Box<crate::models::V1beta1CustomResourceDefinitionNames>,
     /// preserveUnknownFields indicates that object fields which are not specified in the OpenAPI schema should be preserved when persisting to storage. apiVersion, kind, metadata and known fields inside metadata are always preserved. If false, schemas must be defined for all versions. Defaults to true in v1beta for backwards compatibility. Deprecated: will be required to be false in v1. Preservation of unknown fields can be specified in the validation schema using the `x-kubernetes-preserve-unknown-fields: true` extension. See https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions/#pruning-versus-preserving-unknown-fields for details.
     #[serde(rename = "preserveUnknownFields", skip_serializing_if = "Option::is_none")]
     pub preserve_unknown_fields: Option<bool>,
@@ -31,9 +31,9 @@ pub struct V1beta1CustomResourceDefinitionSpec {
     #[serde(rename = "scope")]
     pub scope: String,
     #[serde(rename = "subresources", skip_serializing_if = "Option::is_none")]
-    pub subresources: Option<crate::models::V1beta1CustomResourceSubresources>,
+    pub subresources: Option<Box<crate::models::V1beta1CustomResourceSubresources>>,
     #[serde(rename = "validation", skip_serializing_if = "Option::is_none")]
-    pub validation: Option<crate::models::V1beta1CustomResourceValidation>,
+    pub validation: Option<Box<crate::models::V1beta1CustomResourceValidation>>,
     /// version is the API version of the defined custom resource. The custom resources are served under `/apis/<group>/<version>/...`. Must match the name of the first item in the `versions` list if `version` and `versions` are both specified. Optional if `versions` is specified. Deprecated: use `versions` instead.
     #[serde(rename = "version", skip_serializing_if = "Option::is_none")]
     pub version: Option<String>,
@@ -49,7 +49,7 @@ impl V1beta1CustomResourceDefinitionSpec {
             additional_printer_columns: None,
             conversion: None,
             group,
-            names,
+            names: Box::new(names),
             preserve_unknown_fields: None,
             scope,
             subresources: None,

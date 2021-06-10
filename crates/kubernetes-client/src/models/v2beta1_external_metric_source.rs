@@ -18,7 +18,7 @@ pub struct V2beta1ExternalMetricSource {
     #[serde(rename = "metricName")]
     pub metric_name: String,
     #[serde(rename = "metricSelector", skip_serializing_if = "Option::is_none")]
-    pub metric_selector: Option<crate::models::V1LabelSelector>,
+    pub metric_selector: Option<Box<crate::models::V1LabelSelector>>,
     /// targetAverageValue is the target per-pod value of global metric (as a quantity). Mutually exclusive with TargetValue.
     #[serde(rename = "targetAverageValue", skip_serializing_if = "Option::is_none")]
     pub target_average_value: Option<String>,

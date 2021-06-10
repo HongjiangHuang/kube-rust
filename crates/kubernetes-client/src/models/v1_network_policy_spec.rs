@@ -21,7 +21,7 @@ pub struct V1NetworkPolicySpec {
     #[serde(rename = "ingress", skip_serializing_if = "Option::is_none")]
     pub ingress: Option<Vec<crate::models::V1NetworkPolicyIngressRule>>,
     #[serde(rename = "podSelector")]
-    pub pod_selector: crate::models::V1LabelSelector,
+    pub pod_selector: Box<crate::models::V1LabelSelector>,
     /// List of rule types that the NetworkPolicy relates to. Valid options are [\"Ingress\"], [\"Egress\"], or [\"Ingress\", \"Egress\"]. If this field is not specified, it will default based on the existence of Ingress or Egress rules; policies that contain an Egress section are assumed to affect Egress, and all policies (whether or not they contain an Ingress section) are assumed to affect Ingress. If you want to write an egress-only policy, you must explicitly specify policyTypes [ \"Egress\" ]. Likewise, if you want to write a policy that specifies that no egress is allowed, you must specify a policyTypes value that include \"Egress\" (since such a policy would not include an Egress section and would otherwise default to just [ \"Ingress\" ]). This field is beta-level in 1.8
     #[serde(rename = "policyTypes", skip_serializing_if = "Option::is_none")]
     pub policy_types: Option<Vec<String>>,
@@ -33,7 +33,7 @@ impl V1NetworkPolicySpec {
         V1NetworkPolicySpec {
             egress: None,
             ingress: None,
-            pod_selector,
+            pod_selector: Box::new(pod_selector),
             policy_types: None,
         }
     }

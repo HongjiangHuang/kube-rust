@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct NetworkingV1beta1IngressStatus {
     #[serde(rename = "loadBalancer", skip_serializing_if = "Option::is_none")]
-    pub load_balancer: Option<crate::models::V1LoadBalancerStatus>,
+    pub load_balancer: Option<Box<crate::models::V1LoadBalancerStatus>>,
 }
 
 impl NetworkingV1beta1IngressStatus {

@@ -21,9 +21,9 @@ pub struct V1Binding {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     #[serde(rename = "target")]
-    pub target: crate::models::V1ObjectReference,
+    pub target: Box<crate::models::V1ObjectReference>,
 }
 
 impl V1Binding {
@@ -33,7 +33,7 @@ impl V1Binding {
             api_version: None,
             kind: None,
             metadata: None,
-            target,
+            target: Box::new(target),
         }
     }
 }

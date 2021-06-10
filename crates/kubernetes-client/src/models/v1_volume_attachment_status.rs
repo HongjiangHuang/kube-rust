@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1VolumeAttachmentStatus {
     #[serde(rename = "attachError", skip_serializing_if = "Option::is_none")]
-    pub attach_error: Option<crate::models::V1VolumeError>,
+    pub attach_error: Option<Box<crate::models::V1VolumeError>>,
     /// Indicates the volume is successfully attached. This field must only be set by the entity completing the attach operation, i.e. the external-attacher.
     #[serde(rename = "attached")]
     pub attached: bool,
@@ -23,7 +23,7 @@ pub struct V1VolumeAttachmentStatus {
     #[serde(rename = "attachmentMetadata", skip_serializing_if = "Option::is_none")]
     pub attachment_metadata: Option<::std::collections::HashMap<String, String>>,
     #[serde(rename = "detachError", skip_serializing_if = "Option::is_none")]
-    pub detach_error: Option<crate::models::V1VolumeError>,
+    pub detach_error: Option<Box<crate::models::V1VolumeError>>,
 }
 
 impl V1VolumeAttachmentStatus {

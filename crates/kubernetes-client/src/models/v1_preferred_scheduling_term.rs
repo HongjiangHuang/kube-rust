@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1PreferredSchedulingTerm {
     #[serde(rename = "preference")]
-    pub preference: crate::models::V1NodeSelectorTerm,
+    pub preference: Box<crate::models::V1NodeSelectorTerm>,
     /// Weight associated with matching the corresponding nodeSelectorTerm, in the range 1-100.
     #[serde(rename = "weight")]
     pub weight: i32,
@@ -25,7 +25,7 @@ impl V1PreferredSchedulingTerm {
     /// An empty preferred scheduling term matches all objects with implicit weight 0 (i.e. it's a no-op). A null preferred scheduling term matches no objects (i.e. is also a no-op).
     pub fn new(preference: crate::models::V1NodeSelectorTerm, weight: i32) -> V1PreferredSchedulingTerm {
         V1PreferredSchedulingTerm {
-            preference,
+            preference: Box::new(preference),
             weight,
         }
     }

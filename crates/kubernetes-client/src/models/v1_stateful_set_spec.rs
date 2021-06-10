@@ -24,14 +24,14 @@ pub struct V1StatefulSetSpec {
     #[serde(rename = "revisionHistoryLimit", skip_serializing_if = "Option::is_none")]
     pub revision_history_limit: Option<i32>,
     #[serde(rename = "selector")]
-    pub selector: crate::models::V1LabelSelector,
+    pub selector: Box<crate::models::V1LabelSelector>,
     /// serviceName is the name of the service that governs this StatefulSet. This service must exist before the StatefulSet, and is responsible for the network identity of the set. Pods get DNS/hostnames that follow the pattern: pod-specific-string.serviceName.default.svc.cluster.local where \"pod-specific-string\" is managed by the StatefulSet controller.
     #[serde(rename = "serviceName")]
     pub service_name: String,
     #[serde(rename = "template")]
-    pub template: crate::models::V1PodTemplateSpec,
+    pub template: Box<crate::models::V1PodTemplateSpec>,
     #[serde(rename = "updateStrategy", skip_serializing_if = "Option::is_none")]
-    pub update_strategy: Option<crate::models::V1StatefulSetUpdateStrategy>,
+    pub update_strategy: Option<Box<crate::models::V1StatefulSetUpdateStrategy>>,
     /// volumeClaimTemplates is a list of claims that pods are allowed to reference. The StatefulSet controller is responsible for mapping network identities to claims in a way that maintains the identity of a pod. Every claim in this list must have at least one matching (by name) volumeMount in one container in the template. A claim in this list takes precedence over any volumes in the template, with the same name.
     #[serde(rename = "volumeClaimTemplates", skip_serializing_if = "Option::is_none")]
     pub volume_claim_templates: Option<Vec<crate::models::V1PersistentVolumeClaim>>,
@@ -44,9 +44,9 @@ impl V1StatefulSetSpec {
             pod_management_policy: None,
             replicas: None,
             revision_history_limit: None,
-            selector,
+            selector: Box::new(selector),
             service_name,
-            template,
+            template: Box::new(template),
             update_strategy: None,
             volume_claim_templates: None,
         }

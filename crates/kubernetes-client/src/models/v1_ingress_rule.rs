@@ -18,7 +18,7 @@ pub struct V1IngressRule {
     #[serde(rename = "host", skip_serializing_if = "Option::is_none")]
     pub host: Option<String>,
     #[serde(rename = "http", skip_serializing_if = "Option::is_none")]
-    pub http: Option<crate::models::V1HttpIngressRuleValue>,
+    pub http: Option<Box<crate::models::V1HttpIngressRuleValue>>,
 }
 
 impl V1IngressRule {

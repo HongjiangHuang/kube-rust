@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1NodeConfigSource {
     #[serde(rename = "configMap", skip_serializing_if = "Option::is_none")]
-    pub config_map: Option<crate::models::V1ConfigMapNodeConfigSource>,
+    pub config_map: Option<Box<crate::models::V1ConfigMapNodeConfigSource>>,
 }
 
 impl V1NodeConfigSource {

@@ -21,7 +21,7 @@ pub struct V1CsiVolumeSource {
     #[serde(rename = "fsType", skip_serializing_if = "Option::is_none")]
     pub fs_type: Option<String>,
     #[serde(rename = "nodePublishSecretRef", skip_serializing_if = "Option::is_none")]
-    pub node_publish_secret_ref: Option<crate::models::V1LocalObjectReference>,
+    pub node_publish_secret_ref: Option<Box<crate::models::V1LocalObjectReference>>,
     /// Specifies a read-only configuration for the volume. Defaults to false (read/write).
     #[serde(rename = "readOnly", skip_serializing_if = "Option::is_none")]
     pub read_only: Option<bool>,

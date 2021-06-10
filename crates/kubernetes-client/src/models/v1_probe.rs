@@ -15,12 +15,12 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1Probe {
     #[serde(rename = "exec", skip_serializing_if = "Option::is_none")]
-    pub exec: Option<crate::models::V1ExecAction>,
+    pub exec: Option<Box<crate::models::V1ExecAction>>,
     /// Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.
     #[serde(rename = "failureThreshold", skip_serializing_if = "Option::is_none")]
     pub failure_threshold: Option<i32>,
     #[serde(rename = "httpGet", skip_serializing_if = "Option::is_none")]
-    pub http_get: Option<crate::models::V1HttpGetAction>,
+    pub http_get: Option<Box<crate::models::V1HttpGetAction>>,
     /// Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
     #[serde(rename = "initialDelaySeconds", skip_serializing_if = "Option::is_none")]
     pub initial_delay_seconds: Option<i32>,
@@ -31,7 +31,7 @@ pub struct V1Probe {
     #[serde(rename = "successThreshold", skip_serializing_if = "Option::is_none")]
     pub success_threshold: Option<i32>,
     #[serde(rename = "tcpSocket", skip_serializing_if = "Option::is_none")]
-    pub tcp_socket: Option<crate::models::V1TcpSocketAction>,
+    pub tcp_socket: Option<Box<crate::models::V1TcpSocketAction>>,
     /// Optional duration in seconds the pod needs to terminate gracefully upon probe failure. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process. If this value is nil, the pod's terminationGracePeriodSeconds will be used. Otherwise, this value overrides the value provided by the pod spec. Value must be non-negative integer. The value zero indicates stop immediately via the kill signal (no opportunity to shut down). This is an alpha field and requires enabling ProbeTerminationGracePeriod feature gate.
     #[serde(rename = "terminationGracePeriodSeconds", skip_serializing_if = "Option::is_none")]
     pub termination_grace_period_seconds: Option<i64>,

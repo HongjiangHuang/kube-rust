@@ -4,18 +4,18 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_namespaced_ingress**](ExtensionsV1beta1Api.md#create_namespaced_ingress) | **Post** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses | 
-[**delete_collection_namespaced_ingress**](ExtensionsV1beta1Api.md#delete_collection_namespaced_ingress) | **Delete** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses | 
-[**delete_namespaced_ingress**](ExtensionsV1beta1Api.md#delete_namespaced_ingress) | **Delete** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses/{name} | 
-[**get_api_resources**](ExtensionsV1beta1Api.md#get_api_resources) | **Get** /apis/extensions/v1beta1/ | 
-[**list_ingress_for_all_namespaces**](ExtensionsV1beta1Api.md#list_ingress_for_all_namespaces) | **Get** /apis/extensions/v1beta1/ingresses | 
-[**list_namespaced_ingress**](ExtensionsV1beta1Api.md#list_namespaced_ingress) | **Get** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses | 
-[**patch_namespaced_ingress**](ExtensionsV1beta1Api.md#patch_namespaced_ingress) | **Patch** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses/{name} | 
-[**patch_namespaced_ingress_status**](ExtensionsV1beta1Api.md#patch_namespaced_ingress_status) | **Patch** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses/{name}/status | 
-[**read_namespaced_ingress**](ExtensionsV1beta1Api.md#read_namespaced_ingress) | **Get** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses/{name} | 
-[**read_namespaced_ingress_status**](ExtensionsV1beta1Api.md#read_namespaced_ingress_status) | **Get** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses/{name}/status | 
-[**replace_namespaced_ingress**](ExtensionsV1beta1Api.md#replace_namespaced_ingress) | **Put** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses/{name} | 
-[**replace_namespaced_ingress_status**](ExtensionsV1beta1Api.md#replace_namespaced_ingress_status) | **Put** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses/{name}/status | 
+[**create_namespaced_ingress**](ExtensionsV1beta1Api.md#create_namespaced_ingress) | **POST** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses | 
+[**delete_collection_namespaced_ingress**](ExtensionsV1beta1Api.md#delete_collection_namespaced_ingress) | **DELETE** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses | 
+[**delete_namespaced_ingress**](ExtensionsV1beta1Api.md#delete_namespaced_ingress) | **DELETE** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses/{name} | 
+[**get_api_resources**](ExtensionsV1beta1Api.md#get_api_resources) | **GET** /apis/extensions/v1beta1/ | 
+[**list_ingress_for_all_namespaces**](ExtensionsV1beta1Api.md#list_ingress_for_all_namespaces) | **GET** /apis/extensions/v1beta1/ingresses | 
+[**list_namespaced_ingress**](ExtensionsV1beta1Api.md#list_namespaced_ingress) | **GET** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses | 
+[**patch_namespaced_ingress**](ExtensionsV1beta1Api.md#patch_namespaced_ingress) | **PATCH** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses/{name} | 
+[**patch_namespaced_ingress_status**](ExtensionsV1beta1Api.md#patch_namespaced_ingress_status) | **PATCH** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses/{name}/status | 
+[**read_namespaced_ingress**](ExtensionsV1beta1Api.md#read_namespaced_ingress) | **GET** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses/{name} | 
+[**read_namespaced_ingress_status**](ExtensionsV1beta1Api.md#read_namespaced_ingress_status) | **GET** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses/{name}/status | 
+[**replace_namespaced_ingress**](ExtensionsV1beta1Api.md#replace_namespaced_ingress) | **PUT** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses/{name} | 
+[**replace_namespaced_ingress_status**](ExtensionsV1beta1Api.md#replace_namespaced_ingress_status) | **PUT** /apis/extensions/v1beta1/namespaces/{namespace}/ingresses/{name}/status | 
 
 
 

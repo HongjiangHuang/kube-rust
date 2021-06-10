@@ -30,9 +30,9 @@ pub struct V1PodSecurityContext {
     #[serde(rename = "runAsUser", skip_serializing_if = "Option::is_none")]
     pub run_as_user: Option<i64>,
     #[serde(rename = "seLinuxOptions", skip_serializing_if = "Option::is_none")]
-    pub se_linux_options: Option<crate::models::V1SeLinuxOptions>,
+    pub se_linux_options: Option<Box<crate::models::V1SeLinuxOptions>>,
     #[serde(rename = "seccompProfile", skip_serializing_if = "Option::is_none")]
-    pub seccomp_profile: Option<crate::models::V1SeccompProfile>,
+    pub seccomp_profile: Option<Box<crate::models::V1SeccompProfile>>,
     /// A list of groups applied to the first process run in each container, in addition to the container's primary GID.  If unspecified, no groups will be added to any container.
     #[serde(rename = "supplementalGroups", skip_serializing_if = "Option::is_none")]
     pub supplemental_groups: Option<Vec<i64>>,
@@ -40,7 +40,7 @@ pub struct V1PodSecurityContext {
     #[serde(rename = "sysctls", skip_serializing_if = "Option::is_none")]
     pub sysctls: Option<Vec<crate::models::V1Sysctl>>,
     #[serde(rename = "windowsOptions", skip_serializing_if = "Option::is_none")]
-    pub windows_options: Option<crate::models::V1WindowsSecurityContextOptions>,
+    pub windows_options: Option<Box<crate::models::V1WindowsSecurityContextOptions>>,
 }
 
 impl V1PodSecurityContext {

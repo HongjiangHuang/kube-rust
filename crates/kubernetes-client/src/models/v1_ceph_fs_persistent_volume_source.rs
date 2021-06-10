@@ -27,7 +27,7 @@ pub struct V1CephFsPersistentVolumeSource {
     #[serde(rename = "secretFile", skip_serializing_if = "Option::is_none")]
     pub secret_file: Option<String>,
     #[serde(rename = "secretRef", skip_serializing_if = "Option::is_none")]
-    pub secret_ref: Option<crate::models::V1SecretReference>,
+    pub secret_ref: Option<Box<crate::models::V1SecretReference>>,
     /// Optional: User is the rados user name, default is admin More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
     #[serde(rename = "user", skip_serializing_if = "Option::is_none")]
     pub user: Option<String>,

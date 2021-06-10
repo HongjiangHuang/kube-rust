@@ -33,9 +33,9 @@ pub struct V1Container {
     #[serde(rename = "imagePullPolicy", skip_serializing_if = "Option::is_none")]
     pub image_pull_policy: Option<String>,
     #[serde(rename = "lifecycle", skip_serializing_if = "Option::is_none")]
-    pub lifecycle: Option<crate::models::V1Lifecycle>,
+    pub lifecycle: Option<Box<crate::models::V1Lifecycle>>,
     #[serde(rename = "livenessProbe", skip_serializing_if = "Option::is_none")]
-    pub liveness_probe: Option<crate::models::V1Probe>,
+    pub liveness_probe: Option<Box<crate::models::V1Probe>>,
     /// Name of the container specified as a DNS_LABEL. Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
     #[serde(rename = "name")]
     pub name: String,
@@ -43,13 +43,13 @@ pub struct V1Container {
     #[serde(rename = "ports", skip_serializing_if = "Option::is_none")]
     pub ports: Option<Vec<crate::models::V1ContainerPort>>,
     #[serde(rename = "readinessProbe", skip_serializing_if = "Option::is_none")]
-    pub readiness_probe: Option<crate::models::V1Probe>,
+    pub readiness_probe: Option<Box<crate::models::V1Probe>>,
     #[serde(rename = "resources", skip_serializing_if = "Option::is_none")]
-    pub resources: Option<crate::models::V1ResourceRequirements>,
+    pub resources: Option<Box<crate::models::V1ResourceRequirements>>,
     #[serde(rename = "securityContext", skip_serializing_if = "Option::is_none")]
-    pub security_context: Option<crate::models::V1SecurityContext>,
+    pub security_context: Option<Box<crate::models::V1SecurityContext>>,
     #[serde(rename = "startupProbe", skip_serializing_if = "Option::is_none")]
-    pub startup_probe: Option<crate::models::V1Probe>,
+    pub startup_probe: Option<Box<crate::models::V1Probe>>,
     /// Whether this container should allocate a buffer for stdin in the container runtime. If this is not set, reads from stdin in the container will always result in EOF. Default is false.
     #[serde(rename = "stdin", skip_serializing_if = "Option::is_none")]
     pub stdin: Option<bool>,

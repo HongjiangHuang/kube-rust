@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1beta1LimitResponse {
     #[serde(rename = "queuing", skip_serializing_if = "Option::is_none")]
-    pub queuing: Option<crate::models::V1beta1QueuingConfiguration>,
+    pub queuing: Option<Box<crate::models::V1beta1QueuingConfiguration>>,
     /// `type` is \"Queue\" or \"Reject\". \"Queue\" means that requests that can not be executed upon arrival are held in a queue until they can be executed or a queuing limit is reached. \"Reject\" means that requests that can not be executed upon arrival are rejected. Required.
     #[serde(rename = "type")]
     pub _type: String,

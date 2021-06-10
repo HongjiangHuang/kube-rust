@@ -21,11 +21,11 @@ pub struct V1StatefulSet {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     #[serde(rename = "spec", skip_serializing_if = "Option::is_none")]
-    pub spec: Option<crate::models::V1StatefulSetSpec>,
+    pub spec: Option<Box<crate::models::V1StatefulSetSpec>>,
     #[serde(rename = "status", skip_serializing_if = "Option::is_none")]
-    pub status: Option<crate::models::V1StatefulSetStatus>,
+    pub status: Option<Box<crate::models::V1StatefulSetStatus>>,
 }
 
 impl V1StatefulSet {

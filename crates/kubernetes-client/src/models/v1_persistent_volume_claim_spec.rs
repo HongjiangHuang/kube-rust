@@ -18,11 +18,11 @@ pub struct V1PersistentVolumeClaimSpec {
     #[serde(rename = "accessModes", skip_serializing_if = "Option::is_none")]
     pub access_modes: Option<Vec<String>>,
     #[serde(rename = "dataSource", skip_serializing_if = "Option::is_none")]
-    pub data_source: Option<crate::models::V1TypedLocalObjectReference>,
+    pub data_source: Option<Box<crate::models::V1TypedLocalObjectReference>>,
     #[serde(rename = "resources", skip_serializing_if = "Option::is_none")]
-    pub resources: Option<crate::models::V1ResourceRequirements>,
+    pub resources: Option<Box<crate::models::V1ResourceRequirements>>,
     #[serde(rename = "selector", skip_serializing_if = "Option::is_none")]
-    pub selector: Option<crate::models::V1LabelSelector>,
+    pub selector: Option<Box<crate::models::V1LabelSelector>>,
     /// Name of the StorageClass required by the claim. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#class-1
     #[serde(rename = "storageClassName", skip_serializing_if = "Option::is_none")]
     pub storage_class_name: Option<String>,

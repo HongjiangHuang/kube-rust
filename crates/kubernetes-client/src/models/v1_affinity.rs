@@ -15,11 +15,11 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1Affinity {
     #[serde(rename = "nodeAffinity", skip_serializing_if = "Option::is_none")]
-    pub node_affinity: Option<crate::models::V1NodeAffinity>,
+    pub node_affinity: Option<Box<crate::models::V1NodeAffinity>>,
     #[serde(rename = "podAffinity", skip_serializing_if = "Option::is_none")]
-    pub pod_affinity: Option<crate::models::V1PodAffinity>,
+    pub pod_affinity: Option<Box<crate::models::V1PodAffinity>>,
     #[serde(rename = "podAntiAffinity", skip_serializing_if = "Option::is_none")]
-    pub pod_anti_affinity: Option<crate::models::V1PodAntiAffinity>,
+    pub pod_anti_affinity: Option<Box<crate::models::V1PodAntiAffinity>>,
 }
 
 impl V1Affinity {

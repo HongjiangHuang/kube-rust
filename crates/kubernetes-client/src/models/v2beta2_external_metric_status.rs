@@ -15,17 +15,17 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V2beta2ExternalMetricStatus {
     #[serde(rename = "current")]
-    pub current: crate::models::V2beta2MetricValueStatus,
+    pub current: Box<crate::models::V2beta2MetricValueStatus>,
     #[serde(rename = "metric")]
-    pub metric: crate::models::V2beta2MetricIdentifier,
+    pub metric: Box<crate::models::V2beta2MetricIdentifier>,
 }
 
 impl V2beta2ExternalMetricStatus {
     /// ExternalMetricStatus indicates the current value of a global metric not associated with any Kubernetes object.
     pub fn new(current: crate::models::V2beta2MetricValueStatus, metric: crate::models::V2beta2MetricIdentifier) -> V2beta2ExternalMetricStatus {
         V2beta2ExternalMetricStatus {
-            current,
-            metric,
+            current: Box::new(current),
+            metric: Box::new(metric),
         }
     }
 }

@@ -21,12 +21,12 @@ pub struct V1alpha1StorageVersion {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     /// Spec is an empty spec. It is here to comply with Kubernetes API style.
     #[serde(rename = "spec")]
     pub spec: serde_json::Value,
     #[serde(rename = "status")]
-    pub status: crate::models::V1alpha1StorageVersionStatus,
+    pub status: Box<crate::models::V1alpha1StorageVersionStatus>,
 }
 
 impl V1alpha1StorageVersion {
@@ -37,7 +37,7 @@ impl V1alpha1StorageVersion {
             kind: None,
             metadata: None,
             spec,
-            status,
+            status: Box::new(status),
         }
     }
 }

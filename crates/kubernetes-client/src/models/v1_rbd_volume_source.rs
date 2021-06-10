@@ -33,7 +33,7 @@ pub struct V1RbdVolumeSource {
     #[serde(rename = "readOnly", skip_serializing_if = "Option::is_none")]
     pub read_only: Option<bool>,
     #[serde(rename = "secretRef", skip_serializing_if = "Option::is_none")]
-    pub secret_ref: Option<crate::models::V1LocalObjectReference>,
+    pub secret_ref: Option<Box<crate::models::V1LocalObjectReference>>,
     /// The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
     #[serde(rename = "user", skip_serializing_if = "Option::is_none")]
     pub user: Option<String>,

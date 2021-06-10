@@ -27,7 +27,7 @@ pub struct V1FlexPersistentVolumeSource {
     #[serde(rename = "readOnly", skip_serializing_if = "Option::is_none")]
     pub read_only: Option<bool>,
     #[serde(rename = "secretRef", skip_serializing_if = "Option::is_none")]
-    pub secret_ref: Option<crate::models::V1SecretReference>,
+    pub secret_ref: Option<Box<crate::models::V1SecretReference>>,
 }
 
 impl V1FlexPersistentVolumeSource {

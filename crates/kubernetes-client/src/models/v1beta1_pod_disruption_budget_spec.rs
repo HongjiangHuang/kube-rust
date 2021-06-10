@@ -21,7 +21,7 @@ pub struct V1beta1PodDisruptionBudgetSpec {
     #[serde(rename = "minAvailable", skip_serializing_if = "Option::is_none")]
     pub min_available: Option<serde_json::Value>,
     #[serde(rename = "selector", skip_serializing_if = "Option::is_none")]
-    pub selector: Option<crate::models::V1LabelSelector>,
+    pub selector: Option<Box<crate::models::V1LabelSelector>>,
 }
 
 impl V1beta1PodDisruptionBudgetSpec {

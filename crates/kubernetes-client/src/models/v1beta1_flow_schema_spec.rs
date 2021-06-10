@@ -15,12 +15,12 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1beta1FlowSchemaSpec {
     #[serde(rename = "distinguisherMethod", skip_serializing_if = "Option::is_none")]
-    pub distinguisher_method: Option<crate::models::V1beta1FlowDistinguisherMethod>,
+    pub distinguisher_method: Option<Box<crate::models::V1beta1FlowDistinguisherMethod>>,
     /// `matchingPrecedence` is used to choose among the FlowSchemas that match a given request. The chosen FlowSchema is among those with the numerically lowest (which we take to be logically highest) MatchingPrecedence.  Each MatchingPrecedence value must be ranged in [1,10000]. Note that if the precedence is not specified, it will be set to 1000 as default.
     #[serde(rename = "matchingPrecedence", skip_serializing_if = "Option::is_none")]
     pub matching_precedence: Option<i32>,
     #[serde(rename = "priorityLevelConfiguration")]
-    pub priority_level_configuration: crate::models::V1beta1PriorityLevelConfigurationReference,
+    pub priority_level_configuration: Box<crate::models::V1beta1PriorityLevelConfigurationReference>,
     /// `rules` describes which requests will match this flow schema. This FlowSchema matches a request if and only if at least one member of rules matches the request. if it is an empty slice, there will be no requests matching the FlowSchema.
     #[serde(rename = "rules", skip_serializing_if = "Option::is_none")]
     pub rules: Option<Vec<crate::models::V1beta1PolicyRulesWithSubjects>>,
@@ -32,7 +32,7 @@ impl V1beta1FlowSchemaSpec {
         V1beta1FlowSchemaSpec {
             distinguisher_method: None,
             matching_precedence: None,
-            priority_level_configuration,
+            priority_level_configuration: Box::new(priority_level_configuration),
             rules: None,
         }
     }

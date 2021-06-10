@@ -43,7 +43,7 @@ pub struct V1PodStatus {
     pub pod_ip: Option<String>,
     /// podIPs holds the IP addresses allocated to the pod. If this field is specified, the 0th entry must match the podIP field. Pods may be allocated at most 1 value for each of IPv4 and IPv6. This list is empty if no IPs have been allocated yet.
     #[serde(rename = "podIPs", skip_serializing_if = "Option::is_none")]
-    pub pod_i_ps: Option<Vec<crate::models::V1PodIp>>,
+    pub pod_ips: Option<Vec<crate::models::V1PodIp>>,
     /// The Quality of Service (QOS) classification assigned to the pod based on resource requirements See PodQOSClass type for available QOS classes More info: https://git.k8s.io/community/contributors/design-proposals/node/resource-qos.md
     #[serde(rename = "qosClass", skip_serializing_if = "Option::is_none")]
     pub qos_class: Option<String>,
@@ -68,7 +68,7 @@ impl V1PodStatus {
             nominated_node_name: None,
             phase: None,
             pod_ip: None,
-            pod_i_ps: None,
+            pod_ips: None,
             qos_class: None,
             reason: None,
             start_time: None,

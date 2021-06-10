@@ -15,13 +15,13 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1VolumeProjection {
     #[serde(rename = "configMap", skip_serializing_if = "Option::is_none")]
-    pub config_map: Option<crate::models::V1ConfigMapProjection>,
+    pub config_map: Option<Box<crate::models::V1ConfigMapProjection>>,
     #[serde(rename = "downwardAPI", skip_serializing_if = "Option::is_none")]
-    pub downward_api: Option<crate::models::V1DownwardApiProjection>,
+    pub downward_api: Option<Box<crate::models::V1DownwardApiProjection>>,
     #[serde(rename = "secret", skip_serializing_if = "Option::is_none")]
-    pub secret: Option<crate::models::V1SecretProjection>,
+    pub secret: Option<Box<crate::models::V1SecretProjection>>,
     #[serde(rename = "serviceAccountToken", skip_serializing_if = "Option::is_none")]
-    pub service_account_token: Option<crate::models::V1ServiceAccountTokenProjection>,
+    pub service_account_token: Option<Box<crate::models::V1ServiceAccountTokenProjection>>,
 }
 
 impl V1VolumeProjection {

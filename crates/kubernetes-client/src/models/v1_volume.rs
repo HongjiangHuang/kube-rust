@@ -15,66 +15,66 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1Volume {
     #[serde(rename = "awsElasticBlockStore", skip_serializing_if = "Option::is_none")]
-    pub aws_elastic_block_store: Option<crate::models::V1AwsElasticBlockStoreVolumeSource>,
+    pub aws_elastic_block_store: Option<Box<crate::models::V1AwsElasticBlockStoreVolumeSource>>,
     #[serde(rename = "azureDisk", skip_serializing_if = "Option::is_none")]
-    pub azure_disk: Option<crate::models::V1AzureDiskVolumeSource>,
+    pub azure_disk: Option<Box<crate::models::V1AzureDiskVolumeSource>>,
     #[serde(rename = "azureFile", skip_serializing_if = "Option::is_none")]
-    pub azure_file: Option<crate::models::V1AzureFileVolumeSource>,
+    pub azure_file: Option<Box<crate::models::V1AzureFileVolumeSource>>,
     #[serde(rename = "cephfs", skip_serializing_if = "Option::is_none")]
-    pub cephfs: Option<crate::models::V1CephFsVolumeSource>,
+    pub cephfs: Option<Box<crate::models::V1CephFsVolumeSource>>,
     #[serde(rename = "cinder", skip_serializing_if = "Option::is_none")]
-    pub cinder: Option<crate::models::V1CinderVolumeSource>,
+    pub cinder: Option<Box<crate::models::V1CinderVolumeSource>>,
     #[serde(rename = "configMap", skip_serializing_if = "Option::is_none")]
-    pub config_map: Option<crate::models::V1ConfigMapVolumeSource>,
+    pub config_map: Option<Box<crate::models::V1ConfigMapVolumeSource>>,
     #[serde(rename = "csi", skip_serializing_if = "Option::is_none")]
-    pub csi: Option<crate::models::V1CsiVolumeSource>,
+    pub csi: Option<Box<crate::models::V1CsiVolumeSource>>,
     #[serde(rename = "downwardAPI", skip_serializing_if = "Option::is_none")]
-    pub downward_api: Option<crate::models::V1DownwardApiVolumeSource>,
+    pub downward_api: Option<Box<crate::models::V1DownwardApiVolumeSource>>,
     #[serde(rename = "emptyDir", skip_serializing_if = "Option::is_none")]
-    pub empty_dir: Option<crate::models::V1EmptyDirVolumeSource>,
+    pub empty_dir: Option<Box<crate::models::V1EmptyDirVolumeSource>>,
     #[serde(rename = "ephemeral", skip_serializing_if = "Option::is_none")]
-    pub ephemeral: Option<crate::models::V1EphemeralVolumeSource>,
+    pub ephemeral: Option<Box<crate::models::V1EphemeralVolumeSource>>,
     #[serde(rename = "fc", skip_serializing_if = "Option::is_none")]
-    pub fc: Option<crate::models::V1FcVolumeSource>,
+    pub fc: Option<Box<crate::models::V1FcVolumeSource>>,
     #[serde(rename = "flexVolume", skip_serializing_if = "Option::is_none")]
-    pub flex_volume: Option<crate::models::V1FlexVolumeSource>,
+    pub flex_volume: Option<Box<crate::models::V1FlexVolumeSource>>,
     #[serde(rename = "flocker", skip_serializing_if = "Option::is_none")]
-    pub flocker: Option<crate::models::V1FlockerVolumeSource>,
+    pub flocker: Option<Box<crate::models::V1FlockerVolumeSource>>,
     #[serde(rename = "gcePersistentDisk", skip_serializing_if = "Option::is_none")]
-    pub gce_persistent_disk: Option<crate::models::V1GcePersistentDiskVolumeSource>,
+    pub gce_persistent_disk: Option<Box<crate::models::V1GcePersistentDiskVolumeSource>>,
     #[serde(rename = "gitRepo", skip_serializing_if = "Option::is_none")]
-    pub git_repo: Option<crate::models::V1GitRepoVolumeSource>,
+    pub git_repo: Option<Box<crate::models::V1GitRepoVolumeSource>>,
     #[serde(rename = "glusterfs", skip_serializing_if = "Option::is_none")]
-    pub glusterfs: Option<crate::models::V1GlusterfsVolumeSource>,
+    pub glusterfs: Option<Box<crate::models::V1GlusterfsVolumeSource>>,
     #[serde(rename = "hostPath", skip_serializing_if = "Option::is_none")]
-    pub host_path: Option<crate::models::V1HostPathVolumeSource>,
+    pub host_path: Option<Box<crate::models::V1HostPathVolumeSource>>,
     #[serde(rename = "iscsi", skip_serializing_if = "Option::is_none")]
-    pub iscsi: Option<crate::models::V1IscsiVolumeSource>,
+    pub iscsi: Option<Box<crate::models::V1IscsiVolumeSource>>,
     /// Volume's name. Must be a DNS_LABEL and unique within the pod. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
     #[serde(rename = "name")]
     pub name: String,
     #[serde(rename = "nfs", skip_serializing_if = "Option::is_none")]
-    pub nfs: Option<crate::models::V1NfsVolumeSource>,
+    pub nfs: Option<Box<crate::models::V1NfsVolumeSource>>,
     #[serde(rename = "persistentVolumeClaim", skip_serializing_if = "Option::is_none")]
-    pub persistent_volume_claim: Option<crate::models::V1PersistentVolumeClaimVolumeSource>,
+    pub persistent_volume_claim: Option<Box<crate::models::V1PersistentVolumeClaimVolumeSource>>,
     #[serde(rename = "photonPersistentDisk", skip_serializing_if = "Option::is_none")]
-    pub photon_persistent_disk: Option<crate::models::V1PhotonPersistentDiskVolumeSource>,
+    pub photon_persistent_disk: Option<Box<crate::models::V1PhotonPersistentDiskVolumeSource>>,
     #[serde(rename = "portworxVolume", skip_serializing_if = "Option::is_none")]
-    pub portworx_volume: Option<crate::models::V1PortworxVolumeSource>,
+    pub portworx_volume: Option<Box<crate::models::V1PortworxVolumeSource>>,
     #[serde(rename = "projected", skip_serializing_if = "Option::is_none")]
-    pub projected: Option<crate::models::V1ProjectedVolumeSource>,
+    pub projected: Option<Box<crate::models::V1ProjectedVolumeSource>>,
     #[serde(rename = "quobyte", skip_serializing_if = "Option::is_none")]
-    pub quobyte: Option<crate::models::V1QuobyteVolumeSource>,
+    pub quobyte: Option<Box<crate::models::V1QuobyteVolumeSource>>,
     #[serde(rename = "rbd", skip_serializing_if = "Option::is_none")]
-    pub rbd: Option<crate::models::V1RbdVolumeSource>,
+    pub rbd: Option<Box<crate::models::V1RbdVolumeSource>>,
     #[serde(rename = "scaleIO", skip_serializing_if = "Option::is_none")]
-    pub scale_io: Option<crate::models::V1ScaleIoVolumeSource>,
+    pub scale_io: Option<Box<crate::models::V1ScaleIoVolumeSource>>,
     #[serde(rename = "secret", skip_serializing_if = "Option::is_none")]
-    pub secret: Option<crate::models::V1SecretVolumeSource>,
+    pub secret: Option<Box<crate::models::V1SecretVolumeSource>>,
     #[serde(rename = "storageos", skip_serializing_if = "Option::is_none")]
-    pub storageos: Option<crate::models::V1StorageOsVolumeSource>,
+    pub storageos: Option<Box<crate::models::V1StorageOsVolumeSource>>,
     #[serde(rename = "vsphereVolume", skip_serializing_if = "Option::is_none")]
-    pub vsphere_volume: Option<crate::models::V1VsphereVirtualDiskVolumeSource>,
+    pub vsphere_volume: Option<Box<crate::models::V1VsphereVirtualDiskVolumeSource>>,
 }
 
 impl V1Volume {

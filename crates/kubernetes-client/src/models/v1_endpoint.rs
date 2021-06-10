@@ -18,12 +18,12 @@ pub struct V1Endpoint {
     #[serde(rename = "addresses")]
     pub addresses: Vec<String>,
     #[serde(rename = "conditions", skip_serializing_if = "Option::is_none")]
-    pub conditions: Option<crate::models::V1EndpointConditions>,
+    pub conditions: Option<Box<crate::models::V1EndpointConditions>>,
     /// deprecatedTopology contains topology information part of the v1beta1 API. This field is deprecated, and will be removed when the v1beta1 API is removed (no sooner than kubernetes v1.24).  While this field can hold values, it is not writable through the v1 API, and any attempts to write to it will be silently ignored. Topology information can be found in the zone and nodeName fields instead.
     #[serde(rename = "deprecatedTopology", skip_serializing_if = "Option::is_none")]
     pub deprecated_topology: Option<::std::collections::HashMap<String, String>>,
     #[serde(rename = "hints", skip_serializing_if = "Option::is_none")]
-    pub hints: Option<crate::models::V1EndpointHints>,
+    pub hints: Option<Box<crate::models::V1EndpointHints>>,
     /// hostname of this endpoint. This field may be used by consumers of endpoints to distinguish endpoints from each other (e.g. in DNS names). Multiple endpoints which use the same hostname should be considered fungible (e.g. multiple A values in DNS). Must be lowercase and pass DNS Label (RFC 1123) validation.
     #[serde(rename = "hostname", skip_serializing_if = "Option::is_none")]
     pub hostname: Option<String>,
@@ -31,7 +31,7 @@ pub struct V1Endpoint {
     #[serde(rename = "nodeName", skip_serializing_if = "Option::is_none")]
     pub node_name: Option<String>,
     #[serde(rename = "targetRef", skip_serializing_if = "Option::is_none")]
-    pub target_ref: Option<crate::models::V1ObjectReference>,
+    pub target_ref: Option<Box<crate::models::V1ObjectReference>>,
     /// zone is the name of the Zone this endpoint exists in.
     #[serde(rename = "zone", skip_serializing_if = "Option::is_none")]
     pub zone: Option<String>,

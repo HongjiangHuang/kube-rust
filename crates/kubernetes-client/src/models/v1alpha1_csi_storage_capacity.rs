@@ -27,9 +27,9 @@ pub struct V1alpha1CsiStorageCapacity {
     #[serde(rename = "maximumVolumeSize", skip_serializing_if = "Option::is_none")]
     pub maximum_volume_size: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     #[serde(rename = "nodeTopology", skip_serializing_if = "Option::is_none")]
-    pub node_topology: Option<crate::models::V1LabelSelector>,
+    pub node_topology: Option<Box<crate::models::V1LabelSelector>>,
     /// The name of the StorageClass that the reported capacity applies to. It must meet the same requirements as the name of a StorageClass object (non-empty, DNS subdomain). If that object no longer exists, the CSIStorageCapacity object is obsolete and should be removed by its creator. This field is immutable.
     #[serde(rename = "storageClassName")]
     pub storage_class_name: String,

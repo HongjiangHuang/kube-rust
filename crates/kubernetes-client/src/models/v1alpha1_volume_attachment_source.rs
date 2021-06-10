@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1alpha1VolumeAttachmentSource {
     #[serde(rename = "inlineVolumeSpec", skip_serializing_if = "Option::is_none")]
-    pub inline_volume_spec: Option<crate::models::V1PersistentVolumeSpec>,
+    pub inline_volume_spec: Option<Box<crate::models::V1PersistentVolumeSpec>>,
     /// Name of the persistent volume to attach.
     #[serde(rename = "persistentVolumeName", skip_serializing_if = "Option::is_none")]
     pub persistent_volume_name: Option<String>,

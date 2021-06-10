@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_namespaced_endpoint_slice**](DiscoveryV1beta1Api.md#create_namespaced_endpoint_slice) | **Post** /apis/discovery.k8s.io/v1beta1/namespaces/{namespace}/endpointslices | 
-[**delete_collection_namespaced_endpoint_slice**](DiscoveryV1beta1Api.md#delete_collection_namespaced_endpoint_slice) | **Delete** /apis/discovery.k8s.io/v1beta1/namespaces/{namespace}/endpointslices | 
-[**delete_namespaced_endpoint_slice**](DiscoveryV1beta1Api.md#delete_namespaced_endpoint_slice) | **Delete** /apis/discovery.k8s.io/v1beta1/namespaces/{namespace}/endpointslices/{name} | 
-[**get_api_resources**](DiscoveryV1beta1Api.md#get_api_resources) | **Get** /apis/discovery.k8s.io/v1beta1/ | 
-[**list_endpoint_slice_for_all_namespaces**](DiscoveryV1beta1Api.md#list_endpoint_slice_for_all_namespaces) | **Get** /apis/discovery.k8s.io/v1beta1/endpointslices | 
-[**list_namespaced_endpoint_slice**](DiscoveryV1beta1Api.md#list_namespaced_endpoint_slice) | **Get** /apis/discovery.k8s.io/v1beta1/namespaces/{namespace}/endpointslices | 
-[**patch_namespaced_endpoint_slice**](DiscoveryV1beta1Api.md#patch_namespaced_endpoint_slice) | **Patch** /apis/discovery.k8s.io/v1beta1/namespaces/{namespace}/endpointslices/{name} | 
-[**read_namespaced_endpoint_slice**](DiscoveryV1beta1Api.md#read_namespaced_endpoint_slice) | **Get** /apis/discovery.k8s.io/v1beta1/namespaces/{namespace}/endpointslices/{name} | 
-[**replace_namespaced_endpoint_slice**](DiscoveryV1beta1Api.md#replace_namespaced_endpoint_slice) | **Put** /apis/discovery.k8s.io/v1beta1/namespaces/{namespace}/endpointslices/{name} | 
+[**create_namespaced_endpoint_slice**](DiscoveryV1beta1Api.md#create_namespaced_endpoint_slice) | **POST** /apis/discovery.k8s.io/v1beta1/namespaces/{namespace}/endpointslices | 
+[**delete_collection_namespaced_endpoint_slice**](DiscoveryV1beta1Api.md#delete_collection_namespaced_endpoint_slice) | **DELETE** /apis/discovery.k8s.io/v1beta1/namespaces/{namespace}/endpointslices | 
+[**delete_namespaced_endpoint_slice**](DiscoveryV1beta1Api.md#delete_namespaced_endpoint_slice) | **DELETE** /apis/discovery.k8s.io/v1beta1/namespaces/{namespace}/endpointslices/{name} | 
+[**get_api_resources**](DiscoveryV1beta1Api.md#get_api_resources) | **GET** /apis/discovery.k8s.io/v1beta1/ | 
+[**list_endpoint_slice_for_all_namespaces**](DiscoveryV1beta1Api.md#list_endpoint_slice_for_all_namespaces) | **GET** /apis/discovery.k8s.io/v1beta1/endpointslices | 
+[**list_namespaced_endpoint_slice**](DiscoveryV1beta1Api.md#list_namespaced_endpoint_slice) | **GET** /apis/discovery.k8s.io/v1beta1/namespaces/{namespace}/endpointslices | 
+[**patch_namespaced_endpoint_slice**](DiscoveryV1beta1Api.md#patch_namespaced_endpoint_slice) | **PATCH** /apis/discovery.k8s.io/v1beta1/namespaces/{namespace}/endpointslices/{name} | 
+[**read_namespaced_endpoint_slice**](DiscoveryV1beta1Api.md#read_namespaced_endpoint_slice) | **GET** /apis/discovery.k8s.io/v1beta1/namespaces/{namespace}/endpointslices/{name} | 
+[**replace_namespaced_endpoint_slice**](DiscoveryV1beta1Api.md#replace_namespaced_endpoint_slice) | **PUT** /apis/discovery.k8s.io/v1beta1/namespaces/{namespace}/endpointslices/{name} | 
 
 
 

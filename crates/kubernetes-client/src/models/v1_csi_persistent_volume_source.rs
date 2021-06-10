@@ -15,9 +15,9 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1CsiPersistentVolumeSource {
     #[serde(rename = "controllerExpandSecretRef", skip_serializing_if = "Option::is_none")]
-    pub controller_expand_secret_ref: Option<crate::models::V1SecretReference>,
+    pub controller_expand_secret_ref: Option<Box<crate::models::V1SecretReference>>,
     #[serde(rename = "controllerPublishSecretRef", skip_serializing_if = "Option::is_none")]
-    pub controller_publish_secret_ref: Option<crate::models::V1SecretReference>,
+    pub controller_publish_secret_ref: Option<Box<crate::models::V1SecretReference>>,
     /// Driver is the name of the driver to use for this volume. Required.
     #[serde(rename = "driver")]
     pub driver: String,
@@ -25,9 +25,9 @@ pub struct V1CsiPersistentVolumeSource {
     #[serde(rename = "fsType", skip_serializing_if = "Option::is_none")]
     pub fs_type: Option<String>,
     #[serde(rename = "nodePublishSecretRef", skip_serializing_if = "Option::is_none")]
-    pub node_publish_secret_ref: Option<crate::models::V1SecretReference>,
+    pub node_publish_secret_ref: Option<Box<crate::models::V1SecretReference>>,
     #[serde(rename = "nodeStageSecretRef", skip_serializing_if = "Option::is_none")]
-    pub node_stage_secret_ref: Option<crate::models::V1SecretReference>,
+    pub node_stage_secret_ref: Option<Box<crate::models::V1SecretReference>>,
     /// Optional: The value to pass to ControllerPublishVolumeRequest. Defaults to false (read/write).
     #[serde(rename = "readOnly", skip_serializing_if = "Option::is_none")]
     pub read_only: Option<bool>,

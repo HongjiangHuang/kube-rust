@@ -15,11 +15,11 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1NetworkPolicyPeer {
     #[serde(rename = "ipBlock", skip_serializing_if = "Option::is_none")]
-    pub ip_block: Option<crate::models::V1IpBlock>,
+    pub ip_block: Option<Box<crate::models::V1IpBlock>>,
     #[serde(rename = "namespaceSelector", skip_serializing_if = "Option::is_none")]
-    pub namespace_selector: Option<crate::models::V1LabelSelector>,
+    pub namespace_selector: Option<Box<crate::models::V1LabelSelector>>,
     #[serde(rename = "podSelector", skip_serializing_if = "Option::is_none")]
-    pub pod_selector: Option<crate::models::V1LabelSelector>,
+    pub pod_selector: Option<Box<crate::models::V1LabelSelector>>,
 }
 
 impl V1NetworkPolicyPeer {

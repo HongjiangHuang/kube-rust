@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1CustomResourceSubresources {
     #[serde(rename = "scale", skip_serializing_if = "Option::is_none")]
-    pub scale: Option<crate::models::V1CustomResourceSubresourceScale>,
+    pub scale: Option<Box<crate::models::V1CustomResourceSubresourceScale>>,
     /// status indicates the custom resource should serve a `/status` subresource. When enabled: 1. requests to the custom resource primary endpoint ignore changes to the `status` stanza of the object. 2. requests to the custom resource `/status` subresource ignore changes to anything other than the `status` stanza of the object.
     #[serde(rename = "status", skip_serializing_if = "Option::is_none")]
     pub status: Option<serde_json::Value>,

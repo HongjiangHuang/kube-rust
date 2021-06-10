@@ -18,7 +18,7 @@ pub struct V2beta2ContainerResourceMetricStatus {
     #[serde(rename = "container")]
     pub container: String,
     #[serde(rename = "current")]
-    pub current: crate::models::V2beta2MetricValueStatus,
+    pub current: Box<crate::models::V2beta2MetricValueStatus>,
     /// Name is the name of the resource in question.
     #[serde(rename = "name")]
     pub name: String,
@@ -29,7 +29,7 @@ impl V2beta2ContainerResourceMetricStatus {
     pub fn new(container: String, current: crate::models::V2beta2MetricValueStatus, name: String) -> V2beta2ContainerResourceMetricStatus {
         V2beta2ContainerResourceMetricStatus {
             container,
-            current,
+            current: Box::new(current),
             name,
         }
     }

@@ -18,7 +18,7 @@ pub struct V1beta1LimitedPriorityLevelConfiguration {
     #[serde(rename = "assuredConcurrencyShares", skip_serializing_if = "Option::is_none")]
     pub assured_concurrency_shares: Option<i32>,
     #[serde(rename = "limitResponse", skip_serializing_if = "Option::is_none")]
-    pub limit_response: Option<crate::models::V1beta1LimitResponse>,
+    pub limit_response: Option<Box<crate::models::V1beta1LimitResponse>>,
 }
 
 impl V1beta1LimitedPriorityLevelConfiguration {

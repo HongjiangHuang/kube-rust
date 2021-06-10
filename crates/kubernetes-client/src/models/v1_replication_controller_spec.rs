@@ -24,7 +24,7 @@ pub struct V1ReplicationControllerSpec {
     #[serde(rename = "selector", skip_serializing_if = "Option::is_none")]
     pub selector: Option<::std::collections::HashMap<String, String>>,
     #[serde(rename = "template", skip_serializing_if = "Option::is_none")]
-    pub template: Option<crate::models::V1PodTemplateSpec>,
+    pub template: Option<Box<crate::models::V1PodTemplateSpec>>,
 }
 
 impl V1ReplicationControllerSpec {

@@ -15,14 +15,14 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct FlowcontrolV1beta1Subject {
     #[serde(rename = "group", skip_serializing_if = "Option::is_none")]
-    pub group: Option<crate::models::V1beta1GroupSubject>,
+    pub group: Option<Box<crate::models::V1beta1GroupSubject>>,
     /// Required
     #[serde(rename = "kind")]
     pub kind: String,
     #[serde(rename = "serviceAccount", skip_serializing_if = "Option::is_none")]
-    pub service_account: Option<crate::models::V1beta1ServiceAccountSubject>,
+    pub service_account: Option<Box<crate::models::V1beta1ServiceAccountSubject>>,
     #[serde(rename = "user", skip_serializing_if = "Option::is_none")]
-    pub user: Option<crate::models::V1beta1UserSubject>,
+    pub user: Option<Box<crate::models::V1beta1UserSubject>>,
 }
 
 impl FlowcontrolV1beta1Subject {

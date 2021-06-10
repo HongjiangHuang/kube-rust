@@ -21,11 +21,11 @@ pub struct AuthenticationV1TokenRequest {
     #[serde(rename = "kind", skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
-    pub metadata: Option<crate::models::V1ObjectMeta>,
+    pub metadata: Option<Box<crate::models::V1ObjectMeta>>,
     #[serde(rename = "spec")]
-    pub spec: crate::models::V1TokenRequestSpec,
+    pub spec: Box<crate::models::V1TokenRequestSpec>,
     #[serde(rename = "status", skip_serializing_if = "Option::is_none")]
-    pub status: Option<crate::models::V1TokenRequestStatus>,
+    pub status: Option<Box<crate::models::V1TokenRequestStatus>>,
 }
 
 impl AuthenticationV1TokenRequest {
@@ -35,7 +35,7 @@ impl AuthenticationV1TokenRequest {
             api_version: None,
             kind: None,
             metadata: None,
-            spec,
+            spec: Box::new(spec),
             status: None,
         }
     }

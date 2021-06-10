@@ -15,7 +15,7 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct V1NodeSpec {
     #[serde(rename = "configSource", skip_serializing_if = "Option::is_none")]
-    pub config_source: Option<crate::models::V1NodeConfigSource>,
+    pub config_source: Option<Box<crate::models::V1NodeConfigSource>>,
     /// Deprecated. Not all kubelets will set this field. Remove field after 1.13. see: https://issues.k8s.io/61966
     #[serde(rename = "externalID", skip_serializing_if = "Option::is_none")]
     pub external_id: Option<String>,
@@ -24,7 +24,7 @@ pub struct V1NodeSpec {
     pub pod_cidr: Option<String>,
     /// podCIDRs represents the IP ranges assigned to the node for usage by Pods on that node. If this field is specified, the 0th entry must match the podCIDR field. It may contain at most 1 value for each of IPv4 and IPv6.
     #[serde(rename = "podCIDRs", skip_serializing_if = "Option::is_none")]
-    pub pod_cid_rs: Option<Vec<String>>,
+    pub pod_cidrs: Option<Vec<String>>,
     /// ID of the node assigned by the cloud provider in the format: <ProviderName>://<ProviderSpecificNodeID>
     #[serde(rename = "providerID", skip_serializing_if = "Option::is_none")]
     pub provider_id: Option<String>,
@@ -43,7 +43,7 @@ impl V1NodeSpec {
             config_source: None,
             external_id: None,
             pod_cidr: None,
-            pod_cid_rs: None,
+            pod_cidrs: None,
             provider_id: None,
             taints: None,
             unschedulable: None,

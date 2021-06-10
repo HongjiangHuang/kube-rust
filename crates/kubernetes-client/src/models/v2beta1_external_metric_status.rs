@@ -24,7 +24,7 @@ pub struct V2beta1ExternalMetricStatus {
     #[serde(rename = "metricName")]
     pub metric_name: String,
     #[serde(rename = "metricSelector", skip_serializing_if = "Option::is_none")]
-    pub metric_selector: Option<crate::models::V1LabelSelector>,
+    pub metric_selector: Option<Box<crate::models::V1LabelSelector>>,
 }
 
 impl V2beta1ExternalMetricStatus {
