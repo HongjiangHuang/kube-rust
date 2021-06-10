@@ -20,6 +20,7 @@ else
 fi
 
 RUST="${GEN_ROOT}/openapi/rust.sh"
+export OPENAPI_GENERATOR_USER_ORG="HongjiangHuang"
 echo ">>> Running ${RUST}"
 ${RUST} crates/kubernetes-client settings
 echo ">>> Done."

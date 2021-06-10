@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # kubernetes-client/gen commit to use for code generation.
-export GEN_COMMIT=2af17e7d74d843dfcd0ed331bfc4e1b288941d30
+export GEN_COMMIT=029c3116d72cb5dfcc0f57bad14aea2ecc95c922
 
 # GitHub username/organization to clone kubernetes repo from.
 export USERNAME=kubernetes
@@ -30,4 +30,4 @@ export CLIENT_VERSION="0.8.0"
 # Name of the release package
 export PACKAGE_NAME="kubernetes-client"
 
-export OPENAPI_GENERATOR_COMMIT=v4.2.3
+export OPENAPI_GENERATOR_COMMIT=381af95daf00055dbc1cffda9e17c6e90e95f886
