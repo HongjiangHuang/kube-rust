@@ -1,0 +1,4 @@
+{
+    "rust-analyzer.experimental.procAttrMacros": true,
+    "rust-analyzer.diagnostics.enableExperimental": true
+}
